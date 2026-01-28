@@ -49,6 +49,61 @@
             "address": "0x57f5e098cad7a3d1eed53991d4d66c45c9af7812",
             "reason": "Wrapped Mountain Protocol USD (wUSDM) is a yield-bearing wrapper where the yield is reflected in the unit price rather than via rebasing. Since its price increases over time (e.g., currently ~$1.09), it violates the criteria to not be an asset whose price goes up as compound interest.",
             "timestamp": "2026-01-28T20:35:33.002Z"
+        },
+        {
+            "address": "0x4879ccc5496c76c13e93cc8a18aba9a7fa445543",
+            "reason": "pre-iUSDT is a points or claimable future asset for the Hourglass protocol, not a USD-pegged stablecoin.",
+            "timestamp": "2026-01-28T23:05:07.087Z"
+        },
+        {
+            "address": "0x3d7d6fdf07ee548b939a80edbc9b2256d0cdc003",
+            "reason": "srUSDe (Strata Senior USDe) is a yield-bearing senior tranche product, categorized as a structured yield instrument rather than a standard stablecoin.",
+            "timestamp": "2026-01-28T23:05:07.087Z"
+        },
+        {
+            "address": "0xc8cf6d7991f15525488b2a83df53468d682ba4b0",
+            "reason": "sUSDf is a yield-bearing (staked) version of Falcon USD, designed to accumulate yield through trading strategies.",
+            "timestamp": "2026-01-28T23:05:07.088Z"
+        },
+        {
+            "address": "0x5c20b550819128074fd538edf79791733ccedd18",
+            "reason": "fUSDT is a Fluid (Instadapp) yield-bearing asset where the exchange rate increases over time.",
+            "timestamp": "2026-01-28T23:05:07.088Z"
+        },
+        {
+            "address": "0xd1074e0ae85610ddba0147e29ebe0d8e5873a000",
+            "reason": "Plasma USD Vault is a yield-bearing deposit receipt for the Plasma Finance platform, not a primary stablecoin.",
+            "timestamp": "2026-01-28T23:05:07.088Z"
+        },
+        {
+            "address": "0x00cd995ac218d1ef85db0eb84469a178e5814683",
+            "reason": "This is a low-liquidity impersonator of Tether USD; the official USDT address on Ethereum is 0xdac17f958d2ee523a2206206994597c13d831ec7.",
+            "timestamp": "2026-01-28T23:05:07.088Z"
+        },
+        {
+            "address": "0x4737d9b4592b40d51e110b94c9c043c6654067ae",
+            "reason": "slvlUSD is a staked (yield-bearing) version of Level USD, which accumulates value through interest.",
+            "timestamp": "2026-01-28T23:05:07.088Z"
+        },
+        {
+            "address": "0xd3fd63209fa2d55b07a0f6db36c2f43900be3094",
+            "reason": "wsrUSD is a 'Savings' wrapper (Wrapped Savings rUSD), which is interest-bearing and not a flat stablecoin.",
+            "timestamp": "2026-01-28T23:05:07.088Z"
+        },
+        {
+            "address": "0x1e33e98af620f1d563fcd3cfd3c75ace841204ef",
+            "reason": "DUSD (Dialectic USD) appears to be a specialized fund or internal asset with very low public utility and liquidity.",
+            "timestamp": "2026-01-28T23:05:07.088Z"
+        },
+        {
+            "address": "0x40052868b2bc56b90fe9823428c1291929551512",
+            "reason": "This is a malicious scam token misspelled as 'Tethor USD' to deceive users.",
+            "timestamp": "2026-01-28T23:05:07.088Z"
+        },
+        {
+            "address": "0xc9b7893ff5ed7d24d68e386c877830738d3c9cd9",
+            "reason": "This address is an impersonator of the official TrueUSD (TUSD) token on Ethereum. The official TUSD contract address is 0x0000000000085d4780B73119b644AE5ecd22b376. The candidate token has negligible TVL ($3.54K) and volume, which is inconsistent with the multi-million dollar liquidity of the genuine stablecoin on the Ethereum mainnet.",
+            "timestamp": "2026-01-28T23:20:56.740Z"
         }
     ]
 }

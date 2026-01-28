@@ -62,6 +62,7 @@ export class UpdateBasketUseCase {
     logger.foundCandidates(candidates.length);
 
     if (candidates.length === 0) {
+      logger.updateComplete();
       return;
     }
 

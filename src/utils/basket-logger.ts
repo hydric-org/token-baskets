@@ -18,9 +18,11 @@ export class BasketLogger {
   }
 
   startUpdate(): void {
+    console.log("\n" + "=".repeat(100));
     console.log(
       `${this.formatPrefix()} 🚀 Starting basket update (ID: ${this.basketId})`,
     );
+    console.log("-".repeat(100));
   }
 
   basketNotFound(): void {
@@ -51,9 +53,9 @@ export class BasketLogger {
 
   tokenValidated(result: ValidationResult): void {
     const status = result.isValid ? "✅ VALID" : "❌ INVALID";
-    const symbol = result.address.substring(0, 10);
+    const address = result.address;
     console.log(
-      `${this.formatPrefix()} ${status}: ${symbol}... - ${result.reason}`,
+      `${this.formatPrefix()} ${status}: ${address} - ${result.reason}`,
     );
   }
 
@@ -75,6 +77,7 @@ export class BasketLogger {
 
   updateComplete(): void {
     console.log(`${this.formatPrefix()} ✅ Update complete`);
+    console.log("=".repeat(100) + "\n");
   }
 
   error(message: string, error?: Error): void {
