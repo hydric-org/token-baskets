@@ -1,0 +1,9 @@
+{
+    "usd-stablecoins": [
+        {
+            "address": "0xffe8b2295cef70290819a8193834cc7900bcef5f",
+            "reason": "Excluded because it is a yield-bearing receipt token (sp-ysUSDC) whose price increases ($1.03) over time due to accrued interest.",
+            "timestamp": "2026-01-28T23:46:54.183Z"
+        }
+    ]
+}

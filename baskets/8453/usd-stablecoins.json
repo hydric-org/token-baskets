@@ -1,0 +1,29 @@
+{
+    "id": "usd-stablecoins",
+    "name": "USD Stablecoins",
+    "logo": "../../assets/usd-stablecoins.png",
+    "description": "A curated list of multiple USD Stablecoins together in a single place.",
+    "lastUpdated": "2026-01-28T23:46:54.183Z",
+    "index": [
+        "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+        "0xc0d3700000987c99b3c9009069e4f8413fd22330",
+        "0xb79dd08ea68a908a97220c76d19a6aa9cbde4376",
+        "0xfde4c96c8593536e31f229ea8f37b2ada2699bb2",
+        "0xd9aaec86b65d86f6a7b5b1b0c42ffa531710b6ca",
+        "0xcfa3ef56d303ae4faaba0592388f19d7c3399fb4",
+        "0x04d5ddf5f3a8939889f11e97f8c4bb48317f1938",
+        "0xcc7ff230365bd730ee4b352cc2492cedac49383e",
+        "0x820c137fa70c8691f0e44dc420a5e53c168921dc",
+        "0x526728dbc96689597f85ae4cd716d4f7fccbae9d",
+        "0xe4b20925d9e9a62f1e492e15a81dc0de62804dd4",
+        "0xeb466342c4d449bc9f53a865d5cb90586f405215",
+        "0xff0c62a4979400841efaa6faadb07ac7d5c98b27",
+        "0x5d3a1ff2b6bab83b63cd9ad0787074081a52ef34",
+        "0xfe26e72431bd82c285655e897f25104e547c4c07",
+        "0x4f604735c1cf31399c6e711d5962b2b3e0225ad3",
+        "0x895e15020c3f52ddd4d8e9514eb83c39f53b1579",
+        "0xa7e9e51eb96d41eee7676ce09a20d4137132faca",
+        "0xec267c53f53807c2337c257f8ac3fc3cc07cc0ed",
+        "0x50c5725949a6f0c72e6c4a641f24049a917db0cb"
+    ]
+}

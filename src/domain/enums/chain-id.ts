@@ -5,4 +5,5 @@ export enum ChainId {
   PLASMA = 9745,
   SCROLL = 534352,
   HYPER_EVM = 999,
+  BASE = 8453,
 }
