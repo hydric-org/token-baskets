@@ -104,6 +104,11 @@
             "address": "0xc9b7893ff5ed7d24d68e386c877830738d3c9cd9",
             "reason": "This address is an impersonator of the official TrueUSD (TUSD) token on Ethereum. The official TUSD contract address is 0x0000000000085d4780B73119b644AE5ecd22b376. The candidate token has negligible TVL ($3.54K) and volume, which is inconsistent with the multi-million dollar liquidity of the genuine stablecoin on the Ethereum mainnet.",
             "timestamp": "2026-01-28T23:20:56.740Z"
+        },
+        {
+            "address": "0x738d1115b90efa71ae468f1287fc864775e23a31",
+            "reason": "Savings rUSD (srUSD) is a legitimate yield-bearing token from the Reservoir Protocol, but it does not meet the specific criteria for this basket. It is a share-based asset where the price per token increases over time relative to the rUSD stablecoin to reflect accrued interest (currently trading at approximately $1.12). The basket rules explicitly exclude USD tokens whose price goes up as compound interest, requiring assets to maintain a 1:1 peg.",
+            "timestamp": "2026-01-28T23:42:10.234Z"
         }
     ]
 }
