@@ -1,0 +1,14 @@
+{
+    "id": "usd-stablecoins",
+    "name": "USD Stablecoins",
+    "logo": "../../assets/usd-stablecoins.png",
+    "description": "A curated list of multiple USD Stablecoins together in a single place.",
+    "lastUpdated": "2026-01-28T23:38:57.722Z",
+    "index": [
+        "0x06efdbff2a14a7c8e15944d1f4a48f9f95f663a4",
+        "0xf55bec9cafdbe8730f096aa55dad6d22d44099df",
+        "0xdb9e8f82d6d45fff803161f2a5f75543972b229a",
+        "0x939778d83b46b456224a33fb59630b11dec56663",
+        "0xeb466342c4d449bc9f53a865d5cb90586f405215"
+    ]
+}
