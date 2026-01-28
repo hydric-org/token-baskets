@@ -1,0 +1,54 @@
+{
+    "usd-stablecoins": [
+        {
+            "address": "0x15700b564ca08d9439c58ca5053166e8317aa138",
+            "reason": "deUSD (Elixir) is a failed stablecoin project that announced termination in late 2025 following a collateral crisis; the asset is significantly de-pegged and no longer functions as a stablecoin.",
+            "timestamp": "2026-01-28T19:32:15.814Z"
+        },
+        {
+            "address": "0xe4b70f9ddbb286f3cfa836e0fd970479f3193252",
+            "reason": "USDZ (USD ZeroGas) could not be verified as a legitimate or recognized stablecoin project; it has extremely low swap activity and lacks verifiable protocol documentation.",
+            "timestamp": "2026-01-28T19:32:15.816Z"
+        },
+        {
+            "address": "0xed7fd16423bc19b9143313ac5e4b7f731d714e97",
+            "reason": "PepeUSD is a meme-based token rather than a legitimate stablecoin protocol with a verifiable pegging mechanism.",
+            "timestamp": "2026-01-28T19:32:15.816Z"
+        },
+        {
+            "address": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+            "reason": "I used Google Search to verify that sUSDS (Savings USDS) is the yield-bearing version of USDS from the Sky Protocol (formerly MakerDAO). While it is a legitimate project, its value increases over time relative to the USD peg as it accumulates yield (share-price model). It is excluded based on the criteria that price must not go up as compound interest.",
+            "timestamp": "2026-01-28T19:37:40.750Z"
+        },
+        {
+            "address": "0x5b6e3887b6420f5f39aa7db4f4738f0a9ca3f8f5",
+            "reason": "Inero USD (USDI) is flagged as a high-risk project with low volume, unverified supply, and ranking penalties on major trackers. It is not a reputable USD stablecoin project.",
+            "timestamp": "2026-01-28T19:37:40.752Z"
+        },
+        {
+            "address": "0x5c5b196abe0d54485975d1ec29617d42d9198326",
+            "reason": "I verified via Google Search that sdeUSD (Staked deUSD) is a yield-bearing synthetic dollar from the Elixir protocol. Similar to sUSDS, its price increases as it accumulates yield, which disqualifies it under the requirement to not be an USD token whose price goes up as compound interest.",
+            "timestamp": "2026-01-28T19:37:40.752Z"
+        },
+        {
+            "address": "0xb0a16535eb77c6d7f75e9fc201d468a40abda7a1",
+            "reason": "Trillion USD (TNUSD) is a low-quality project with a very small holder base and insignificant market presence. It does not meet the standards for a legitimate, high-TVL stablecoin project.",
+            "timestamp": "2026-01-28T19:37:40.752Z"
+        },
+        {
+            "address": "0x35d8949372d46b7a3d5a56006ae77b215fc69bc0",
+            "reason": "This is bUSD0 (Bond USD0) by Usual Money, which is a yield-bearing bond token that trades at a discount and appreciates toward par. It is not a standard $1-pegged stablecoin for this basket.",
+            "timestamp": "2026-01-28T20:12:26.270Z"
+        },
+        {
+            "address": "0x75af3fd37d7ca74447e865f792f263b2b1159b58",
+            "reason": "This token is a malicious impersonator of Tether USD (USDT). It lacks high TVL, lacks recognition from official bridge protocols, and has negligible volume compared to legitimate bridged versions.",
+            "timestamp": "2026-01-28T20:30:50.415Z"
+        },
+        {
+            "address": "0x57f5e098cad7a3d1eed53991d4d66c45c9af7812",
+            "reason": "Wrapped Mountain Protocol USD (wUSDM) is a yield-bearing wrapper where the yield is reflected in the unit price rather than via rebasing. Since its price increases over time (e.g., currently ~$1.09), it violates the criteria to not be an asset whose price goes up as compound interest.",
+            "timestamp": "2026-01-28T20:35:33.002Z"
+        }
+    ]
+}

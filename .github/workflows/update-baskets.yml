@@ -1,0 +1,47 @@
+name: Update Token Baskets
+
+on:
+  schedule:
+    - cron: "0 0 * * 1" # Weekly on Mondays at midnight
+  workflow_dispatch:
+
+jobs:
+  update-baskets:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Generate SDK
+        run: npm run codegen
+        env:
+          LIQUIDITY_POOLS_INDEXER_URL: ${{ secrets.LIQUIDITY_POOLS_INDEXER_URL }}
+
+      - name: Run Tests
+        run: npm test
+
+      - name: Run Update Script
+        run: npm run update-baskets
+        env:
+          LIQUIDITY_POOLS_INDEXER_URL: ${{ secrets.LIQUIDITY_POOLS_INDEXER_URL }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "chore: update token baskets [skip ci]"
+          title: "chore: Update Token Baskets"
+          body: "Automated update of token baskets via Gemini AI validation."
+          branch: "update-baskets/automated"
+          delete-branch: true
+          base: main

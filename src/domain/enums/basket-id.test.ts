@@ -1,0 +1,12 @@
+import { BasketId } from "./basket-id";
+
+describe("BasketId", () => {
+  it("should have correct values for baskets", () => {
+    expect(BasketId.USD_STABLECOINS).toBe("usd-stablecoins");
+  });
+
+  it("should contain expected number of baskets", () => {
+    const keys = Object.keys(BasketId);
+    expect(keys).toHaveLength(1);
+  });
+});

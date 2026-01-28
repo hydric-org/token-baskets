@@ -1,0 +1,34 @@
+query GetTokens(
+  $chainId: Int!
+  $excludedIds: [String!]
+  $symbolContains: String
+  $minUsdPrice: numeric
+  $maxUsdPrice: numeric
+) {
+  SingleChainToken(
+    where: {
+      chainId: { _eq: $chainId }
+      id: { _nin: $excludedIds }
+      trackedTotalValuePooledUsd: { _gt: "1000" }
+      trackedUsdPrice: { _gte: $minUsdPrice, _lte: $maxUsdPrice }
+      _or: [
+        { normalizedSymbol: { _ilike: $symbolContains } }
+        { symbol: { _ilike: $symbolContains } }
+      ]
+    }
+    order_by: { trackedTotalValuePooledUsd: desc }
+    limit: 20
+  ) {
+    id
+    symbol
+    name
+    decimals
+    trackedTotalValuePooledUsd
+    trackedUsdPrice
+    trackedSwapVolumeUsd
+    poolsCount
+    swapsCount
+    tokenAddress
+    chainId
+  }
+}
