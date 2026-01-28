@@ -20,7 +20,9 @@ const validationResultSchema = z.object({
     .describe("Whether the token is legitimate for the basket."),
   reason: z
     .string()
-    .describe("Explanation for why the token was accepted or rejected."),
+    .describe(
+      "Explanation for why the token was accepted or rejected. It should be concise and clear.",
+    ),
 });
 
 const validationResponseSchema = z.object({
