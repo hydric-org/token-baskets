@@ -321,5 +321,12 @@
             "reason": "Mondcoin (MDC) shows zero trading volume and negligible liquidity; it is not a recognized or official Monad-pegged asset or liquid staking token.",
             "timestamp": "2026-01-29T01:45:01.994Z"
         }
+    ],
+    "eur-stablecoins": [
+        {
+            "address": "0xc581b735a1688071a1746c968e0798d642ede491",
+            "reason": "EURT Has been discontinued.",
+            "timestamp": "2026-01-29T01:45:01.994Z"
+        }
     ]
 }
