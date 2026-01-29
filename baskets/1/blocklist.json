@@ -206,6 +206,11 @@
             "address": "0x292a477e521230fe230c13c93374adde8ddec1c1",
             "reason": "RUETH (Russian Ruble Wrapped Ethereum) lacks a legitimate protocol backing and appears to be a niche or suspicious token not suitable for this basket.",
             "timestamp": "2026-01-29T00:32:09.028Z"
+        },
+        {
+            "address": "0x68749665ff8d2d112fa859aa293f07a622782f38",
+            "reason": "This token is Tether Gold (XAUt), which is pegged to the price of physical gold, not Ethereum.",
+            "timestamp": "2026-01-29T01:41:37.439Z"
         }
     ],
     "btc-pegged-tokens": [
@@ -250,6 +255,71 @@
             "address": "0x9078deb4736b7e2181beb8db276dfbfa7f21f821",
             "reason": "This is Monk.gg (MONKGG), a token for a gaming platform and is not pegged to the Monad network's value.",
             "timestamp": "2026-01-29T01:31:37.018Z"
+        },
+        {
+            "address": "0xb4444468e444f89e1c2cac2f1d3ee7e336cbd1f5",
+            "reason": "RZR (Rezerve.money) is a reserve currency protocol focused on BTC accumulation and is not pegged to the price of Monad.",
+            "timestamp": "2026-01-29T01:41:24.126Z"
+        },
+        {
+            "address": "0xa27eef3f41ff959c0186be55cf158f360ff68d78",
+            "reason": "$PUMP (404 PUMP MONSTER) is an ERC404 project and is not pegged to the price of Monad.",
+            "timestamp": "2026-01-29T01:41:24.126Z"
+        },
+        {
+            "address": "0xd3043d66afe00344c115f7f81d18277c5c718ff8",
+            "reason": "omUSD (OpenMoney USD) is a stablecoin pegged to the US Dollar, not to the price of Monad.",
+            "timestamp": "2026-01-29T01:41:24.126Z"
+        },
+        {
+            "address": "0xaf4dce16da2877f8c9e00544c93b62ac40631f16",
+            "reason": "MTH (Monetha) is a reputation and e-commerce platform token and is not pegged to the price of Monad.",
+            "timestamp": "2026-01-29T01:41:24.126Z"
+        },
+        {
+            "address": "0x16558553e4647ca500c3718c56c356edb6f9b11c",
+            "reason": "MKT (Monkey King Token) is a meme-based asset and is not pegged to the price of Monad.",
+            "timestamp": "2026-01-29T01:41:24.126Z"
+        },
+        {
+            "address": "0x39b8b6385416f4ca36a20319f70d28621895279d",
+            "reason": "EURe (Monerium) is a Euro-backed stablecoin and is not pegged to the price of Monad.",
+            "timestamp": "2026-01-29T01:41:24.126Z"
+        },
+        {
+            "address": "0x465e07d6028830124be2e4aa551fbe12805db0f5",
+            "reason": "WXMR (Wrapped Monero) is a token pegged to the price of Monero (XMR), not Monad.",
+            "timestamp": "2026-01-29T01:41:24.131Z"
+        },
+        {
+            "address": "0x70401dfd142a16dc7031c56e862fc88cb9537ce0",
+            "reason": "BIRD (Bird.Money) is an oracle and decentralized lending protocol token and is not pegged to the price of Monad.",
+            "timestamp": "2026-01-29T01:41:24.131Z"
+        },
+        {
+            "address": "0x6c061d18d2b5bbfbe8a8d1eeb9ee27efd544cc5d",
+            "reason": "MNRCH (Monarch) is a governance or utility token for a social/trading protocol and does not function as a Monad-pegged asset.",
+            "timestamp": "2026-01-29T01:41:24.131Z"
+        },
+        {
+            "address": "0x3231cb76718cdef2155fc47b5286d82e6eda273f",
+            "reason": "This address represents another instance of Monerium EURe, which is pegged to the Euro and not Monad.",
+            "timestamp": "2026-01-29T01:41:24.131Z"
+        },
+        {
+            "address": "0xb63b606ac810a52cca15e44bb630fd42d8d1d83d",
+            "reason": "This is the Monaco (MCO) token, a legacy project that rebranded to Crypto.com; it is not pegged to the price of Monad (MON).",
+            "timestamp": "2026-01-29T01:45:01.994Z"
+        },
+        {
+            "address": "0x99d8a9c45b2eca8864373a26d1459e3dff1e17f3",
+            "reason": "This is Magic Internet Money (MIM), a USD-pegged stablecoin from the Abracadabra protocol, not an asset pegged to Monad.",
+            "timestamp": "2026-01-29T01:45:01.994Z"
+        },
+        {
+            "address": "0x721fdf8c0fb7251c12ad65d7fb5b455c25344397",
+            "reason": "Mondcoin (MDC) shows zero trading volume and negligible liquidity; it is not a recognized or official Monad-pegged asset or liquid staking token.",
+            "timestamp": "2026-01-29T01:45:01.994Z"
         }
     ]
 }

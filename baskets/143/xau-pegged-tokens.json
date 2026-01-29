@@ -1,0 +1,10 @@
+{
+    "id": "xau-pegged-tokens",
+    "name": "Gold Pegged Tokens",
+    "logo": "../../assets/xau-pegged-tokens.png",
+    "description": "A curated list of multiple Tokens that are pegged to Gold (XAU) USD price together in a single place.",
+    "lastUpdated": "2026-01-29T01:38:21.109Z",
+    "index": [
+        "0x01bff41798a0bcf287b996046ca68b395dbc1071"
+    ]
+}

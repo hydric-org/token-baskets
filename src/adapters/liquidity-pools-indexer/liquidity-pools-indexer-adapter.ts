@@ -28,7 +28,7 @@ export class LiquidityPoolsIndexerAdapter implements ITokenSource {
 
     const keywordPromises = basketDefinition.searchKeywords.map(
       async (keyword) => {
-        const symbolContains = `%${keyword}%`;
+        const symbolOrNameContains = `%${keyword}%`;
 
         const where: SingleChainToken_Bool_Exp = {
           chainId: { _eq: chainId },
@@ -39,8 +39,10 @@ export class LiquidityPoolsIndexerAdapter implements ITokenSource {
           },
           trackedTotalValuePooledUsd: { _gt: "1000" },
           _or: [
-            { normalizedSymbol: { _ilike: symbolContains } },
-            { symbol: { _ilike: symbolContains } },
+            { normalizedSymbol: { _ilike: symbolOrNameContains } },
+            { symbol: { _ilike: symbolOrNameContains } },
+            { name: { _ilike: symbolOrNameContains } },
+            { normalizedName: { _ilike: symbolOrNameContains } },
           ],
         };
 

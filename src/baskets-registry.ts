@@ -3,12 +3,52 @@ import { IBasketDefinition } from "./domain/interfaces/basket-definition.interfa
 
 export const BasketsRegistry: IBasketDefinition[] = [
   {
+    id: BasketId.EUR_STABLECOINS,
+    name: "EUR Stablecoins",
+    description:
+      "A curated list of multiple Stablecoins pegged to EUR together in a single place.",
+    logo: "../../assets/eur-stablecoins.png",
+    searchKeywords: ["EUR", "Euro"],
+    minUsdPrice: 0.2,
+    maxUsdPrice: 3,
+    validationPrompt: `
+      You are a crypto expert. Verify if the following tokens match the criteria for the basket "EUR Stablecoins".
+      
+      Basket's Criteria:
+      - Description: A curated list of multiple Stablecoins pegged to EUR together in a single place.
+      - Must be a valid, legitimate project (not a scam and not a malicious impersonator).
+
+      CRITICAL INSTRUCTIONS FOR THIS BASKET:
+      1. **Wrappers and Vaults are VALID**: Tokens representing deposits (e.g., aEUR, cEUR, eEUR) or wrapped versions are VALID if they are pegged to the asset. The only criteria here is to not be an EUR Token that its price goes up as compound interest.
+      2. **Inclusivity**: If it is a EUR-pegged asset and a real project, it belongs in the basket.
+        `,
+  },
+  {
+    id: BasketId.XAU_PEGGED_TOKENS,
+    name: "Gold Pegged Tokens",
+    description:
+      "A curated list of multiple Tokens that are pegged to Gold (XAU) USD price together in a single place.",
+    logo: "../../assets/xau-pegged-tokens.png",
+    searchKeywords: ["XAU", "Gold"],
+    minUsdPrice: 2000,
+    validationPrompt: `
+      You are a crypto expert. Verify if the following tokens match the criteria for the basket "Gold Pegged Tokens".
+      
+      Basket's Criteria:
+      - Description: A curated list of multiple Tokens that are pegged to Gold (XAU) USD price together in a single place.
+      - Must be a valid, legitimate project (not a scam and not a malicious impersonator).
+      
+      CRITICAL INSTRUCTIONS FOR THIS BASKET:
+      1. **Inclusivity**: If it is a XAU-pegged asset and a real project, it belongs in the basket.
+      2. **Price**: The price must be pegged to XAU's official USD price.`,
+  },
+  {
     id: BasketId.MONAD_PEGGED_TOKENS,
     name: "Monad Pegged Tokens",
     description:
       "A curated list of multiple Tokens that are pegged to Monad's price together in a single place.",
     logo: "../../assets/monad-pegged-tokens.png",
-    searchKeywords: ["MON"],
+    searchKeywords: ["MON", "Monad"],
     minUsdPrice: 0.005,
     validationPrompt: `
       You are a crypto expert. Verify if the following tokens match the criteria for the basket "Monad Pegged Tokens".
@@ -28,7 +68,7 @@ export const BasketsRegistry: IBasketDefinition[] = [
     description:
       "A curated list of multiple Tokens that are pegged to Hyperliquid's HYPE price together in a single place.",
     logo: "../../assets/hype-pegged-tokens.png",
-    searchKeywords: ["HYPE"],
+    searchKeywords: ["HYPE", "Hyperliquid"],
     minUsdPrice: 5,
     validationPrompt: `
       You are a crypto expert. Verify if the following tokens match the criteria for the basket "HYPE Pegged Tokens".
@@ -48,7 +88,7 @@ export const BasketsRegistry: IBasketDefinition[] = [
     description:
       "A curated list of multiple Tokens that are pegged to Bitcoin's price together in a single place.",
     logo: "../../assets/btc-pegged-tokens.png",
-    searchKeywords: ["BTC"],
+    searchKeywords: ["BTC", "Bitcoin"],
     minUsdPrice: 30000,
     validationPrompt: `
       You are a crypto expert. Verify if the following tokens match the criteria for the basket "BTC Pegged Assets".
@@ -69,7 +109,7 @@ export const BasketsRegistry: IBasketDefinition[] = [
     description:
       "A curated list of multiple Tokens that are pegged to ETH's price together in a single place.",
     logo: "../../assets/ether-pegged-tokens.png",
-    searchKeywords: ["ETH", "WETH"],
+    searchKeywords: ["ETH", "WETH", "Ether"],
     minUsdPrice: 1000,
     validationPrompt: `
       You are a crypto expert. Verify if the following tokens match the criteria for the basket "ETH Pegged Tokens".
@@ -89,7 +129,7 @@ export const BasketsRegistry: IBasketDefinition[] = [
     description:
       "A curated list of multiple USD Stablecoins together in a single place.",
     logo: "../../assets/usd-stablecoins.png",
-    searchKeywords: ["USD", "DAI", "USAT"],
+    searchKeywords: ["USD", "DAI", "USAT", "Dollar"],
     minUsdPrice: 0.9,
     maxUsdPrice: 1.1,
     validationPrompt: `

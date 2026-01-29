@@ -1,0 +1,9 @@
+{
+    "hype-pegged-tokens": [
+        {
+            "address": "0xc061d38903b99ac12713b550c2cb44b221674f94",
+            "reason": "This token (hbBTC) represents a vault position with directional exposure to Bitcoin (uBTC) rather than Hyperliquid's HYPE token. While it is a legitimate project from Hyperbeat, it does not meet the basket's requirement of being pegged to HYPE's price.",
+            "timestamp": "2026-01-29T01:42:29.803Z"
+        }
+    ]
+}

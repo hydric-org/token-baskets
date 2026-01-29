@@ -4,4 +4,6 @@ export enum BasketId {
   BTC_PEGGED_TOKENS = "btc-pegged-tokens",
   HYPE_PEGGED_TOKENS = "hype-pegged-tokens",
   MONAD_PEGGED_TOKENS = "monad-pegged-tokens",
+  XAU_PEGGED_TOKENS = "xau-pegged-tokens",
+  EUR_STABLECOINS = "eur-stablecoins",
 }
