@@ -13,4 +13,6 @@ const config: Config = {
   },
 };
 
+process.env.SKIP_ENV_VALIDATION = "true";
+
 export default config;

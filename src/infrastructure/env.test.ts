@@ -13,6 +13,7 @@ describe("Env", () => {
   beforeEach(() => {
     jest.resetModules();
     process.env = { ...originalEnv };
+    process.env.SKIP_ENV_VALIDATION = "false";
     (dotenv.config as unknown as MockType).mockClear();
     jest
       .spyOn(process, "exit")
@@ -32,17 +33,11 @@ describe("Env", () => {
     expect(localEnv.GeminiApiKey).toBe("test-key");
   });
 
-  it("should exit if required variables are missing", () => {
+  it("should throw if required variables are missing", () => {
     delete process.env.LIQUIDITY_POOLS_INDEXER_URL;
     delete process.env.GEMINI_API_KEY;
 
-    const exitSpy = jest
-      .spyOn(process, "exit")
-      .mockImplementation((() => {}) as unknown as never);
-
     // Trigger require
     expect(() => require("./env")).toThrow("Invalid environment variables");
-
-    expect(exitSpy).toHaveBeenCalledWith(1);
   });
 });

@@ -9,14 +9,15 @@ const envSchema = z.object({
 });
 
 const parsed = envSchema.safeParse(process.env);
+const skipValidation = process.env.SKIP_ENV_VALIDATION === "true";
 
-if (!parsed.success) {
-  console.error("❌ Invalid environment variables:", parsed.error.format());
-  process.exit(1);
-  throw new Error("Invalid environment variables");
+if (!parsed.success && !skipValidation) {
+  throw new Error(
+    `❌ Invalid environment variables: ${JSON.stringify(parsed.error.format())}`,
+  );
 }
 
 export const Env = {
-  IndexerUrl: parsed.data.LIQUIDITY_POOLS_INDEXER_URL,
-  GeminiApiKey: parsed.data.GEMINI_API_KEY,
+  IndexerUrl: parsed.data?.LIQUIDITY_POOLS_INDEXER_URL ?? "",
+  GeminiApiKey: parsed.data?.GEMINI_API_KEY ?? "",
 };
