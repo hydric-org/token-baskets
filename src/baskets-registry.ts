@@ -3,6 +3,28 @@ import { IBasketDefinition } from "./domain/interfaces/basket-definition.interfa
 
 export const BasketsRegistry: IBasketDefinition[] = [
   {
+    id: BasketId.ETH_PEGGED_ASSETS,
+    name: "ETH Pegged Tokens",
+    description:
+      "A curated list of multiple Tokens that are pegged to ETH's price together in a single place.",
+    logo: "../../assets/ether-pegged-tokens.png",
+    searchKeywords: ["ETH", "WETH"],
+    minUsdPrice: 1000,
+    validationPrompt: `
+      You are a crypto expert. Verify if the following tokens match the criteria for the basket "ETH Pegged Tokens".
+      
+      Basket's Criteria:
+      - Description: A curated list of multiple tokens that are pegged to ETH's price together in a single place.
+      - Must be a valid, legitimate project (not a scam and not a malicious impersonator).
+      
+      CRITICAL INSTRUCTIONS FOR THIS BASKET:
+      1. **Liquid Staking Tokens are VALID**: Tokens representing deposits (e.g., stETH, rETH, cbETH) or wrapped versions are VALID if they are pegged to the ether's price.
+      2. **Inclusivity**: If it is a ETH-pegged asset and a real project, it belongs in the basket.
+      3. **Price**: The price must be close to ETH's price. But it can be different, for example stETH has a price slightly different from ETH, but it's pegged to ETH's price, if ETH goes up and down, stETH should follow it.
+      4. **Zero Address**: If the token is the zero address, it means that the token is the native ETH of the chain, so it's always VALID.
+        `,
+  },
+  {
     id: BasketId.USD_STABLECOINS,
     name: "USD Stablecoins",
     description:
@@ -14,17 +36,13 @@ export const BasketsRegistry: IBasketDefinition[] = [
     validationPrompt: `
       You are a crypto expert. Verify if the following tokens match the criteria for the basket "USD Stablecoins".
       
-      Criteria:
+      Basket's Criteria:
       - Description: A curated list of multiple USD Stablecoins.
       - Must be a valid, legitimate project (not a scam and not a malicious impersonator).
-      - Symbol/Name must be related to: USD, DAI, USAT
-      
-      CRITICAL INSTRUCTIONS:
-      1. **Legitimate Bridged Tokens are VALID**: Tokens bridged via Wormhole, LayerZero, Axelar, Multichain, etc., are legitimate. Do NOT mark them as impersonators.
-      2. **Wrappers and Vaults are VALID**: Tokens representing deposits (e.g., aUSDC, cUSDC, eUSDe) or wrapped versions are VALID if they are pegged to the asset. The only criteria here is to not be an USD Token that its price goes up as compound interest.
-      3. **Scam Check**: Only mark as INVALID if it is a *malicious* fake trying to deceive (e.g., low TVL fake USDT). High TVL is a strong signal of legitimacy.
-      4. **Inclusivity**: If it is a USD-pegged asset and a real project, it belongs in the basket.
-      5. **Impersonation**: Note that some bridge tokens might use the same name and symbol as the original token, in case you see repeated symbol/names, with low liquidity, or volume, perform a double check to see if it's bridged or just a scam trying to impersonate the original token.
+
+      CRITICAL INSTRUCTIONS FOR THIS BASKET:
+      1. **Wrappers and Vaults are VALID**: Tokens representing deposits (e.g., aUSDC, cUSDC, eUSDe) or wrapped versions are VALID if they are pegged to the asset. The only criteria here is to not be an USD Token that its price goes up as compound interest.
+      2. **Inclusivity**: If it is a USD-pegged asset and a real project, it belongs in the basket.
         `,
   },
 ];

@@ -119,6 +119,88 @@
             "address": "0xc58d044404d8b14e953c115e67823784dea53d8f",
             "reason": "This is the 'Junior' tranche of the Strata USDe yield protocol. It is a leveraged investment product designed to capture yield and absorb risk, meaning its price fluctuates based on performance and it is not intended to maintain a stable 1:1 USD peg.",
             "timestamp": "2026-01-29T00:05:24.736Z"
+        },
+        {
+            "address": "0xaf1157149ff040dad186a0142a796d901bef1cf1",
+            "reason": "USDi Coin is an inflation-linked token designed to track the Consumer Price Index (CPI) rather than a 1:1 USD peg. Its price increases over time to reflect inflation, violating the criteria for standard USD stablecoins and the restriction against tokens whose price increases.",
+            "timestamp": "2026-01-29T00:13:44.573Z"
+        },
+        {
+            "address": "0xc5d6a7b61d18afa11435a889557b068bb9f29930",
+            "reason": "Savings USDD (sUSDD) is a yield-bearing version of the USDD stablecoin. Its price relative to USD increases over time as interest is accrued (currently trading around $1.04), which violates the specific basket criteria excluding USD tokens with price appreciation from compound interest.",
+            "timestamp": "2026-01-29T00:13:44.573Z"
+        }
+    ],
+    "eth-pegged-assets": [
+        {
+            "address": "0xf80fc1ce16cbcbd18421e9cd055ca1bb58a9e097",
+            "reason": "Low holder count and negligible volume suggest this is not a legitimate liquid pegged token for a curated list.",
+            "timestamp": "2026-01-29T00:12:57.048Z"
+        },
+        {
+            "address": "0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb",
+            "reason": "This is the governance token for ether.fi, not a price-pegged ETH asset.",
+            "timestamp": "2026-01-29T00:12:57.048Z"
+        },
+        {
+            "address": "0xaa6e8127831c9de45ae56bb1b0d4d4da6e5665bd",
+            "reason": "This is a leveraged index token with 2x volatility; it is not pegged 1:1 to the price of ETH.",
+            "timestamp": "2026-01-29T00:12:57.048Z"
+        },
+        {
+            "address": "0x7e0db521828743a65e4ad1246fd0cc8e04c0866b",
+            "reason": "Obscure token with insufficient verification as a legitimate pegged project.",
+            "timestamp": "2026-01-29T00:12:57.048Z"
+        },
+        {
+            "address": "0xa250cc729bb3323e7933022a67b52200fe354767",
+            "reason": "Niche double-wrapped token with low liquidity; not a standard curated pegged asset.",
+            "timestamp": "2026-01-29T00:12:57.048Z"
+        },
+        {
+            "address": "0x2abd7bb192ffc644f95603f9b4832ceb8492d2dd",
+            "reason": "Impersonator; the official WETH contract on Ethereum is 0xc02aaa...",
+            "timestamp": "2026-01-29T00:12:57.048Z"
+        },
+        {
+            "address": "0x325a87aabeaa1097011f4838d9152ba44e7f282b",
+            "reason": "Represents the Ethereum PoW fork (ETHW), which is a different asset not pegged to the main Ethereum price.",
+            "timestamp": "2026-01-29T00:12:57.048Z"
+        },
+        {
+            "address": "0x32d222e1f6386b3df7065d639870be0ef76d3599",
+            "reason": "Impersonator; the official WETH contract on Ethereum is 0xc02aaa...",
+            "timestamp": "2026-01-29T00:12:57.048Z"
+        },
+        {
+            "address": "0xa7d0647889de293ab5dd3a8718b3ea65651305a0",
+            "reason": "The token name indicates a specific price strike/level (@ 3800), suggesting it is a structured product or option-like asset rather than a general ETH-pegged token.",
+            "timestamp": "2026-01-29T00:27:02.967Z"
+        },
+        {
+            "address": "0x0c582b44fffddc1c5dd65e43867fe200d2e63e46",
+            "reason": "The token name indicates a specific price strike/level (@ 10000), suggesting it is a structured product rather than a general ETH-pegged token.",
+            "timestamp": "2026-01-29T00:27:02.968Z"
+        },
+        {
+            "address": "0x9b2c171abb9c732ffa3789724d0aa653c9e0c428",
+            "reason": "KGETH is a niche regional wrapper ('Kyrgyz Som Wrapped') which may introduce foreign exchange risk and is not a standard ETH-pegged asset for this basket.",
+            "timestamp": "2026-01-29T00:27:02.968Z"
+        },
+        {
+            "address": "0xc6a9851def913016074ac089e194f65945343462",
+            "reason": "MRETH (Moldavian Ruble Wrapped Ethereum) is a suspicious token with extremely low TVL and no association with legitimate Ethereum liquid staking or wrapping protocols.",
+            "timestamp": "2026-01-29T00:32:09.026Z"
+        },
+        {
+            "address": "0xc700e80556fa35ea368c07f8298c41aca3211e9f",
+            "reason": "ETHR (Ethereum Recovery) is not a recognized ETH-pegged asset and is frequently associated with fraudulent 'scam recovery' schemes.",
+            "timestamp": "2026-01-29T00:32:09.028Z"
+        },
+        {
+            "address": "0x292a477e521230fe230c13c93374adde8ddec1c1",
+            "reason": "RUETH (Russian Ruble Wrapped Ethereum) lacks a legitimate protocol backing and appears to be a niche or suspicious token not suitable for this basket.",
+            "timestamp": "2026-01-29T00:32:09.028Z"
         }
     ]
 }

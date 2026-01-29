@@ -4,7 +4,10 @@ import { IBasketDefinition } from "../../domain/interfaces/basket-definition.int
 import { ITokenSource } from "../../domain/interfaces/token-source.interface";
 import { IToken } from "../../domain/interfaces/token.interface";
 import { Env } from "../../infrastructure/env";
-import { getSdk } from "./generated/liquidity-pools-indexer-sdk";
+import {
+  getSdk,
+  SingleChainToken_Bool_Exp,
+} from "./generated/liquidity-pools-indexer-sdk";
 
 export class LiquidityPoolsIndexerAdapter implements ITokenSource {
   private client: GraphQLClient;
@@ -26,13 +29,23 @@ export class LiquidityPoolsIndexerAdapter implements ITokenSource {
     for (const keyword of basketDefinition.searchKeywords) {
       const symbolContains = `%${keyword}%`;
 
+      const where: SingleChainToken_Bool_Exp = {
+        chainId: { _eq: chainId },
+        id: { _nin: excludedIds },
+        trackedUsdPrice: {
+          _gte: basketDefinition.minUsdPrice,
+          _lte: basketDefinition.maxUsdPrice,
+        },
+        trackedTotalValuePooledUsd: { _gt: "1000" },
+        _or: [
+          { normalizedSymbol: { _ilike: symbolContains } },
+          { symbol: { _ilike: symbolContains } },
+        ],
+      };
+
       try {
         const response = await this.liquidityPoolsIndexerSdk.GetTokens({
-          chainId,
-          symbolContains,
-          excludedIds,
-          minUsdPrice: basketDefinition.minUsdPrice,
-          maxUsdPrice: basketDefinition.maxUsdPrice,
+          where,
         });
 
         for (const t of response.SingleChainToken) {

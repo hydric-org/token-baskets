@@ -1,0 +1,10 @@
+{
+    "id": "eth-pegged-assets",
+    "name": "ETH Pegged Tokens",
+    "logo": "../../assets/ether-pegged-tokens.png",
+    "description": "A curated list of multiple Tokens that are pegged to ETH's price together in a single place.",
+    "lastUpdated": "2026-01-29T00:15:03.364Z",
+    "index": [
+        "0x5300000000000000000000000000000000000004"
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "id": "eth-pegged-assets",
+    "name": "ETH Pegged Tokens",
+    "logo": "../../assets/ether-pegged-tokens.png",
+    "description": "A curated list of multiple Tokens that are pegged to ETH's price together in a single place.",
+    "lastUpdated": "2026-01-29T00:27:32.229Z",
+    "index": [
+        "0xdbfefd2e8460a6ee4955a68582f85708baea60a3",
+        "0x4200000000000000000000000000000000000006",
+        "0xc1cba3fcea344f92d9239c08c0568f6f2f0ee452",
+        "0x2ae3f1ec7f1f5012cfeab0185bfc7aa3cf0dec22",
+        "0xcb327b99ff831bf8223cced12b1338ff3aa322ff",
+        "0x71b35ecb35104773537f849fbc353f81303a5860",
+        "0x2416092f143378750bb29b79ed961ab195cceea5",
+        "0xedfa23602d0ec14714057867a78d01e94176bea0",
+        "0xed4e2fd35161c3c0e33ca187fce64c70d44ce32b",
+        "0xb6fe221fe9eef5aba221c348ba20a1bf5e73624c",
+        "0x04c0599ae5a44757c0af6f9ec3b93da8976c150a",
+        "0x23da5f2d509cb43a59d43c108a43edf34510eff1",
+        "0x1bc71130a0e39942a7658878169764bbd8a45993"
+    ]
+}

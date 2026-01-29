@@ -54,6 +54,11 @@ ${tokens
   )
   .join("\n")}
 
+## General Criteria For Validation
+ 1. **Legitimate Bridged Tokens are VALID**: Tokens bridged via Wormhole, LayerZero, Axelar, Multichain, etc., are legitimate. Do NOT mark them as impersonators.
+ 2. **Scam Check**: Only mark as INVALID if it is a *malicious* fake trying to deceive (e.g., low TVL fake USDT, USDC, WETH, etc.). High TVL is a strong signal of legitimacy.
+ 3. **Impersonation**: Note that some bridge tokens might use the same name and symbol as the original token, in case you see repeated symbol/names, with low liquidity, or volume, perform a double check to see if it's bridged or just a scam trying to impersonate the original token.
+
 ## AI Search Strategy (Grounding)
 IMPORTANT: Use Google Search to ground your logic in real-time data for tokens you are unsure about or you think it's an impersonator. You should never search tokens that have high tvl (considerng the network they are on), since it's a clear sign of legitimacy.
 
