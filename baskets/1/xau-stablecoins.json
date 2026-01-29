@@ -1,7 +1,7 @@
 {
     "id": "xau-stablecoins",
     "name": "Gold Stablecoins",
-    "logo": "../../assets/xau-stablecoins.png",
+    "logo": "https://cdn.jsdelivr.net/gh/hydric-org/token-baskets/assets/logos/xau-stablecoins.png",
     "description": "A curated list of multiple Stablecoins that are pegged to Gold (XAU) USD price together in a single place.",
     "lastUpdated": "2026-01-29T01:40:48.362Z",
     "index": [

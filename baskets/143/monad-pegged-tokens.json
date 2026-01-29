@@ -1,7 +1,7 @@
 {
     "id": "monad-pegged-tokens",
     "name": "Monad Pegged Tokens",
-    "logo": "../../assets/monad-pegged-tokens.png",
+    "logo": "https://cdn.jsdelivr.net/gh/hydric-org/token-baskets/assets/logos/monad-pegged-tokens.png",
     "description": "A curated list of multiple Tokens that are pegged to Monad's price together in a single place.",
     "lastUpdated": "2026-01-29T01:31:52.740Z",
     "index": [

@@ -1,7 +1,7 @@
 {
     "id": "usd-stablecoins",
     "name": "USD Stablecoins",
-    "logo": "../../assets/usd-stablecoins.png",
+    "logo": "https://cdn.jsdelivr.net/gh/hydric-org/token-baskets/assets/logos/usd-stablecoins.png",
     "description": "A curated list of multiple USD Stablecoins together in a single place.",
     "lastUpdated": "2026-01-29T01:43:36.976Z",
     "index": [

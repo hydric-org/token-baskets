@@ -1,7 +1,7 @@
 {
     "id": "btc-pegged-tokens",
     "name": "BTC Pegged Assets",
-    "logo": "../../assets/btc-pegged-tokens.png",
+    "logo": "https://cdn.jsdelivr.net/gh/hydric-org/token-baskets/assets/logos/btc-pegged-tokens.png",
     "description": "A curated list of multiple Tokens that are pegged to Bitcoin's price together in a single place.",
     "lastUpdated": "2026-01-29T00:55:05.138Z",
     "index": [

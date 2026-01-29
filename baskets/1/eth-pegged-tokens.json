@@ -1,7 +1,7 @@
 {
     "id": "eth-pegged-tokens",
     "name": "ETH Pegged Tokens",
-    "logo": "../../assets/ether-pegged-tokens.png",
+    "logo": "https://cdn.jsdelivr.net/gh/hydric-org/token-baskets/assets/logos/eth-pegged-tokens.png",
     "description": "A curated list of multiple Tokens that are pegged to ETH's price together in a single place.",
     "lastUpdated": "2026-01-29T01:41:37.439Z",
     "index": [

@@ -1,7 +1,7 @@
 {
     "id": "hype-pegged-tokens",
     "name": "HYPE Pegged Tokens",
-    "logo": "../../assets/hype-pegged-tokens.png",
+    "logo": "https://cdn.jsdelivr.net/gh/hydric-org/token-baskets/assets/logos/hype-pegged-tokens.png",
     "description": "A curated list of multiple Tokens that are pegged to Hyperliquid's HYPE price together in a single place.",
     "lastUpdated": "2026-01-29T01:23:06.066Z",
     "index": [
