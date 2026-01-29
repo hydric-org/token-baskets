@@ -224,5 +224,32 @@
             "reason": "This is a malicious impersonator of WBTC. The legitimate WBTC contract on Ethereum is 0x2260fac5e5542a773aa44fbcfedf7c193bc2c599; this address has negligible TVL and failed honeypot security checks.",
             "timestamp": "2026-01-29T01:01:02.375Z"
         }
+    ],
+    "monad-pegged-tokens": [
+        {
+            "address": "0xc555d625828c4527d477e595ff1dd5801b4a600e",
+            "reason": "This is the official token for Mon Protocol (Pixelmon). While it uses the symbol 'MON', it is an independent gaming ecosystem token and is not pegged to the price of the Monad Layer 1 network token.",
+            "timestamp": "2026-01-29T01:31:37.018Z"
+        },
+        {
+            "address": "0x1796ae0b0fa4862485106a0de9b654efe301d0b2",
+            "reason": "This is PMON (Polychain Monsters/Polkamon), a well-known NFT and gaming project. It is not pegged to or associated with the price of Monad.",
+            "timestamp": "2026-01-29T01:31:37.018Z"
+        },
+        {
+            "address": "0x13091389825e39775a8cb24a53df7e775180ca08",
+            "reason": "This is MonsterBet (MONBET), a betting project token. It is not a Monad-pegged asset or liquid staking token.",
+            "timestamp": "2026-01-29T01:31:37.018Z"
+        },
+        {
+            "address": "0xd1eab89db6af34cea1a1a4414d74fcf68f363896",
+            "reason": "This is Wrapped Tekomon (wTEKOMON), a project-specific token that does not track the price of Monad.",
+            "timestamp": "2026-01-29T01:31:37.018Z"
+        },
+        {
+            "address": "0x9078deb4736b7e2181beb8db276dfbfa7f21f821",
+            "reason": "This is Monk.gg (MONKGG), a token for a gaming platform and is not pegged to the Monad network's value.",
+            "timestamp": "2026-01-29T01:31:37.018Z"
+        }
     ]
 }

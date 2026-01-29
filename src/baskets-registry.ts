@@ -3,6 +3,26 @@ import { IBasketDefinition } from "./domain/interfaces/basket-definition.interfa
 
 export const BasketsRegistry: IBasketDefinition[] = [
   {
+    id: BasketId.MONAD_PEGGED_TOKENS,
+    name: "Monad Pegged Tokens",
+    description:
+      "A curated list of multiple Tokens that are pegged to Monad's price together in a single place.",
+    logo: "../../assets/monad-pegged-tokens.png",
+    searchKeywords: ["MON"],
+    minUsdPrice: 0.005,
+    validationPrompt: `
+      You are a crypto expert. Verify if the following tokens match the criteria for the basket "Monad Pegged Tokens".
+      
+      Basket's Criteria:
+      - Description: A curated list of multiple tokens that are pegged to Monad's price together in a single place.
+      - Must be a valid, legitimate project (not a scam and not a malicious impersonator).
+      
+      CRITICAL INSTRUCTIONS FOR THIS BASKET:
+      1. **Liquid Staking Tokens are VALID**: Tokens representing deposits (e.g., stMON, gMON, shMON) or wrapped versions are VALID if they are pegged to the Monad's price.
+      2. **Inclusivity**: If it is a Monad-pegged asset and a real project, it belongs in the basket.
+      3. **Price**: The price must be close to Monad's price. But it can be different, for example stMON has a price slightly different from Monad, but it's pegged to Monad's price, if Monad goes up and down, stMON should follow it.`,
+  },
+  {
     id: BasketId.HYPE_PEGGED_TOKENS,
     name: "HYPE Pegged Tokens",
     description:
