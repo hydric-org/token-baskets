@@ -1,0 +1,10 @@
+{
+    "id": "xau-stablecoins",
+    "name": "Gold Stablecoins",
+    "logo": "../../assets/xau-stablecoins.png",
+    "description": "A curated list of multiple Stablecoins that are pegged to Gold (XAU) USD price together in a single place.",
+    "lastUpdated": "2026-01-29T01:43:03.281Z",
+    "index": [
+        "0xf602a45812040d90b202355bdc05438918cd3fe3"
+    ]
+}

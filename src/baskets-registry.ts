@@ -29,18 +29,18 @@ export const BasketsRegistry: IBasketDefinition[] = [
         `,
   },
   {
-    id: BasketId.XAU_PEGGED_TOKENS,
-    name: "Gold Pegged Tokens",
+    id: BasketId.XAU_STABLECOINS,
+    name: "Gold Stablecoins",
     description:
-      "A curated list of multiple Tokens that are pegged to Gold (XAU) USD price together in a single place.",
-    logo: basketLogo(BasketId.XAU_PEGGED_TOKENS),
+      "A curated list of multiple Stablecoins that are pegged to Gold (XAU) USD price together in a single place.",
+    logo: basketLogo(BasketId.XAU_STABLECOINS),
     searchKeywords: ["XAU", "Gold"],
     minUsdPrice: 2000,
     validationPrompt: `
-      You are a crypto expert. Verify if the following tokens match the criteria for the basket "Gold Pegged Tokens".
+      You are a crypto expert. Verify if the following tokens match the criteria for the basket "Gold Stablecoins".
       
       Basket's Criteria:
-      - Description: A curated list of multiple Tokens that are pegged to Gold (XAU) USD price together in a single place.
+      - Description: A curated list of multiple Stablecoins that are pegged to Gold (XAU) USD price together in a single place.
       - Must be a valid, legitimate project (not a scam and not a malicious impersonator).
       
       CRITICAL INSTRUCTIONS FOR THIS BASKET:

@@ -1,8 +1,8 @@
 {
-    "id": "xau-pegged-tokens",
-    "name": "Gold Pegged Tokens",
-    "logo": "../../assets/xau-pegged-tokens.png",
-    "description": "A curated list of multiple Tokens that are pegged to Gold (XAU) USD price together in a single place.",
+    "id": "xau-stablecoins",
+    "name": "Gold Stablecoins",
+    "logo": "../../assets/xau-stablecoins.png",
+    "description": "A curated list of multiple Stablecoins that are pegged to Gold (XAU) USD price together in a single place.",
     "lastUpdated": "2026-01-29T01:40:48.362Z",
     "index": [
         "0x68749665ff8d2d112fa859aa293f07a622782f38",
