@@ -320,6 +320,11 @@
             "address": "0x721fdf8c0fb7251c12ad65d7fb5b455c25344397",
             "reason": "Mondcoin (MDC) shows zero trading volume and negligible liquidity; it is not a recognized or official Monad-pegged asset or liquid staking token.",
             "timestamp": "2026-01-29T01:45:01.994Z"
+        },
+        {
+            "address": "0x3cafdbfe682aec17d5ace2f97a2f3ab3dcf6a4a9",
+            "reason": "This token is a tokenized version of Taiwan Semiconductor Manufacturing (TSM) stock provided by Ondo Finance; it is not pegged to the price of Monad.",
+            "timestamp": "2026-01-29T12:33:11.775Z"
         }
     ],
     "eur-stablecoins": [
