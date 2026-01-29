@@ -26,51 +26,59 @@ export class LiquidityPoolsIndexerAdapter implements ITokenSource {
     const allTokens: IToken[] = [];
     const seenAddresses = new Set<string>();
 
-    for (const keyword of basketDefinition.searchKeywords) {
-      const symbolContains = `%${keyword}%`;
+    const keywordPromises = basketDefinition.searchKeywords.map(
+      async (keyword) => {
+        const symbolContains = `%${keyword}%`;
 
-      const where: SingleChainToken_Bool_Exp = {
-        chainId: { _eq: chainId },
-        id: { _nin: excludedIds },
-        trackedUsdPrice: {
-          _gte: basketDefinition.minUsdPrice,
-          _lte: basketDefinition.maxUsdPrice,
-        },
-        trackedTotalValuePooledUsd: { _gt: "1000" },
-        _or: [
-          { normalizedSymbol: { _ilike: symbolContains } },
-          { symbol: { _ilike: symbolContains } },
-        ],
-      };
+        const where: SingleChainToken_Bool_Exp = {
+          chainId: { _eq: chainId },
+          id: { _nin: excludedIds },
+          trackedUsdPrice: {
+            _gte: basketDefinition.minUsdPrice,
+            _lte: basketDefinition.maxUsdPrice,
+          },
+          trackedTotalValuePooledUsd: { _gt: "1000" },
+          _or: [
+            { normalizedSymbol: { _ilike: symbolContains } },
+            { symbol: { _ilike: symbolContains } },
+          ],
+        };
 
-      try {
-        const response = await this.liquidityPoolsIndexerSdk.GetTokens({
-          where,
-        });
-
-        for (const t of response.SingleChainToken) {
-          if (seenAddresses.has(t.tokenAddress)) continue;
-
-          const price = parseFloat(t.trackedUsdPrice || "0");
-
-          seenAddresses.add(t.tokenAddress);
-          allTokens.push({
-            address: t.tokenAddress,
-            chainId: t.chainId,
-            symbol: t.symbol,
-            name: t.name,
-            decimals: t.decimals,
-            trackedTotalValuePooledUsd: parseFloat(
-              t.trackedTotalValuePooledUsd || "0",
-            ),
-            priceUsd: price,
-            trackedSwapVolumeUsd: parseFloat(t.trackedSwapVolumeUsd || "0"),
-            poolsCount: parseInt(t.poolsCount || "0"),
-            swapsCount: parseInt(t.swapsCount || "0"),
+        try {
+          const response = await this.liquidityPoolsIndexerSdk.GetTokens({
+            where,
           });
+          return response.SingleChainToken;
+        } catch (error) {
+          console.error(`Error fetching tokens for keyword ${keyword}:`, error);
+          return [];
         }
-      } catch (error) {
-        console.error(`Error fetching tokens for keyword ${keyword}:`, error);
+      },
+    );
+
+    const results = await Promise.all(keywordPromises);
+
+    for (const tokens of results) {
+      for (const t of tokens) {
+        if (seenAddresses.has(t.tokenAddress)) continue;
+
+        const price = parseFloat(t.trackedUsdPrice || "0");
+
+        seenAddresses.add(t.tokenAddress);
+        allTokens.push({
+          address: t.tokenAddress,
+          chainId: t.chainId,
+          symbol: t.symbol,
+          name: t.name,
+          decimals: t.decimals,
+          trackedTotalValuePooledUsd: parseFloat(
+            t.trackedTotalValuePooledUsd || "0",
+          ),
+          priceUsd: price,
+          trackedSwapVolumeUsd: parseFloat(t.trackedSwapVolumeUsd || "0"),
+          poolsCount: parseInt(t.poolsCount || "0"),
+          swapsCount: parseInt(t.swapsCount || "0"),
+        });
       }
     }
 
