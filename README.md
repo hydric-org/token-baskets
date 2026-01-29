@@ -1,75 +1,95 @@
 # hydric Token Baskets
 
-A tool to manage and update curated token baskets across multiple chains using AI-powered validation and indexing.
+A professional tool to manage and update curated token baskets (Stablecoins, LSTs, Pegged Assets, etc.) across multiple chains using AI-powered validation and the hydric Indexer.
 
-## Features
+## How It Works
 
-- **AI-Powered Validation**: Uses Gemini AI (with Google Search Search grounding) to verify token legitimacy and peg adherence.
-- **Multi-Chain Support**: Supports multiple blockchains
-- **Automated Indexing**: Fetches potential candidates from the hydric Liquidity Pools Indexer.
-- **Curated Baskets**: Community-driven basket definitions (e.g., USD Stablecoins).
+The tool follows a **human-in-the-loop automation** strategy:
 
-## Setup
+- **Discovery**  
+  Queries the hydric Liquidity Pools Indexer for new tokens matching specific criteria.
 
-1. Install dependencies:
+- **AI Validation**  
+  Uses Gemini 3.5 Flash with Google Search grounding to verify legitimacy and peg adherence.
 
-   ```bash
-   npm install
-   ```
+- **Audit**  
+  Automatically filters out known scams and malicious impersonators using high-trust signals such as TVL, volume, and swap counts.
 
-2. Create a `.env` file with required keys:
-   ```
-   GEMINI_API_KEY=your_key
-   LIQUIDITY_POOLS_INDEXER_URL=your_url
-   ```
+- **GitOps**  
+  Updates the local JSON state and opens a pull request for final human verification before merging.
 
-## Commands
+## Accessing Baskets
 
-- **Update Baskets**: `npm run update-baskets`
-- **Run Tests**: `npm test`
-- **Generate GraphQL SDK**: `npm run codegen`
+Baskets are globally accessible via the jsDelivr CDN for easy integration into any dApp or backend.
+
+- **URL template**
+
+```
+  https://cdn.jsdelivr.net/gh/hydric-org/token-baskets/baskets/{chainId}/{basketId}.json
+```
+
+- **Example (USD Stablecoins on Ethereum)**
+
+```
+  https://cdn.jsdelivr.net/gh/hydric-org/token-baskets/baskets/1/usd-stablecoins.json
+```
+
+## Setup & Development
+
+### Prerequisites
+
+- Node.js v18 or higher
+- Google AI Studio API key
+- [hydric Liquidity Pools Indexer](https://github.com/hydric-org/liquidity-pools-indexer) deploy url
+
+### Installation
+
+- Install dependencies  
+  `npm install`
+
+- Create a `.env` file with the following variables:
+
+```env
+GEMINI_API_KEY
+LIQUIDITY_POOLS_INDEXER_URL
+```
+
+### Commands
+
+- **Update baskets**  
+  `npm run update-baskets`
+  Starts the discovery and validation process.
+
+- **Run tests**  
+  `npm run test`
+  Executes the Jest test suite.
+
+- **Generate SDK**  
+  `npm run codegen`
+  Generates the GraphQL SDK from the indexer schema.
 
 ## Extending the Tool
 
 ### Adding a New Basket
 
-To create a new curated token basket:
+1. **Define ID**  
+   Add the new identifier to `src/domain/enums/basket-id.ts`.
 
-1.  **Define Basket ID**: Add a new identifier to `src/domain/enums/basket-id.ts`.
+2. **Register**  
+   Add the configuration (keywords, AI prompt, price bounds) to `src/baskets-registry.ts`.
 
-    ```typescript
-    export enum BasketId {
-      USD_STABLECOINS = "usd-stablecoins",
-      MY_NEW_BASKET = "my-new-basket", // Add this
-    }
-    ```
-
-2.  **Register Definition**: Add the basket configuration to `src/baskets-registry.ts`.
-    - Define search keywords.
-    - Write a specific `validationPrompt` for the AI to follow.
-    - Set price bounds or other validation metadata.
-
-3.  **Run**: The next execution of `npm run update-baskets` will automatically process your new basket across all supported chains.
+3. **Execute**  
+   `npm run update-baskets`
+   Run the update command to automatically populate the new basket across all supported chains.
 
 ### Adding a New Chain
 
-To support a new blockchain:
+1. **Verify**  
+   Ensure the chain is supported by the hydric Indexer.
 
-1.  **Verify Compatibility**: Ensure the chain is supported by the [hydric Liquidity Pools Indexer](https://docs.hydric.org/overview/supported-blockchains#liquidity-pools).
-2.  **Update Enum**: Add the Chain ID to `src/domain/enums/chain-id.ts`.
-    ```typescript
-    export enum ChainId {
-      ETHEREUM = 1,
-      UNICHAIN = 130,
-      NEW_CHAIN = 1234, // Add your chain ID here
-    }
-    ```
-3.  **Run**: The tool iterates through all values in the `ChainId` enum. Just by adding it to the enum, the tool will start fetching and validating tokens for that chain.
+2. **Update**  
+   Add the new ID to `src/domain/enums/chain-id.ts`.
 
-## Project Structure
+## Disclaimer
 
-- `src/domain/interfaces`: Entity interfaces (prefixed with `I`).
-- `src/usecases`: Core business logic (e.g., `UpdateBasketUseCase`).
-- `src/adapters`: External integrations (AI, Indexer, Filesystem).
-- `baskets/`: JSON storage for basket definitions and blocklists.
-- `assets/`: Image assets for baskets.
+This project is an open-source tool for data aggregation. Token inclusion in a basket is based on automated AI analysis and human review and does not constitute financial advice. Use at your own risk.
