@@ -63,8 +63,12 @@ describe("IndexerAdapter", () => {
     // Verify that price filters were passed to the query
     expect(mockSdk.GetTokens).toHaveBeenCalledWith(
       expect.objectContaining({
-        minUsdPrice: 0.9,
-        maxUsdPrice: 1.1,
+        where: expect.objectContaining({
+          trackedUsdPrice: {
+            _gte: 0.9,
+            _lte: 1.1,
+          },
+        }),
       }),
     );
   });
@@ -138,8 +142,12 @@ describe("IndexerAdapter", () => {
     // Verify that undefined price filters are passed to the query
     expect(mockSdk.GetTokens).toHaveBeenCalledWith(
       expect.objectContaining({
-        minUsdPrice: undefined,
-        maxUsdPrice: undefined,
+        where: expect.objectContaining({
+          trackedUsdPrice: {
+            _gte: undefined,
+            _lte: undefined,
+          },
+        }),
       }),
     );
   });
