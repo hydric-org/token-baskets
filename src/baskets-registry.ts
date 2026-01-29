@@ -3,8 +3,28 @@ import { IBasketDefinition } from "./domain/interfaces/basket-definition.interfa
 
 export const BasketsRegistry: IBasketDefinition[] = [
   {
+    id: BasketId.HYPE_PEGGED_TOKENS,
+    name: "HYPE Pegged Tokens",
+    description:
+      "A curated list of multiple Tokens that are pegged to Hyperliquid's HYPE price together in a single place.",
+    logo: "../../assets/hype-pegged-tokens.png",
+    searchKeywords: ["HYPE"],
+    minUsdPrice: 5,
+    validationPrompt: `
+      You are a crypto expert. Verify if the following tokens match the criteria for the basket "HYPE Pegged Tokens".
+      
+      Basket's Criteria:
+      - Description: A curated list of multiple tokens that are pegged to Hyperliquid's HYPE price together in a single place.
+      - Must be a valid, legitimate project (not a scam and not a malicious impersonator).
+      
+      CRITICAL INSTRUCTIONS FOR THIS BASKET:
+      1. **Liquid Staking Tokens are VALID**: Tokens representing deposits (e.g., stHYPE, kHYPE, LHYPE) or wrapped versions are VALID if they are pegged to the HYPE's price.
+      2. **Inclusivity**: If it is a HYPE-pegged asset and a real project, it belongs in the basket.
+      3. **Price**: The price must be close to HYPE's price. But it can be different, for example stHYPE has a price slightly different from HYPE, but it's pegged to HYPE's price, if HYPE goes up and down, stHYPE should follow it.`,
+  },
+  {
     id: BasketId.BTC_PEGGED_TOKENS,
-    name: "BTC Pegged Assets",
+    name: "BTC Pegged Tokens",
     description:
       "A curated list of multiple Tokens that are pegged to Bitcoin's price together in a single place.",
     logo: "../../assets/btc-pegged-tokens.png",
@@ -41,9 +61,7 @@ export const BasketsRegistry: IBasketDefinition[] = [
       CRITICAL INSTRUCTIONS FOR THIS BASKET:
       1. **Liquid Staking Tokens are VALID**: Tokens representing deposits (e.g., stETH, rETH, cbETH) or wrapped versions are VALID if they are pegged to the ether's price.
       2. **Inclusivity**: If it is a ETH-pegged asset and a real project, it belongs in the basket.
-      3. **Price**: The price must be close to ETH's price. But it can be different, for example stETH has a price slightly different from ETH, but it's pegged to ETH's price, if ETH goes up and down, stETH should follow it.
-      4. **Zero Address**: If the token is the zero address, it means that the token is the native ETH of the chain, so it's always VALID.
-        `,
+      3. **Price**: The price must be close to ETH's price. But it can be different, for example stETH has a price slightly different from ETH, but it's pegged to ETH's price, if ETH goes up and down, stETH should follow it.`,
   },
   {
     id: BasketId.USD_STABLECOINS,

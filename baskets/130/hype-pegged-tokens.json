@@ -1,0 +1,10 @@
+{
+    "id": "hype-pegged-tokens",
+    "name": "HYPE Pegged Tokens",
+    "logo": "../../assets/hype-pegged-tokens.png",
+    "description": "A curated list of multiple Tokens that are pegged to Hyperliquid's HYPE price together in a single place.",
+    "lastUpdated": "2026-01-29T01:22:47.123Z",
+    "index": [
+        "0x15d0e0c55a3e7ee67152ad7e89acf164253ff68d"
+    ]
+}
