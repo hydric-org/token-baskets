@@ -1,13 +1,18 @@
 import { BasketId } from "./domain/enums/basket-id";
 import { IBasketDefinition } from "./domain/interfaces/basket-definition.interface";
 
+const basketLogo = (id: BasketId) =>
+  "https://cdn.jsdelivr.net/gh/hydric-org/token-baskets/assets/logos/" +
+  id +
+  ".png";
+
 export const BasketsRegistry: IBasketDefinition[] = [
   {
     id: BasketId.EUR_STABLECOINS,
     name: "EUR Stablecoins",
     description:
       "A curated list of multiple Stablecoins pegged to EUR together in a single place.",
-    logo: "../../assets/eur-stablecoins.png",
+    logo: basketLogo(BasketId.EUR_STABLECOINS),
     searchKeywords: ["EUR", "Euro"],
     minUsdPrice: 0.2,
     maxUsdPrice: 3,
@@ -28,7 +33,7 @@ export const BasketsRegistry: IBasketDefinition[] = [
     name: "Gold Pegged Tokens",
     description:
       "A curated list of multiple Tokens that are pegged to Gold (XAU) USD price together in a single place.",
-    logo: "../../assets/xau-pegged-tokens.png",
+    logo: basketLogo(BasketId.XAU_PEGGED_TOKENS),
     searchKeywords: ["XAU", "Gold"],
     minUsdPrice: 2000,
     validationPrompt: `
@@ -47,7 +52,7 @@ export const BasketsRegistry: IBasketDefinition[] = [
     name: "Monad Pegged Tokens",
     description:
       "A curated list of multiple Tokens that are pegged to Monad's price together in a single place.",
-    logo: "../../assets/monad-pegged-tokens.png",
+    logo: basketLogo(BasketId.MONAD_PEGGED_TOKENS),
     searchKeywords: ["MON", "Monad"],
     minUsdPrice: 0.005,
     validationPrompt: `
@@ -67,7 +72,7 @@ export const BasketsRegistry: IBasketDefinition[] = [
     name: "HYPE Pegged Tokens",
     description:
       "A curated list of multiple Tokens that are pegged to Hyperliquid's HYPE price together in a single place.",
-    logo: "../../assets/hype-pegged-tokens.png",
+    logo: basketLogo(BasketId.HYPE_PEGGED_TOKENS),
     searchKeywords: ["HYPE", "Hyperliquid"],
     minUsdPrice: 5,
     validationPrompt: `
@@ -87,7 +92,7 @@ export const BasketsRegistry: IBasketDefinition[] = [
     name: "BTC Pegged Tokens",
     description:
       "A curated list of multiple Tokens that are pegged to Bitcoin's price together in a single place.",
-    logo: "../../assets/btc-pegged-tokens.png",
+    logo: basketLogo(BasketId.BTC_PEGGED_TOKENS),
     searchKeywords: ["BTC", "Bitcoin"],
     minUsdPrice: 30000,
     validationPrompt: `
@@ -108,7 +113,7 @@ export const BasketsRegistry: IBasketDefinition[] = [
     name: "ETH Pegged Tokens",
     description:
       "A curated list of multiple Tokens that are pegged to ETH's price together in a single place.",
-    logo: "../../assets/ether-pegged-tokens.png",
+    logo: basketLogo(BasketId.ETH_PEGGED_TOKENS),
     searchKeywords: ["ETH", "WETH", "Ether"],
     minUsdPrice: 1000,
     validationPrompt: `
@@ -128,7 +133,7 @@ export const BasketsRegistry: IBasketDefinition[] = [
     name: "USD Stablecoins",
     description:
       "A curated list of multiple USD Stablecoins together in a single place.",
-    logo: "../../assets/usd-stablecoins.png",
+    logo: basketLogo(BasketId.USD_STABLECOINS),
     searchKeywords: ["USD", "DAI", "USAT", "Dollar"],
     minUsdPrice: 0.9,
     maxUsdPrice: 1.1,
