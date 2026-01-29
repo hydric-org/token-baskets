@@ -129,6 +129,11 @@
             "address": "0xc5d6a7b61d18afa11435a889557b068bb9f29930",
             "reason": "Savings USDD (sUSDD) is a yield-bearing version of the USDD stablecoin. Its price relative to USD increases over time as interest is accrued (currently trading around $1.04), which violates the specific basket criteria excluding USD tokens with price appreciation from compound interest.",
             "timestamp": "2026-01-29T00:13:44.573Z"
+        },
+        {
+            "address": "0x17b65cfcd084739459ecc8fdc032e9cbc7aeefda",
+            "reason": "This token is an unverified project using the symbol USDG (often associated with the regulated Global Dollar by Paxos). It is identified as 'USDGOLD' or associated with '@UsdMem' on social media, with unverified supply and low liquidity, suggesting it is an impersonator or a meme coin rather than a legitimate USD stablecoin.",
+            "timestamp": "2026-01-29T01:12:32.687Z"
         }
     ],
     "eth-pegged-assets": [
@@ -201,6 +206,23 @@
             "address": "0x292a477e521230fe230c13c93374adde8ddec1c1",
             "reason": "RUETH (Russian Ruble Wrapped Ethereum) lacks a legitimate protocol backing and appears to be a niche or suspicious token not suitable for this basket.",
             "timestamp": "2026-01-29T00:32:09.028Z"
+        }
+    ],
+    "btc-pegged-assets": [
+        {
+            "address": "0x476908d9f75687684ce3dbf6990e722129cdbcc6",
+            "reason": "This address is an impersonator of the official Wrapped Bitcoin (WBTC) token, which has the contract address 0x2260fac5e5542a773aa44fbcfedf7c193bc2c599 on Ethereum.",
+            "timestamp": "2026-01-29T00:58:38.034Z"
+        },
+        {
+            "address": "0x199cc8f0ac008bdc8cf0b1ccd5187f84e168c4d2",
+            "reason": "The token shows suspicious volume-to-TVL ratios and does not match the official addresses for known zkBTC projects, suggesting it is a low-liquidity impersonator.",
+            "timestamp": "2026-01-29T00:58:38.035Z"
+        },
+        {
+            "address": "0x55dbb3a6f734dcee3e900be8708323a14e25e14b",
+            "reason": "This is a malicious impersonator of WBTC. The legitimate WBTC contract on Ethereum is 0x2260fac5e5542a773aa44fbcfedf7c193bc2c599; this address has negligible TVL and failed honeypot security checks.",
+            "timestamp": "2026-01-29T01:01:02.375Z"
         }
     ]
 }

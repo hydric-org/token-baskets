@@ -1,0 +1,11 @@
+{
+    "id": "btc-pegged-assets",
+    "name": "BTC Pegged Assets",
+    "logo": "../../assets/btc-pegged-assets.png",
+    "description": "A curated list of multiple Tokens that are pegged to Bitcoin's price together in a single place.",
+    "lastUpdated": "2026-01-29T00:55:05.138Z",
+    "index": [
+        "0x0555e30da8f98308edb960aa94c0db47230d2b9c",
+        "0x927b51f251480a681271180da4de28d44ec4afb8"
+    ]
+}

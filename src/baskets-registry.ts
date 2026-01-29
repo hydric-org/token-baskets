@@ -3,6 +3,27 @@ import { IBasketDefinition } from "./domain/interfaces/basket-definition.interfa
 
 export const BasketsRegistry: IBasketDefinition[] = [
   {
+    id: BasketId.BTC_PEGGED_ASSETS,
+    name: "BTC Pegged Assets",
+    description:
+      "A curated list of multiple Tokens that are pegged to Bitcoin's price together in a single place.",
+    logo: "../../assets/btc-pegged-assets.png",
+    searchKeywords: ["BTC"],
+    minUsdPrice: 30000,
+    validationPrompt: `
+      You are a crypto expert. Verify if the following tokens match the criteria for the basket "BTC Pegged Assets".
+      
+      Basket's Criteria:
+      - Description: A curated list of multiple tokens that are pegged to BTC's price together in a single place.
+      - Must be a valid, legitimate project (not a scam and not a malicious impersonator).
+      
+      CRITICAL INSTRUCTIONS FOR THIS BASKET:
+      1. **BTC Yield Tokens are VALID**: Tokens representing deposits (e.g., LBTC, solvBTC) or wrapped versions are VALID if they are pegged to the bitcoin's price.
+      2. **Inclusivity**: If it is a BTC-pegged asset and a real project, it belongs in the basket.
+      3. **Price**: It should be close to the BTC price, tokens with price of 10k when the btc price is 70k should be discarded
+        `,
+  },
+  {
     id: BasketId.ETH_PEGGED_ASSETS,
     name: "ETH Pegged Tokens",
     description:
