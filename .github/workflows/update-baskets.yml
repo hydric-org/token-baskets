@@ -38,7 +38,7 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v5
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PULL_REQUEST_TOKEN }}
           commit-message: "chore: update token baskets [skip ci]"
           title: "chore: Update Token Baskets"
           body: "Automated update of token baskets via Gemini AI validation."
