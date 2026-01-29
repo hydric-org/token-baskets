@@ -109,6 +109,16 @@
             "address": "0x738d1115b90efa71ae468f1287fc864775e23a31",
             "reason": "Savings rUSD (srUSD) is a legitimate yield-bearing token from the Reservoir Protocol, but it does not meet the specific criteria for this basket. It is a share-based asset where the price per token increases over time relative to the rUSD stablecoin to reflect accrued interest (currently trading at approximately $1.12). The basket rules explicitly exclude USD tokens whose price goes up as compound interest, requiring assets to maintain a 1:1 peg.",
             "timestamp": "2026-01-28T23:42:10.234Z"
+        },
+        {
+            "address": "0x6503de9fe77d256d9d823f2d335ce83ece9e153f",
+            "reason": "This is a pre-deposit vault receipt for the Stable Network project. It is a claim on future tokens/assets and does not function as a liquid USD-pegged stablecoin, as evidenced by its highly volatile and de-pegged market price.",
+            "timestamp": "2026-01-29T00:05:24.736Z"
+        },
+        {
+            "address": "0xc58d044404d8b14e953c115e67823784dea53d8f",
+            "reason": "This is the 'Junior' tranche of the Strata USDe yield protocol. It is a leveraged investment product designed to capture yield and absorb risk, meaning its price fluctuates based on performance and it is not intended to maintain a stable 1:1 USD peg.",
+            "timestamp": "2026-01-29T00:05:24.736Z"
         }
     ]
 }
