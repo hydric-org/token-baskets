@@ -179,4 +179,59 @@ describe("UpdateBasketUseCase", () => {
     );
     consoleSpy.mockRestore();
   });
+
+  it("should lowercase addresses when adding to basket and blocklist", async () => {
+    const uppercaseAddress = "0xABCDEF1234567890ABCDEF1234567890ABCDEF12";
+    const lowercaseAddress = uppercaseAddress.toLowerCase();
+
+    const mixedToken: IToken = {
+      ...mockToken,
+      address: uppercaseAddress,
+    };
+
+    basketRepo.getBasket.mockResolvedValue(null);
+    basketRepo.getBlocklist.mockResolvedValue([]);
+    tokenSource.getPotentialTokens.mockResolvedValue([
+      mixedToken,
+      { ...mockToken, address: "0xVALID" },
+    ]);
+
+    tokenValidator.validateTokens.mockResolvedValue([
+      {
+        address: uppercaseAddress,
+        isValid: true,
+        reason: "Valid Uppercase",
+      },
+      {
+        address: "0xINVALID",
+        isValid: false,
+        reason: "Invalid Mixed",
+      },
+    ]);
+
+    await useCase.execute(ChainId.ETHEREUM, mockBasketDefinition);
+
+    // Verify basket index has lowercase address
+    expect(basketRepo.saveBasket).toHaveBeenCalledWith(
+      ChainId.ETHEREUM,
+      expect.objectContaining({
+        index: expect.arrayContaining([lowercaseAddress]),
+      }),
+    );
+
+    // Verify basket index does NOT have uppercase address
+    const savedBasket = basketRepo.saveBasket.mock.calls[0][1];
+    expect(savedBasket.index).not.toContain(uppercaseAddress);
+
+    // Verify blocklist has lowercase address
+    expect(basketRepo.addToBlocklist).toHaveBeenCalledWith(
+      ChainId.ETHEREUM,
+      BasketId.USD_STABLECOINS,
+      expect.arrayContaining([
+        expect.objectContaining({
+          address: "0xinvalid",
+        }),
+      ]),
+    );
+  });
 });

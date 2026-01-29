@@ -79,10 +79,10 @@ export class UpdateBasketUseCase {
       logger.tokenValidated(result);
 
       if (result.isValid) {
-        newValidTokens.push(result.address);
+        newValidTokens.push(result.address.toLowerCase());
       } else {
         newInvalidEntries.push({
-          address: result.address,
+          address: result.address.toLowerCase(),
           reason: result.reason,
           timestamp: new Date().toISOString(),
         });
@@ -94,7 +94,7 @@ export class UpdateBasketUseCase {
       let addedAtLeastOne = false;
       for (const t of newValidTokens) {
         if (!currentSet.has(t.toLowerCase())) {
-          basket.index.push(t);
+          basket.index.push(t.toLowerCase());
           addedAtLeastOne = true;
         }
       }
