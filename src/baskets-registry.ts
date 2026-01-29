@@ -3,11 +3,11 @@ import { IBasketDefinition } from "./domain/interfaces/basket-definition.interfa
 
 export const BasketsRegistry: IBasketDefinition[] = [
   {
-    id: BasketId.BTC_PEGGED_ASSETS,
+    id: BasketId.BTC_PEGGED_TOKENS,
     name: "BTC Pegged Assets",
     description:
       "A curated list of multiple Tokens that are pegged to Bitcoin's price together in a single place.",
-    logo: "../../assets/btc-pegged-assets.png",
+    logo: "../../assets/btc-pegged-tokens.png",
     searchKeywords: ["BTC"],
     minUsdPrice: 30000,
     validationPrompt: `
@@ -24,7 +24,7 @@ export const BasketsRegistry: IBasketDefinition[] = [
         `,
   },
   {
-    id: BasketId.ETH_PEGGED_ASSETS,
+    id: BasketId.ETH_PEGGED_TOKENS,
     name: "ETH Pegged Tokens",
     description:
       "A curated list of multiple Tokens that are pegged to ETH's price together in a single place.",

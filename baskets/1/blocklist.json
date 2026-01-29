@@ -136,7 +136,7 @@
             "timestamp": "2026-01-29T01:12:32.687Z"
         }
     ],
-    "eth-pegged-assets": [
+    "eth-pegged-tokens": [
         {
             "address": "0xf80fc1ce16cbcbd18421e9cd055ca1bb58a9e097",
             "reason": "Low holder count and negligible volume suggest this is not a legitimate liquid pegged token for a curated list.",
@@ -208,7 +208,7 @@
             "timestamp": "2026-01-29T00:32:09.028Z"
         }
     ],
-    "btc-pegged-assets": [
+    "btc-pegged-tokens": [
         {
             "address": "0x476908d9f75687684ce3dbf6990e722129cdbcc6",
             "reason": "This address is an impersonator of the official Wrapped Bitcoin (WBTC) token, which has the contract address 0x2260fac5e5542a773aa44fbcfedf7c193bc2c599 on Ethereum.",

@@ -1,5 +1,5 @@
 export enum BasketId {
   USD_STABLECOINS = "usd-stablecoins",
-  ETH_PEGGED_ASSETS = "eth-pegged-assets",
-  BTC_PEGGED_ASSETS = "btc-pegged-assets",
+  ETH_PEGGED_TOKENS = "eth-pegged-tokens",
+  BTC_PEGGED_TOKENS = "btc-pegged-tokens",
 }

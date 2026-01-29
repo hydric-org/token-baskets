@@ -1,5 +1,5 @@
 {
-    "eth-pegged-assets": [
+    "eth-pegged-tokens": [
         {
             "address": "0x056a5fa5da84ceb7f93d36e545c5905607d8bd81",
             "reason": "This is the ETHFI governance token for ether.fi; while the project is legitimate, the token is not pegged to the price of ETH.",

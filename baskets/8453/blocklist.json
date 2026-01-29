@@ -6,7 +6,7 @@
             "timestamp": "2026-01-28T23:46:54.183Z"
         }
     ],
-    "eth-pegged-assets": [
+    "eth-pegged-tokens": [
         {
             "address": "0x36bf8dd23ce8596fca847698c7b290266eb83509",
             "reason": "Meme token ($ETHWIF) that is not pegged to the price of ETH.",

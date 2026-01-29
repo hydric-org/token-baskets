@@ -1,5 +1,5 @@
 {
-    "id": "eth-pegged-assets",
+    "id": "eth-pegged-tokens",
     "name": "ETH Pegged Tokens",
     "logo": "../../assets/ether-pegged-tokens.png",
     "description": "A curated list of multiple Tokens that are pegged to ETH's price together in a single place.",
