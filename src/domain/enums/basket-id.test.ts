@@ -8,6 +8,6 @@ describe("BasketId", () => {
 
   it("should contain expected number of baskets", () => {
     const keys = Object.keys(BasketId);
-    expect(keys).toHaveLength(2);
+    expect(keys).toHaveLength(7);
   });
 });
