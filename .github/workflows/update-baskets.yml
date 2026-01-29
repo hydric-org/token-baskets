@@ -40,6 +40,8 @@ jobs:
         with:
           token: ${{ secrets.PULL_REQUEST_TOKEN }}
           commit-message: "chore: update token baskets [skip ci]"
+          committer: GitHub <noreply@github.com>
+          author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
           title: "[Auto] Update Token Baskets"
           body: "Baskets have been updated. Please review and merge."
           branch: "update-baskets/automated"
