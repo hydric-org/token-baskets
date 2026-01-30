@@ -73,4 +73,18 @@ describe("JsDelivrCachePurgeService", () => {
       "Failed to purge cache: 400 Bad Request",
     );
   });
+
+  it("should split requests into chunks of 10", async () => {
+    const files = Array.from({ length: 25 }, (_, i) => `file${i}.json`);
+    await service.purge([], files);
+
+    expect(fetchSpy).toHaveBeenCalledTimes(3);
+
+    // Check first chunk (10 files)
+    expect(JSON.parse(fetchSpy.mock.calls[0][1].body).path).toHaveLength(10);
+    // Check second chunk (10 files)
+    expect(JSON.parse(fetchSpy.mock.calls[1][1].body).path).toHaveLength(10);
+    // Check third chunk (5 files)
+    expect(JSON.parse(fetchSpy.mock.calls[2][1].body).path).toHaveLength(5);
+  });
 });

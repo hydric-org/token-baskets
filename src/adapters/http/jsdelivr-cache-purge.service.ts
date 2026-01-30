@@ -23,31 +23,43 @@ export class JsDelivrCachePurgeService implements ICdnCachePurgeService {
       return;
     }
 
-    const body = {
-      path: Array.from(pathsToPurge),
-    };
+    const allPaths = Array.from(pathsToPurge);
+    const chunkSize = 10;
+    const chunks: string[][] = [];
 
-    console.log("Purging jsDelivr cache for paths:", body.path);
+    for (let i = 0; i < allPaths.length; i += chunkSize) {
+      chunks.push(allPaths.slice(i, i + chunkSize));
+    }
 
-    try {
-      const response = await fetch(this.baseUrl, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(body),
-      });
+    console.log(`Purging jsDelivr cache in ${chunks.length} chunks...`);
 
-      if (!response.ok) {
-        const text = await response.text();
-        throw new Error(`Failed to purge cache: ${response.status} ${text}`);
+    for (const chunk of chunks) {
+      const body = {
+        path: chunk,
+      };
+
+      console.log("Purging chunk:", body.path);
+
+      try {
+        const response = await fetch(this.baseUrl, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(body),
+        });
+
+        if (!response.ok) {
+          const text = await response.text();
+          throw new Error(`Failed to purge cache: ${response.status} ${text}`);
+        }
+
+        const result = await response.json();
+        console.log("Purge response:", result);
+      } catch (error) {
+        console.error("Error purging jsDelivr cache chunk:", error);
+        throw error;
       }
-
-      const result = await response.json();
-      console.log("Purge response:", result);
-    } catch (error) {
-      console.error("Error purging jsDelivr cache:", error);
-      throw error;
     }
   }
 }
