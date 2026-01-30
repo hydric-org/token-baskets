@@ -7,6 +7,7 @@
     "test": "jest",
     "codegen": "graphql-codegen --config codegen.ts",
     "update-baskets": "ts-node src/index.ts",
+    "purge-cdn-cache": "ts-node src/scripts/purge-cdn-cache.ts",
     "lint": "eslint 'src/**/*.{ts,tsx}'",
     "format": "prettier --write 'src/**/*.{ts,tsx}'",
     "build": "tsc",
