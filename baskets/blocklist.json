@@ -145,6 +145,11 @@
                 "address": "0x4f8e1426a9d10bddc11d26042ad270f16ccb95f2",
                 "reason": "YieldFi sUSD is a yield-accruing vault token from the YieldFi platform; its value increases over time and it lacks the liquidity/volume of a primary stablecoin.",
                 "timestamp": "2026-01-29T23:56:32.593Z"
+            },
+            {
+                "address": "0x56ac9870d3238605e0a8973397a0cfa696865057",
+                "reason": "This token (USDT1) is a malicious impersonator of Tether (USDT) with no legitimate backing or project documentation, typically associated with scam activities.",
+                "timestamp": "2026-01-30T12:31:05.179Z"
             }
         ],
         "8453": [
@@ -157,6 +162,11 @@
                 "address": "0x1c05477115a2490e94cdba29fabbefd348256080",
                 "reason": "This token is an impersonator of USDC on the Base network. The official native USDC address on Base is 0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 and the official bridged version (USDbC) is 0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA.",
                 "timestamp": "2026-01-29T23:58:32.619Z"
+            },
+            {
+                "address": "0x65f74fd58284daeafac89d122fb0566e0629c2a0",
+                "reason": "This token appears to be a scam or an impersonator. It has extremely low TVL ($11.8K), zero trading volume, and no official documentation or project presence under the name 'Stacked Dollar'. It uses the 'sUSD' symbol, which is typically associated with the high-volume Synthetix stablecoin, but the address and name do not match the official Synthetix contract on Base.",
+                "timestamp": "2026-01-30T12:32:31.322Z"
             }
         ]
     },
@@ -165,6 +175,11 @@
             {
                 "address": "0xf80fc1ce16cbcbd18421e9cd055ca1bb58a9e097",
                 "reason": "Low holder count and negligible volume suggest this is not a legitimate liquid pegged token for a curated list.",
+                "timestamp": "2026-01-29T00:12:57.048Z"
+            },
+            {
+                "address": "0xf073bac22dab7faf4a3dd6c6189a70d54110525c",
+                "reason": "inETH has ceased operations and is no longer pegged to ETH.",
                 "timestamp": "2026-01-29T00:12:57.048Z"
             },
             {
@@ -236,6 +251,16 @@
                 "address": "0x68749665ff8d2d112fa859aa293f07a622782f38",
                 "reason": "This token is Tether Gold (XAUt), which is pegged to the price of physical gold, not Ethereum.",
                 "timestamp": "2026-01-29T01:41:37.439Z"
+            },
+            {
+                "address": "0x657e8c867d8b37dcc18fa4caead9c45eb088c642",
+                "reason": "This token is ether.fi BTC (eBTC), which is pegged to the price of Bitcoin (BTC), not Ethereum (ETH).",
+                "timestamp": "2026-01-30T12:30:46.805Z"
+            },
+            {
+                "address": "0x5b4b8fd619a38f2906d4ae22b6fe338550c3b449",
+                "reason": "This is a low-liquidity test token (Test ETH) with no significant market presence or legitimate financial pegging mechanism.",
+                "timestamp": "2026-01-30T12:30:46.805Z"
             }
         ],
         "8453": [
@@ -492,6 +517,11 @@
                 "address": "0x6070af4963dbaca5fc20e84cd77fb0ba238b99f9",
                 "reason": "This token is not pegged to Monad's price and has no relation to the Monad ecosystem. It appears to be a low-liquidity asset on the Base network.",
                 "timestamp": "2026-01-29T23:57:16.698Z"
+            },
+            {
+                "address": "0x05589f4545f7d20caa85752aaf7c5ca16af5a2d2",
+                "reason": "This token is Monopoly Coin on the Base network, which is a separate project and is not pegged to the price of Monad (MON).",
+                "timestamp": "2026-01-30T12:31:44.891Z"
             }
         ]
     },
@@ -501,6 +531,13 @@
                 "address": "0xc581b735a1688071a1746c968e0798d642ede491",
                 "reason": "EURT Has been discontinued.",
                 "timestamp": "2026-01-29T01:45:01.994Z"
+            }
+        ],
+        "8453": [
+            {
+                "address": "0xef22cb48b8483df6152e1423b19df5553bbd818b",
+                "reason": "This is the utility token for Heurist AI, a decentralized AI infrastructure project, and is not a stablecoin pegged to the Euro.",
+                "timestamp": "2026-01-30T12:31:35.287Z"
             }
         ]
     },

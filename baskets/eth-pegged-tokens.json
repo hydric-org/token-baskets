@@ -3,7 +3,7 @@
     "name": "ETH Pegged Tokens",
     "logo": "https://cdn.jsdelivr.net/gh/hydric-org/token-baskets/assets/logos/eth-pegged-tokens.png",
     "description": "A curated list of multiple Tokens that are pegged to ETH's price together in a single place.",
-    "lastUpdated": "2026-01-29T23:57:49.511Z",
+    "lastUpdated": "2026-01-30T12:30:46.805Z",
     "addresses": {
         "1": [
             "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
@@ -54,7 +54,8 @@
             "0x04c154b66cb340f3ae24111cc767e0184ed00cc6",
             "0x917cee801a67f933f2e6b33fc0cd1ed2d5909d88",
             "0xf1c9acdc66974dfb6decb12aa385b9cd01190e38",
-            "0xac3e018457b222d93114458476f3e3416abbe38f"
+            "0xac3e018457b222d93114458476f3e3416abbe38f",
+            "0x2dabcea55a12d73191aece59f508b191fb68adac"
         ],
         "130": [
             "0x0000000000000000000000000000000000000000",

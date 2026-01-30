@@ -3,7 +3,7 @@
     "name": "BTC Pegged Assets",
     "logo": "https://cdn.jsdelivr.net/gh/hydric-org/token-baskets/assets/logos/btc-pegged-tokens.png",
     "description": "A curated list of multiple Tokens that are pegged to Bitcoin's price together in a single place.",
-    "lastUpdated": "2026-01-29T23:55:09.644Z",
+    "lastUpdated": "2026-01-30T12:31:56.256Z",
     "addresses": {
         "1": [
             "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
@@ -29,7 +29,9 @@
             "0x27a70b9f8073efe5a02998d5cc64acdc9e0ba589",
             "0x5401b8620e5fb570064ca9114fd1e135fd77d57c",
             "0x5e14fe5ea32ee54c6cb3c237ffdce1c57df2a0be",
-            "0x004e9c3ef86bc1ca1f0bb5c7662861ee93350568"
+            "0x004e9c3ef86bc1ca1f0bb5c7662861ee93350568",
+            "0x657e8c867d8b37dcc18fa4caead9c45eb088c642",
+            "0x972966bcc17f7d818de4f27dc146ef539c231bdf"
         ],
         "130": [
             "0x0555e30da8f98308edb960aa94c0db47230d2b9c",
@@ -50,7 +52,8 @@
             "0xc96de26018a54d51c097160568752c4e3bd6c364",
             "0x3b86ad95859b6ab773f55f8d94b4b9d443ee931f",
             "0xf1143f3a8d76f1ca740d29d5671d365f66c44ed1",
-            "0x8d2757ea27aabf172da4cca4e5474c76016e3dc5"
+            "0x8d2757ea27aabf172da4cca4e5474c76016e3dc5",
+            "0x12418783e860997eb99e8acf682df952f721cf62"
         ],
         "534352": [
             "0x3c1bca5a656e69edcd0d4e36bebb3fcdaca60cf1",
