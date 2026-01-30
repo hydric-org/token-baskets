@@ -1,0 +1,516 @@
+{
+    "usd-stablecoins": {
+        "1": [
+            {
+                "address": "0x15700b564ca08d9439c58ca5053166e8317aa138",
+                "reason": "deUSD (Elixir) is a failed stablecoin project that announced termination in late 2025 following a collateral crisis; the asset is significantly de-pegged and no longer functions as a stablecoin.",
+                "timestamp": "2026-01-28T19:32:15.814Z"
+            },
+            {
+                "address": "0xe4b70f9ddbb286f3cfa836e0fd970479f3193252",
+                "reason": "USDZ (USD ZeroGas) could not be verified as a legitimate or recognized stablecoin project; it has extremely low swap activity and lacks verifiable protocol documentation.",
+                "timestamp": "2026-01-28T19:32:15.816Z"
+            },
+            {
+                "address": "0xed7fd16423bc19b9143313ac5e4b7f731d714e97",
+                "reason": "PepeUSD is a meme-based token rather than a legitimate stablecoin protocol with a verifiable pegging mechanism.",
+                "timestamp": "2026-01-28T19:32:15.816Z"
+            },
+            {
+                "address": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+                "reason": "I used Google Search to verify that sUSDS (Savings USDS) is the yield-bearing version of USDS from the Sky Protocol (formerly MakerDAO). While it is a legitimate project, its value increases over time relative to the USD peg as it accumulates yield (share-price model). It is excluded based on the criteria that price must not go up as compound interest.",
+                "timestamp": "2026-01-28T19:37:40.750Z"
+            },
+            {
+                "address": "0x5b6e3887b6420f5f39aa7db4f4738f0a9ca3f8f5",
+                "reason": "Inero USD (USDI) is flagged as a high-risk project with low volume, unverified supply, and ranking penalties on major trackers. It is not a reputable USD stablecoin project.",
+                "timestamp": "2026-01-28T19:37:40.752Z"
+            },
+            {
+                "address": "0x5c5b196abe0d54485975d1ec29617d42d9198326",
+                "reason": "I verified via Google Search that sdeUSD (Staked deUSD) is a yield-bearing synthetic dollar from the Elixir protocol. Similar to sUSDS, its price increases as it accumulates yield, which disqualifies it under the requirement to not be an USD token whose price goes up as compound interest.",
+                "timestamp": "2026-01-28T19:37:40.752Z"
+            },
+            {
+                "address": "0xb0a16535eb77c6d7f75e9fc201d468a40abda7a1",
+                "reason": "Trillion USD (TNUSD) is a low-quality project with a very small holder base and insignificant market presence. It does not meet the standards for a legitimate, high-TVL stablecoin project.",
+                "timestamp": "2026-01-28T19:37:40.752Z"
+            },
+            {
+                "address": "0x35d8949372d46b7a3d5a56006ae77b215fc69bc0",
+                "reason": "This is bUSD0 (Bond USD0) by Usual Money, which is a yield-bearing bond token that trades at a discount and appreciates toward par. It is not a standard $1-pegged stablecoin for this basket.",
+                "timestamp": "2026-01-28T20:12:26.270Z"
+            },
+            {
+                "address": "0x75af3fd37d7ca74447e865f792f263b2b1159b58",
+                "reason": "This token is a malicious impersonator of Tether USD (USDT). It lacks high TVL, lacks recognition from official bridge protocols, and has negligible volume compared to legitimate bridged versions.",
+                "timestamp": "2026-01-28T20:30:50.415Z"
+            },
+            {
+                "address": "0x57f5e098cad7a3d1eed53991d4d66c45c9af7812",
+                "reason": "Wrapped Mountain Protocol USD (wUSDM) is a yield-bearing wrapper where the yield is reflected in the unit price rather than via rebasing. Since its price increases over time (e.g., currently ~$1.09), it violates the criteria to not be an asset whose price goes up as compound interest.",
+                "timestamp": "2026-01-28T20:35:33.002Z"
+            },
+            {
+                "address": "0x4879ccc5496c76c13e93cc8a18aba9a7fa445543",
+                "reason": "pre-iUSDT is a points or claimable future asset for the Hourglass protocol, not a USD-pegged stablecoin.",
+                "timestamp": "2026-01-28T23:05:07.087Z"
+            },
+            {
+                "address": "0x3d7d6fdf07ee548b939a80edbc9b2256d0cdc003",
+                "reason": "srUSDe (Strata Senior USDe) is a yield-bearing senior tranche product, categorized as a structured yield instrument rather than a standard stablecoin.",
+                "timestamp": "2026-01-28T23:05:07.087Z"
+            },
+            {
+                "address": "0xc8cf6d7991f15525488b2a83df53468d682ba4b0",
+                "reason": "sUSDf is a yield-bearing (staked) version of Falcon USD, designed to accumulate yield through trading strategies.",
+                "timestamp": "2026-01-28T23:05:07.088Z"
+            },
+            {
+                "address": "0x5c20b550819128074fd538edf79791733ccedd18",
+                "reason": "fUSDT is a Fluid (Instadapp) yield-bearing asset where the exchange rate increases over time.",
+                "timestamp": "2026-01-28T23:05:07.088Z"
+            },
+            {
+                "address": "0xd1074e0ae85610ddba0147e29ebe0d8e5873a000",
+                "reason": "Plasma USD Vault is a yield-bearing deposit receipt for the Plasma Finance platform, not a primary stablecoin.",
+                "timestamp": "2026-01-28T23:05:07.088Z"
+            },
+            {
+                "address": "0x00cd995ac218d1ef85db0eb84469a178e5814683",
+                "reason": "This is a low-liquidity impersonator of Tether USD; the official USDT address on Ethereum is 0xdac17f958d2ee523a2206206994597c13d831ec7.",
+                "timestamp": "2026-01-28T23:05:07.088Z"
+            },
+            {
+                "address": "0x4737d9b4592b40d51e110b94c9c043c6654067ae",
+                "reason": "slvlUSD is a staked (yield-bearing) version of Level USD, which accumulates value through interest.",
+                "timestamp": "2026-01-28T23:05:07.088Z"
+            },
+            {
+                "address": "0xd3fd63209fa2d55b07a0f6db36c2f43900be3094",
+                "reason": "wsrUSD is a 'Savings' wrapper (Wrapped Savings rUSD), which is interest-bearing and not a flat stablecoin.",
+                "timestamp": "2026-01-28T23:05:07.088Z"
+            },
+            {
+                "address": "0x1e33e98af620f1d563fcd3cfd3c75ace841204ef",
+                "reason": "DUSD (Dialectic USD) appears to be a specialized fund or internal asset with very low public utility and liquidity.",
+                "timestamp": "2026-01-28T23:05:07.088Z"
+            },
+            {
+                "address": "0x40052868b2bc56b90fe9823428c1291929551512",
+                "reason": "This is a malicious scam token misspelled as 'Tethor USD' to deceive users.",
+                "timestamp": "2026-01-28T23:05:07.088Z"
+            },
+            {
+                "address": "0xc9b7893ff5ed7d24d68e386c877830738d3c9cd9",
+                "reason": "This address is an impersonator of the official TrueUSD (TUSD) token on Ethereum. The official TUSD contract address is 0x0000000000085d4780B73119b644AE5ecd22b376. The candidate token has negligible TVL ($3.54K) and volume, which is inconsistent with the multi-million dollar liquidity of the genuine stablecoin on the Ethereum mainnet.",
+                "timestamp": "2026-01-28T23:20:56.740Z"
+            },
+            {
+                "address": "0x738d1115b90efa71ae468f1287fc864775e23a31",
+                "reason": "Savings rUSD (srUSD) is a legitimate yield-bearing token from the Reservoir Protocol, but it does not meet the specific criteria for this basket. It is a share-based asset where the price per token increases over time relative to the rUSD stablecoin to reflect accrued interest (currently trading at approximately $1.12). The basket rules explicitly exclude USD tokens whose price goes up as compound interest, requiring assets to maintain a 1:1 peg.",
+                "timestamp": "2026-01-28T23:42:10.234Z"
+            },
+            {
+                "address": "0x6503de9fe77d256d9d823f2d335ce83ece9e153f",
+                "reason": "This is a pre-deposit vault receipt for the Stable Network project. It is a claim on future tokens/assets and does not function as a liquid USD-pegged stablecoin, as evidenced by its highly volatile and de-pegged market price.",
+                "timestamp": "2026-01-29T00:05:24.736Z"
+            },
+            {
+                "address": "0xc58d044404d8b14e953c115e67823784dea53d8f",
+                "reason": "This is the 'Junior' tranche of the Strata USDe yield protocol. It is a leveraged investment product designed to capture yield and absorb risk, meaning its price fluctuates based on performance and it is not intended to maintain a stable 1:1 USD peg.",
+                "timestamp": "2026-01-29T00:05:24.736Z"
+            },
+            {
+                "address": "0xaf1157149ff040dad186a0142a796d901bef1cf1",
+                "reason": "USDi Coin is an inflation-linked token designed to track the Consumer Price Index (CPI) rather than a 1:1 USD peg. Its price increases over time to reflect inflation, violating the criteria for standard USD stablecoins and the restriction against tokens whose price increases.",
+                "timestamp": "2026-01-29T00:13:44.573Z"
+            },
+            {
+                "address": "0xc5d6a7b61d18afa11435a889557b068bb9f29930",
+                "reason": "Savings USDD (sUSDD) is a yield-bearing version of the USDD stablecoin. Its price relative to USD increases over time as interest is accrued (currently trading around $1.04), which violates the specific basket criteria excluding USD tokens with price appreciation from compound interest.",
+                "timestamp": "2026-01-29T00:13:44.573Z"
+            },
+            {
+                "address": "0x17b65cfcd084739459ecc8fdc032e9cbc7aeefda",
+                "reason": "This token is an unverified project using the symbol USDG (often associated with the regulated Global Dollar by Paxos). It is identified as 'USDGOLD' or associated with '@UsdMem' on social media, with unverified supply and low liquidity, suggesting it is an impersonator or a meme coin rather than a legitimate USD stablecoin.",
+                "timestamp": "2026-01-29T01:12:32.687Z"
+            },
+            {
+                "address": "0x547213367cfb08ab418e7b54d7883b2c2aa27fd7",
+                "reason": "sUSDz is a yield-bearing staked version of USDz where the price increases relative to the peg (trading at ~$1.18), violating the stable price criteria.",
+                "timestamp": "2026-01-29T23:56:32.593Z"
+            },
+            {
+                "address": "0x4f8e1426a9d10bddc11d26042ad270f16ccb95f2",
+                "reason": "YieldFi sUSD is a yield-accruing vault token from the YieldFi platform; its value increases over time and it lacks the liquidity/volume of a primary stablecoin.",
+                "timestamp": "2026-01-29T23:56:32.593Z"
+            }
+        ],
+        "8453": [
+            {
+                "address": "0xffe8b2295cef70290819a8193834cc7900bcef5f",
+                "reason": "Excluded because it is a yield-bearing receipt token (sp-ysUSDC) whose price increases ($1.03) over time due to accrued interest.",
+                "timestamp": "2026-01-28T23:46:54.183Z"
+            },
+            {
+                "address": "0x1c05477115a2490e94cdba29fabbefd348256080",
+                "reason": "This token is an impersonator of USDC on the Base network. The official native USDC address on Base is 0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 and the official bridged version (USDbC) is 0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA.",
+                "timestamp": "2026-01-29T23:58:32.619Z"
+            }
+        ]
+    },
+    "eth-pegged-tokens": {
+        "1": [
+            {
+                "address": "0xf80fc1ce16cbcbd18421e9cd055ca1bb58a9e097",
+                "reason": "Low holder count and negligible volume suggest this is not a legitimate liquid pegged token for a curated list.",
+                "timestamp": "2026-01-29T00:12:57.048Z"
+            },
+            {
+                "address": "0xfe0c30065b384f05761f15d0cc899d4f9f9cc0eb",
+                "reason": "This is the governance token for ether.fi, not a price-pegged ETH asset.",
+                "timestamp": "2026-01-29T00:12:57.048Z"
+            },
+            {
+                "address": "0xaa6e8127831c9de45ae56bb1b0d4d4da6e5665bd",
+                "reason": "This is a leveraged index token with 2x volatility; it is not pegged 1:1 to the price of ETH.",
+                "timestamp": "2026-01-29T00:12:57.048Z"
+            },
+            {
+                "address": "0x7e0db521828743a65e4ad1246fd0cc8e04c0866b",
+                "reason": "Obscure token with insufficient verification as a legitimate pegged project.",
+                "timestamp": "2026-01-29T00:12:57.048Z"
+            },
+            {
+                "address": "0xa250cc729bb3323e7933022a67b52200fe354767",
+                "reason": "Niche double-wrapped token with low liquidity; not a standard curated pegged asset.",
+                "timestamp": "2026-01-29T00:12:57.048Z"
+            },
+            {
+                "address": "0x2abd7bb192ffc644f95603f9b4832ceb8492d2dd",
+                "reason": "Impersonator; the official WETH contract on Ethereum is 0xc02aaa...",
+                "timestamp": "2026-01-29T00:12:57.048Z"
+            },
+            {
+                "address": "0x325a87aabeaa1097011f4838d9152ba44e7f282b",
+                "reason": "Represents the Ethereum PoW fork (ETHW), which is a different asset not pegged to the main Ethereum price.",
+                "timestamp": "2026-01-29T00:12:57.048Z"
+            },
+            {
+                "address": "0x32d222e1f6386b3df7065d639870be0ef76d3599",
+                "reason": "Impersonator; the official WETH contract on Ethereum is 0xc02aaa...",
+                "timestamp": "2026-01-29T00:12:57.048Z"
+            },
+            {
+                "address": "0xa7d0647889de293ab5dd3a8718b3ea65651305a0",
+                "reason": "The token name indicates a specific price strike/level (@ 3800), suggesting it is a structured product or option-like asset rather than a general ETH-pegged token.",
+                "timestamp": "2026-01-29T00:27:02.967Z"
+            },
+            {
+                "address": "0x0c582b44fffddc1c5dd65e43867fe200d2e63e46",
+                "reason": "The token name indicates a specific price strike/level (@ 10000), suggesting it is a structured product rather than a general ETH-pegged token.",
+                "timestamp": "2026-01-29T00:27:02.968Z"
+            },
+            {
+                "address": "0x9b2c171abb9c732ffa3789724d0aa653c9e0c428",
+                "reason": "KGETH is a niche regional wrapper ('Kyrgyz Som Wrapped') which may introduce foreign exchange risk and is not a standard ETH-pegged asset for this basket.",
+                "timestamp": "2026-01-29T00:27:02.968Z"
+            },
+            {
+                "address": "0xc6a9851def913016074ac089e194f65945343462",
+                "reason": "MRETH (Moldavian Ruble Wrapped Ethereum) is a suspicious token with extremely low TVL and no association with legitimate Ethereum liquid staking or wrapping protocols.",
+                "timestamp": "2026-01-29T00:32:09.026Z"
+            },
+            {
+                "address": "0xc700e80556fa35ea368c07f8298c41aca3211e9f",
+                "reason": "ETHR (Ethereum Recovery) is not a recognized ETH-pegged asset and is frequently associated with fraudulent 'scam recovery' schemes.",
+                "timestamp": "2026-01-29T00:32:09.028Z"
+            },
+            {
+                "address": "0x292a477e521230fe230c13c93374adde8ddec1c1",
+                "reason": "RUETH (Russian Ruble Wrapped Ethereum) lacks a legitimate protocol backing and appears to be a niche or suspicious token not suitable for this basket.",
+                "timestamp": "2026-01-29T00:32:09.028Z"
+            },
+            {
+                "address": "0x68749665ff8d2d112fa859aa293f07a622782f38",
+                "reason": "This token is Tether Gold (XAUt), which is pegged to the price of physical gold, not Ethereum.",
+                "timestamp": "2026-01-29T01:41:37.439Z"
+            }
+        ],
+        "8453": [
+            {
+                "address": "0x36bf8dd23ce8596fca847698c7b290266eb83509",
+                "reason": "Meme token ($ETHWIF) that is not pegged to the price of ETH.",
+                "timestamp": "2026-01-29T00:16:13.140Z"
+            },
+            {
+                "address": "0x2dda09a1fd02a5a68708d3ebb712a7b56225e66d",
+                "reason": "Meme/community token (TOGETHER) and not pegged to the price of ETH.",
+                "timestamp": "2026-01-29T00:16:13.140Z"
+            },
+            {
+                "address": "0x032a2e558ae273f4abfb75274b500595d1c31cb8",
+                "reason": "Meme token (SOMETHING) and not pegged to the price of ETH.",
+                "timestamp": "2026-01-29T00:16:13.140Z"
+            },
+            {
+                "address": "0x3630bccff57b4ca29314cc68d96b2e3492b91a2c",
+                "reason": "Meme token (METHG) and not pegged to the price of ETH.",
+                "timestamp": "2026-01-29T00:16:13.140Z"
+            },
+            {
+                "address": "0x1efef78ce5fdd91e069adaeb6a9dbc66f9872026",
+                "reason": "Meme token using the name 'Ethereum'; not pegged to the actual price of ETH.",
+                "timestamp": "2026-01-29T00:16:13.140Z"
+            },
+            {
+                "address": "0x26ef50e479df5c00e08526df37ef701bef8259ba",
+                "reason": "Meme token using the ETH ticker; not pegged to the price of ETH.",
+                "timestamp": "2026-01-29T00:16:13.140Z"
+            },
+            {
+                "address": "0x410e7da3c731acfcfcb68a0a9e95a8fb6d407897",
+                "reason": "Meme token launched via the Clanker platform; not pegged to ETH.",
+                "timestamp": "2026-01-29T00:16:13.140Z"
+            },
+            {
+                "address": "0x3b6b46fe8c54c0173fb709b11dc715359254e8fb",
+                "reason": "Meme token and not pegged to the price of ETH.",
+                "timestamp": "2026-01-29T00:16:13.141Z"
+            },
+            {
+                "address": "0xe3bd9137be0cea397aa22da8749a56925339797a",
+                "reason": "Meme or failed project (ETHFINA) with a price significantly lower than and not pegged to ETH.",
+                "timestamp": "2026-01-29T00:16:13.141Z"
+            },
+            {
+                "address": "0x7fcb56d035d3eb5a9e96f7098a5b8f08a732ef4b",
+                "reason": "This token is an impersonator with a price near zero ($0.00000000024) and very low liquidity; it does not represent the actual Ethereum asset on the Base network.",
+                "timestamp": "2026-01-29T23:57:49.511Z"
+            },
+            {
+                "address": "0xf30a58729115f0e30d64de40878adbce3cea7c84",
+                "reason": "This is a fake impersonator of Wrapped Ethereum (WETH); the official WETH contract on Base is 0x4200000000000000000000000000000000000006.",
+                "timestamp": "2026-01-29T23:57:49.511Z"
+            }
+        ],
+        "534352": [
+            {
+                "address": "0x056a5fa5da84ceb7f93d36e545c5905607d8bd81",
+                "reason": "This is the ETHFI governance token for ether.fi; while the project is legitimate, the token is not pegged to the price of ETH.",
+                "timestamp": "2026-01-29T00:15:03.364Z"
+            },
+            {
+                "address": "0x657e8c867d8b37dcc18fa4caead9c45eb088c642",
+                "reason": "This token is ether.fi's eBTC, which is a Bitcoin-backed liquid restaking token pegged to the price of BTC, not ETH.",
+                "timestamp": "2026-01-29T01:42:13.692Z"
+            }
+        ]
+    },
+    "btc-pegged-tokens": {
+        "1": [
+            {
+                "address": "0x476908d9f75687684ce3dbf6990e722129cdbcc6",
+                "reason": "This address is an impersonator of the official Wrapped Bitcoin (WBTC) token, which has the contract address 0x2260fac5e5542a773aa44fbcfedf7c193bc2c599 on Ethereum.",
+                "timestamp": "2026-01-29T00:58:38.034Z"
+            },
+            {
+                "address": "0x199cc8f0ac008bdc8cf0b1ccd5187f84e168c4d2",
+                "reason": "The token shows suspicious volume-to-TVL ratios and does not match the official addresses for known zkBTC projects, suggesting it is a low-liquidity impersonator.",
+                "timestamp": "2026-01-29T00:58:38.035Z"
+            },
+            {
+                "address": "0x55dbb3a6f734dcee3e900be8708323a14e25e14b",
+                "reason": "This is a malicious impersonator of WBTC. The legitimate WBTC contract on Ethereum is 0x2260fac5e5542a773aa44fbcfedf7c193bc2c599; this address has negligible TVL and failed honeypot security checks.",
+                "timestamp": "2026-01-29T01:01:02.375Z"
+            },
+            {
+                "address": "0xeb4c2781e4eba804ce9a9803c67d0893436bb27d",
+                "reason": "RenBTC is defunct and significantly depegged (trading at a >90% discount) following the shutdown of the Ren Protocol bridge.",
+                "timestamp": "2026-01-29T23:55:09.644Z"
+            }
+        ],
+        "8453": [
+            {
+                "address": "0x5dcb7586115541ee6c1920edda2661dc9eddd109",
+                "reason": "BitcoinBR (BTCBR) is widely reported as a scam token with no real market value or liquidity; furthermore, its price is near zero ($0.004) and not pegged to the price of BTC as required.",
+                "timestamp": "2026-01-29T23:57:26.479Z"
+            }
+        ]
+    },
+    "monad-pegged-tokens": {
+        "1": [
+            {
+                "address": "0xc555d625828c4527d477e595ff1dd5801b4a600e",
+                "reason": "This is the official token for Mon Protocol (Pixelmon). While it uses the symbol 'MON', it is an independent gaming ecosystem token and is not pegged to the price of the Monad Layer 1 network token.",
+                "timestamp": "2026-01-29T01:31:37.018Z"
+            },
+            {
+                "address": "0x1796ae0b0fa4862485106a0de9b654efe301d0b2",
+                "reason": "This is PMON (Polychain Monsters/Polkamon), a well-known NFT and gaming project. It is not pegged to or associated with the price of Monad.",
+                "timestamp": "2026-01-29T01:31:37.018Z"
+            },
+            {
+                "address": "0x13091389825e39775a8cb24a53df7e775180ca08",
+                "reason": "This is MonsterBet (MONBET), a betting project token. It is not a Monad-pegged asset or liquid staking token.",
+                "timestamp": "2026-01-29T01:31:37.018Z"
+            },
+            {
+                "address": "0xd1eab89db6af34cea1a1a4414d74fcf68f363896",
+                "reason": "This is Wrapped Tekomon (wTEKOMON), a project-specific token that does not track the price of Monad.",
+                "timestamp": "2026-01-29T01:31:37.018Z"
+            },
+            {
+                "address": "0x9078deb4736b7e2181beb8db276dfbfa7f21f821",
+                "reason": "This is Monk.gg (MONKGG), a token for a gaming platform and is not pegged to the Monad network's value.",
+                "timestamp": "2026-01-29T01:31:37.018Z"
+            },
+            {
+                "address": "0xb4444468e444f89e1c2cac2f1d3ee7e336cbd1f5",
+                "reason": "RZR (Rezerve.money) is a reserve currency protocol focused on BTC accumulation and is not pegged to the price of Monad.",
+                "timestamp": "2026-01-29T01:41:24.126Z"
+            },
+            {
+                "address": "0xa27eef3f41ff959c0186be55cf158f360ff68d78",
+                "reason": "$PUMP (404 PUMP MONSTER) is an ERC404 project and is not pegged to the price of Monad.",
+                "timestamp": "2026-01-29T01:41:24.126Z"
+            },
+            {
+                "address": "0xd3043d66afe00344c115f7f81d18277c5c718ff8",
+                "reason": "omUSD (OpenMoney USD) is a stablecoin pegged to the US Dollar, not to the price of Monad.",
+                "timestamp": "2026-01-29T01:41:24.126Z"
+            },
+            {
+                "address": "0xaf4dce16da2877f8c9e00544c93b62ac40631f16",
+                "reason": "MTH (Monetha) is a reputation and e-commerce platform token and is not pegged to the price of Monad.",
+                "timestamp": "2026-01-29T01:41:24.126Z"
+            },
+            {
+                "address": "0x16558553e4647ca500c3718c56c356edb6f9b11c",
+                "reason": "MKT (Monkey King Token) is a meme-based asset and is not pegged to the price of Monad.",
+                "timestamp": "2026-01-29T01:41:24.126Z"
+            },
+            {
+                "address": "0x39b8b6385416f4ca36a20319f70d28621895279d",
+                "reason": "EURe (Monerium) is a Euro-backed stablecoin and is not pegged to the price of Monad.",
+                "timestamp": "2026-01-29T01:41:24.126Z"
+            },
+            {
+                "address": "0x465e07d6028830124be2e4aa551fbe12805db0f5",
+                "reason": "WXMR (Wrapped Monero) is a token pegged to the price of Monero (XMR), not Monad.",
+                "timestamp": "2026-01-29T01:41:24.131Z"
+            },
+            {
+                "address": "0x70401dfd142a16dc7031c56e862fc88cb9537ce0",
+                "reason": "BIRD (Bird.Money) is an oracle and decentralized lending protocol token and is not pegged to the price of Monad.",
+                "timestamp": "2026-01-29T01:41:24.131Z"
+            },
+            {
+                "address": "0x6c061d18d2b5bbfbe8a8d1eeb9ee27efd544cc5d",
+                "reason": "MNRCH (Monarch) is a governance or utility token for a social/trading protocol and does not function as a Monad-pegged asset.",
+                "timestamp": "2026-01-29T01:41:24.131Z"
+            },
+            {
+                "address": "0x3231cb76718cdef2155fc47b5286d82e6eda273f",
+                "reason": "This address represents another instance of Monerium EURe, which is pegged to the Euro and not Monad.",
+                "timestamp": "2026-01-29T01:41:24.131Z"
+            },
+            {
+                "address": "0xb63b606ac810a52cca15e44bb630fd42d8d1d83d",
+                "reason": "This is the Monaco (MCO) token, a legacy project that rebranded to Crypto.com; it is not pegged to the price of Monad (MON).",
+                "timestamp": "2026-01-29T01:45:01.994Z"
+            },
+            {
+                "address": "0x99d8a9c45b2eca8864373a26d1459e3dff1e17f3",
+                "reason": "This is Magic Internet Money (MIM), a USD-pegged stablecoin from the Abracadabra protocol, not an asset pegged to Monad.",
+                "timestamp": "2026-01-29T01:45:01.994Z"
+            },
+            {
+                "address": "0x721fdf8c0fb7251c12ad65d7fb5b455c25344397",
+                "reason": "Mondcoin (MDC) shows zero trading volume and negligible liquidity; it is not a recognized or official Monad-pegged asset or liquid staking token.",
+                "timestamp": "2026-01-29T01:45:01.994Z"
+            },
+            {
+                "address": "0x3cafdbfe682aec17d5ace2f97a2f3ab3dcf6a4a9",
+                "reason": "This token is a tokenized version of Taiwan Semiconductor Manufacturing (TSM) stock provided by Ondo Finance; it is not pegged to the price of Monad.",
+                "timestamp": "2026-01-29T12:33:11.775Z"
+            },
+            {
+                "address": "0x8c282c35b5e1088bb208991c151182a782637699",
+                "reason": "MONAI is the utility token for the Monai AI project, not a token pegged to the price of Monad (MON).",
+                "timestamp": "2026-01-29T23:54:39.226Z"
+            },
+            {
+                "address": "0x4046eac59ceeadc1e069bc513b3fc5554711aaa7",
+                "reason": "PEPEMON is a meme coin project and is not a liquid staking token or a price-pegged version of Monad.",
+                "timestamp": "2026-01-29T23:54:39.226Z"
+            },
+            {
+                "address": "0x97df0441fc62f5c374a721da1b67f6b660ccfbed",
+                "reason": "This is a low-liquidity PEPEMON token that functions as a meme asset rather than a price-pegged Monad derivative.",
+                "timestamp": "2026-01-29T23:54:39.226Z"
+            },
+            {
+                "address": "0x7252d57ae4ec9af61db3b82a6eedab74eec5d1dc",
+                "reason": "MONDAY (MondayClub Token) is an independent community token and does not maintain a price peg to Monad.",
+                "timestamp": "2026-01-29T23:54:39.226Z"
+            },
+            {
+                "address": "0x3aada3e213abf8529606924d8d1c55cbdc70bf74",
+                "reason": "XMON is the native token for the 0xmons NFT project and is not pegged to the price of Monad.",
+                "timestamp": "2026-01-29T23:54:39.226Z"
+            }
+        ],
+        "8453": [
+            {
+                "address": "0x60edae6e86546428da423b5fbe0fba46ca552fc7",
+                "reason": "This token is associated with the Dragobits NFT game on Base and is not pegged to Monad's price.",
+                "timestamp": "2026-01-29T01:32:08.026Z"
+            },
+            {
+                "address": "0x99b2b1a2adb02b38222adcd057783d7e5d1fcc7d",
+                "reason": "This is the Common Wealth (WLTH) token, which is a platform for real-world assets and venture capital; it is not pegged to Monad's price.",
+                "timestamp": "2026-01-29T01:43:21.105Z"
+            },
+            {
+                "address": "0x8f4e4221ba88d4e9bb76ecfb91d7c5ce08d7d5b9",
+                "reason": "This is FUMoney (FU), a community or meme token on the Base network, and is not an asset pegged to Monad.",
+                "timestamp": "2026-01-29T01:43:21.105Z"
+            },
+            {
+                "address": "0xee7f51101cf48b09cb4bddbb518afd84f6e235df",
+                "reason": "This is Monster Hunter Kawai (KAWAI), a gaming-related token, and is not pegged to Monad's price.",
+                "timestamp": "2026-01-29T01:43:21.105Z"
+            },
+            {
+                "address": "0x5c54c69c7bc62ad730eca31b377010f7ba241a29",
+                "reason": "This is Monster Soul Token (MST), a gaming ecosystem token, and does not function as a Monad-pegged asset.",
+                "timestamp": "2026-01-29T01:43:21.105Z"
+            },
+            {
+                "address": "0x6070af4963dbaca5fc20e84cd77fb0ba238b99f9",
+                "reason": "This token is not pegged to Monad's price and has no relation to the Monad ecosystem. It appears to be a low-liquidity asset on the Base network.",
+                "timestamp": "2026-01-29T23:57:16.698Z"
+            }
+        ]
+    },
+    "eur-stablecoins": {
+        "1": [
+            {
+                "address": "0xc581b735a1688071a1746c968e0798d642ede491",
+                "reason": "EURT Has been discontinued.",
+                "timestamp": "2026-01-29T01:45:01.994Z"
+            }
+        ]
+    },
+    "hype-pegged-tokens": {
+        "999": [
+            {
+                "address": "0xc061d38903b99ac12713b550c2cb44b221674f94",
+                "reason": "This token (hbBTC) represents a vault position with directional exposure to Bitcoin (uBTC) rather than Hyperliquid's HYPE token. While it is a legitimate project from Hyperbeat, it does not meet the basket's requirement of being pegged to HYPE's price.",
+                "timestamp": "2026-01-29T01:42:29.803Z"
+            }
+        ]
+    }
+}

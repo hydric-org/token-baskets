@@ -34,23 +34,35 @@ describe("FileBasketRepository", () => {
     });
 
     it("should return parsed basket if file exists", async () => {
-      const mockBasket: IBasket = {
+      const unifiedMock = {
         id: BasketId.USD_STABLECOINS,
         name: "Test",
         logo: "",
         description: "",
         lastUpdated: "",
-        index: [],
+        addresses: {
+          [ChainId.ETHEREUM.toString()]: ["0x123"],
+        },
       };
+
+      const expectedBasket: IBasket = {
+        id: BasketId.USD_STABLECOINS,
+        name: "Test",
+        logo: "",
+        description: "",
+        lastUpdated: "",
+        index: ["0x123"],
+      };
+
       (fs.existsSync as unknown as MockType).mockReturnValue(true);
       (fs.readFileSync as unknown as MockType).mockReturnValue(
-        JSON.stringify(mockBasket),
+        JSON.stringify(unifiedMock),
       );
       const result = await repo.getBasket(
         ChainId.ETHEREUM,
         BasketId.USD_STABLECOINS,
       );
-      expect(result).toEqual(mockBasket);
+      expect(result).toEqual(expectedBasket);
     });
 
     it("should return null and log error if parsing fails", async () => {
@@ -75,30 +87,25 @@ describe("FileBasketRepository", () => {
         logo: "",
         description: "",
         lastUpdated: "",
-        index: [],
+        index: ["0x1"],
       };
-      (fs.existsSync as unknown as MockType).mockReturnValue(false); // for ensureDirectory
+      (fs.existsSync as unknown as MockType).mockReturnValue(false); // for ensureDirectory and read check
       await repo.saveBasket(ChainId.ETHEREUM, mockBasket);
       expect(fs.mkdirSync).toHaveBeenCalledWith("/dir", { recursive: true });
       expect(fs.writeFileSync).toHaveBeenCalled();
+
+      const savedContent = JSON.parse(
+        (fs.writeFileSync as unknown as MockType).mock.calls[0][1],
+      );
+      expect(savedContent.addresses[ChainId.ETHEREUM.toString()]).toEqual([
+        "0x1",
+      ]);
     });
   });
 
   describe("blocklist", () => {
     it("should return empty array if blocklist file does not exist", async () => {
       (fs.existsSync as unknown as MockType).mockReturnValue(false);
-      const result = await repo.getBlocklist(
-        ChainId.ETHEREUM,
-        BasketId.USD_STABLECOINS,
-      );
-      expect(result).toEqual([]);
-    });
-
-    it("should handle migration from old array format by resetting", async () => {
-      (fs.existsSync as unknown as MockType).mockReturnValue(true);
-      (fs.readFileSync as unknown as MockType).mockReturnValue(
-        JSON.stringify(["0x1"]),
-      );
       const result = await repo.getBlocklist(
         ChainId.ETHEREUM,
         BasketId.USD_STABLECOINS,
@@ -118,9 +125,11 @@ describe("FileBasketRepository", () => {
 
     it("should add entries and dedup by address", async () => {
       const existing = {
-        [BasketId.USD_STABLECOINS]: [
-          { address: "0x1", reason: "old", timestamp: "" },
-        ],
+        [BasketId.USD_STABLECOINS]: {
+          [ChainId.ETHEREUM.toString()]: [
+            { address: "0x1", reason: "old", timestamp: "" },
+          ],
+        },
       };
       (fs.existsSync as unknown as MockType).mockReturnValue(true);
       (fs.readFileSync as unknown as MockType).mockReturnValue(
@@ -135,24 +144,11 @@ describe("FileBasketRepository", () => {
       const saved = JSON.parse(
         (fs.writeFileSync as unknown as MockType).mock.calls[0][1],
       );
-      expect(saved[BasketId.USD_STABLECOINS]).toHaveLength(2);
-      expect(saved[BasketId.USD_STABLECOINS][1].address).toBe("0x2");
-    });
 
-    it("should handle case where existing file does not have the basket key", async () => {
-      (fs.existsSync as unknown as MockType).mockReturnValue(true);
-      (fs.readFileSync as unknown as MockType).mockReturnValue(
-        JSON.stringify({ other: [] }),
-      );
-
-      await repo.addToBlocklist(ChainId.ETHEREUM, BasketId.USD_STABLECOINS, [
-        { address: "0x1", reason: "new", timestamp: "" },
-      ]);
-
-      const saved = JSON.parse(
-        (fs.writeFileSync as unknown as MockType).mock.calls[0][1],
-      );
-      expect(saved[BasketId.USD_STABLECOINS]).toHaveLength(1);
+      const chainList =
+        saved[BasketId.USD_STABLECOINS][ChainId.ETHEREUM.toString()];
+      expect(chainList).toHaveLength(2);
+      expect(chainList[1].address).toBe("0x2");
     });
   });
 });

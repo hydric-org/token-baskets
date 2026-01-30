@@ -1,0 +1,417 @@
+{
+    "baskets": [
+        {
+            "id": "btc-pegged-tokens",
+            "name": "BTC Pegged Assets",
+            "logo": "https://cdn.jsdelivr.net/gh/hydric-org/token-baskets/assets/logos/btc-pegged-tokens.png",
+            "description": "A curated list of multiple Tokens that are pegged to Bitcoin's price together in a single place.",
+            "lastUpdated": "2026-01-29T23:55:09.644Z",
+            "addresses": {
+                "1": [
+                    "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+                    "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+                    "0xa3ca88cfb7bbe9cfbd47df053ffa2130c7e6f770",
+                    "0x7a56e1c57c7475ccf742a1832b028f0456652f97",
+                    "0x8236a87084f8b84306f72007f36f2618a5634494",
+                    "0x18084fba666a33d37592fa2633fd49a74dd93a88",
+                    "0xc96de26018a54d51c097160568752c4e3bd6c364",
+                    "0x36f9975d8184a65be42290d5a8764dc97f3d9396",
+                    "0xf6718b2701d4a6498ef77d7c152b2137ab28b8a3",
+                    "0x661c70333aa1850ccdbae82776bb436a0fcfeefb",
+                    "0x8064d9ae6cdf087b1bcd5bdf3531bd5d8c537a68",
+                    "0x73e0c0d45e048d25fc26fa3159b0aa04bfa4db98",
+                    "0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335",
+                    "0x9be89d2a4cd102d8fecc6bf9da793be995c22541",
+                    "0xc620cb64c6c504f417da517048ae2dab7cca75fa",
+                    "0x2f913c820ed3beb3a67391a6eff64e70c4b20b19",
+                    "0xf5e11df1ebcf78b6b6d26e04ff19cd786a1e81dc",
+                    "0x71e1b632f1ddc20f79df1472f7a464779588a6d1",
+                    "0x09def5abc67e967d54e8233a4b5ebbc1b3fbe34b",
+                    "0x9af4f3621ea1d00c93e484a17e14310c116245c3",
+                    "0x27a70b9f8073efe5a02998d5cc64acdc9e0ba589",
+                    "0x5401b8620e5fb570064ca9114fd1e135fd77d57c",
+                    "0x5e14fe5ea32ee54c6cb3c237ffdce1c57df2a0be",
+                    "0x004e9c3ef86bc1ca1f0bb5c7662861ee93350568"
+                ],
+                "130": [
+                    "0x0555e30da8f98308edb960aa94c0db47230d2b9c",
+                    "0x927b51f251480a681271180da4de28d44ec4afb8"
+                ],
+                "143": [
+                    "0x0555e30da8f98308edb960aa94c0db47230d2b9c"
+                ],
+                "999": [
+                    "0x9fdbda0a5e284c32744d2f17ee5c74b284993463",
+                    "0xc061d38903b99ac12713b550c2cb44b221674f94"
+                ],
+                "8453": [
+                    "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+                    "0xecac9c5f704e954931349da37f60e39f515c11c1",
+                    "0xc26c9099bd3789107888c35bb41178079b282561",
+                    "0x236aa50979d5f3de3bd1eeb40e81137f22ab794b",
+                    "0xc96de26018a54d51c097160568752c4e3bd6c364",
+                    "0x3b86ad95859b6ab773f55f8d94b4b9d443ee931f",
+                    "0xf1143f3a8d76f1ca740d29d5671d365f66c44ed1",
+                    "0x8d2757ea27aabf172da4cca4e5474c76016e3dc5"
+                ],
+                "534352": [
+                    "0x3c1bca5a656e69edcd0d4e36bebb3fcdaca60cf1",
+                    "0x657e8c867d8b37dcc18fa4caead9c45eb088c642"
+                ]
+            }
+        },
+        {
+            "id": "eth-pegged-tokens",
+            "name": "ETH Pegged Tokens",
+            "logo": "https://cdn.jsdelivr.net/gh/hydric-org/token-baskets/assets/logos/eth-pegged-tokens.png",
+            "description": "A curated list of multiple Tokens that are pegged to ETH's price together in a single place.",
+            "lastUpdated": "2026-01-29T23:57:49.511Z",
+            "addresses": {
+                "1": [
+                    "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+                    "0x0000000000000000000000000000000000000000",
+                    "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+                    "0xd5f7838f5c461feff7fe49ea5ebaf7728bb0adfa",
+                    "0xae78736cd615f374d3085123a210448e74fc6393",
+                    "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+                    "0x5e8422345238f34275888049021821e8e08caa1f",
+                    "0xe6829d9a7ee3040e1276fa75293bde931859e8fa",
+                    "0xa35b1b31ce002fbf2058d22f30f95d405200a15b",
+                    "0x856c4efb76c1d1ae02e20ceb03a2a6a08b0b8dc3",
+                    "0x8c1bed5b9a0928467c9b1341da1d7bd5e10b6549",
+                    "0xe72b141df173b999ae7c1adcbf60cc9833ce56a8",
+                    "0xd9a442856c234a39a81a089c06451ebaa4306a72",
+                    "0xbe9895146f7af43049ca1c1ae358b0541ea49704",
+                    "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+                    "0x5bbe36152d3cd3eb7183a82470b39b29eedf068b",
+                    "0xf951e335afb289353dc249e82926178eac7ded78",
+                    "0xfae103dc9cf190ed75350761e95403b7b8afa6c0",
+                    "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
+                    "0x90551c1795392094fe6d29b758eccd233cfaa260",
+                    "0x030ba81f1c18d280636f32af80b9aad02cf0854e",
+                    "0xfe2e637202056d30016725477c5da089ab0a043a",
+                    "0xab4ac1b0d49774563f5e67528c7a85cea03d0f63",
+                    "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+                    "0x3ff17b85b77386d8de77fb9532e6f5a49b66e114",
+                    "0xe1b4d34e8754600962cd944b535180bd758e6c2e",
+                    "0xd11c452fc99cf405034ee446803b6f6c1f6d5ed8",
+                    "0x28e318b2063ed3945f86f1ef13bdeb29923c9f02",
+                    "0x7690202e2c2297bcd03664e31116d1dffe7e3b73",
+                    "0x69d210d3b60e939bfa6e87cccc4fab7e8f44c16b",
+                    "0xe95a203b1a91a908f9b9ce46459d101078c2c3cb",
+                    "0x3802c218221390025bceabbad5d8c59f40eb74b8",
+                    "0xf0bb20865277abd641a307ece5ee04e79073416c",
+                    "0xbf5495efe5db9ce00f80364c8b423567e58d2110",
+                    "0x35fa164735182de50811e8e2e824cfb9b6118ac2",
+                    "0xa2e3356610840701bdf5611a53974510ae27e2e1",
+                    "0x5fd13359ba15a84b76f7f87568309040176167cd",
+                    "0xd5113eb3d80053b22573beb59c02428e2bcfc285",
+                    "0xc3d088842dcf02c13699f936bb83dfbbc6f721ab",
+                    "0xca9de1f80df74331c5fcb7eee2d05e746d47bfb2",
+                    "0x2411802d8bea09be0af8fd8d08314a63e706b29c",
+                    "0xe73ee64adb39a443a251c910e4e3b56f7a4130dc",
+                    "0xc6572019548dfeba782ba5a2093c836626c7789a",
+                    "0x83599937c2c9bea0e0e8ac096c6f32e86486b410",
+                    "0x7122985656e38bdc0302db86685bb972b145bd3c",
+                    "0x04c154b66cb340f3ae24111cc767e0184ed00cc6",
+                    "0x917cee801a67f933f2e6b33fc0cd1ed2d5909d88",
+                    "0xf1c9acdc66974dfb6decb12aa385b9cd01190e38",
+                    "0xac3e018457b222d93114458476f3e3416abbe38f"
+                ],
+                "130": [
+                    "0x0000000000000000000000000000000000000000",
+                    "0x7dcc39b4d1c53cb31e1abc0e358b43987fef80f7",
+                    "0x4200000000000000000000000000000000000006",
+                    "0xc02fe7317d4eb8753a02c35fe019786854a92001",
+                    "0x2416092f143378750bb29b79ed961ab195cceea5",
+                    "0xc3eacf0612346366db554c991d7858716db09f58",
+                    "0x94cac393f3444cef63a651ffc18497e7e8bd036a"
+                ],
+                "143": [
+                    "0xee8c0e9f1bffb4eb878d8f15f368a02a35481242",
+                    "0x10aeaf63194db8d453d4d85a06e5efe1dd0b5417"
+                ],
+                "999": [
+                    "0xbe6727b535545c67d5caa73dea54865b92cf7907",
+                    "0xe6829d9a7ee3040e1276fa75293bde931859e8fa"
+                ],
+                "8453": [
+                    "0xdbfefd2e8460a6ee4955a68582f85708baea60a3",
+                    "0x4200000000000000000000000000000000000006",
+                    "0xc1cba3fcea344f92d9239c08c0568f6f2f0ee452",
+                    "0x2ae3f1ec7f1f5012cfeab0185bfc7aa3cf0dec22",
+                    "0xcb327b99ff831bf8223cced12b1338ff3aa322ff",
+                    "0x71b35ecb35104773537f849fbc353f81303a5860",
+                    "0x2416092f143378750bb29b79ed961ab195cceea5",
+                    "0xedfa23602d0ec14714057867a78d01e94176bea0",
+                    "0xed4e2fd35161c3c0e33ca187fce64c70d44ce32b",
+                    "0xb6fe221fe9eef5aba221c348ba20a1bf5e73624c",
+                    "0x04c0599ae5a44757c0af6f9ec3b93da8976c150a",
+                    "0x23da5f2d509cb43a59d43c108a43edf34510eff1",
+                    "0x1bc71130a0e39942a7658878169764bbd8a45993",
+                    "0x0000000000000000000000000000000000000000",
+                    "0xf587b7116879a529353cc71ee959cd69fd5cae48",
+                    "0xecc68d0451e20292406967fe7c04280e5238ac7d"
+                ],
+                "9745": [
+                    "0x9895d81bb462a195b4922ed7de0e3acd007c32cb"
+                ],
+                "534352": [
+                    "0x5300000000000000000000000000000000000004"
+                ]
+            }
+        },
+        {
+            "id": "eur-stablecoins",
+            "name": "EUR Stablecoins",
+            "logo": "https://cdn.jsdelivr.net/gh/hydric-org/token-baskets/assets/logos/eur-stablecoins.png",
+            "description": "A curated list of multiple Stablecoins pegged to EUR together in a single place.",
+            "lastUpdated": "2026-01-29T23:54:19.139Z",
+            "addresses": {
+                "1": [
+                    "0x5f7827fdeb7c20b443265fc2f40845b715385ff2",
+                    "0x1abaea1f7c830bd89acc67ec4af516284b1bc33c",
+                    "0x3c89cd1884e7bef73ca3ef08d2ef6ec338fd8e49",
+                    "0x1a7e4e63778b4f12a199c062f3efdd288afcbce8",
+                    "0x3aa3a077e1c6c5d5b03df3819eead01efa552663",
+                    "0x9d1a7a3191102e9f900faa10540837ba84dcbae7",
+                    "0x39b8b6385416f4ca36a20319f70d28621895279d",
+                    "0x3231cb76718cdef2155fc47b5286d82e6eda273f",
+                    "0x6ba75d640bebfe5da1197bb5a2aff3327789b5d3"
+                ],
+                "8453": [
+                    "0x60a3e35cc302bfa44cb288bc5a4f316fdb1adb42",
+                    "0x4ee4bea687d5ce6245198db136d32aec02806a83"
+                ]
+            }
+        },
+        {
+            "id": "usd-stablecoins",
+            "name": "USD Stablecoins",
+            "logo": "https://cdn.jsdelivr.net/gh/hydric-org/token-baskets/assets/logos/usd-stablecoins.png",
+            "description": "A curated list of multiple USD Stablecoins together in a single place.",
+            "lastUpdated": "2026-01-29T23:58:32.619Z",
+            "addresses": {
+                "1": [
+                    "0x2a8e1e676ec238d8a992307b495b45b3feaa5e86",
+                    "0xc5f0f7b66764f6ec8c8dff7ba683102295e16409",
+                    "0xd3043d66afe00344c115f7f81d18277c5c718ff8",
+                    "0x4f604735c1cf31399c6e711d5962b2b3e0225ad3",
+                    "0x056fd409e1d7a124bd7017459dfea2f387b6d5cd",
+                    "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+                    "0x8a60e489004ca22d775c5f2c657598278d17d9c2",
+                    "0x57ab1ec28d129707052df4df418d58a2d46d5f51",
+                    "0x8292bb45bf1ee4d140127049757c2e0ff06317ed",
+                    "0x5422374b27757da72d5265cc745ea906e0446634",
+                    "0xc08e7e23c235073c6807c2efe7021304cb7c2815",
+                    "0x1036c90a7dea8a392901147870f74a40af812bb4",
+                    "0x4274cd7277c7bb0806bd5fe84b9adae466a8da0a",
+                    "0xdd468a1ddc392dcdbef6db6e34e89aa338f9f186",
+                    "0x6b175474e89094c44da98b954eedeac495271d0f",
+                    "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+                    "0xdac17f958d2ee523a2206206994597c13d831ec7",
+                    "0xbbaec992fc2d637151daf40451f160bf85f3c8c1",
+                    "0x4c9edd5852cd905f086c759e8383e09bff1e68b3",
+                    "0xfa2b947eec368f42195f24f36d2af29f7c24cec2",
+                    "0x8d0d000ee44948fc98c9b98a4fa4921476f08b0d",
+                    "0x0000206329b97db379d5e1bf586bbdb969c63274",
+                    "0x00000000efe302beaa2b3e6e1b18d08d69a9012a",
+                    "0x9cf12ccd6020b6888e4d4c4e4c7aca33c1eb91f8",
+                    "0x41f7b8b9b897276b7aae926a9016935280b44e97",
+                    "0xde60adfddaabaaac3dafa57b26acc91cb63728c4",
+                    "0x1cdd2eab61112697626f7b4bb0e23da4febf7b7c",
+                    "0x7cd167b101d2808cfd2c45d17b2e7ea9f46b74b6",
+                    "0xe343167631d89b6ffc58b88d6b7fb0228795491d",
+                    "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+                    "0xddf73eacb2218377fc38679ad14dfce51b651dd1",
+                    "0x4ea40dcee961675683e0a2e1721bd49cb9bca913",
+                    "0x1958853a8be062dc4f401750eb233f5850f0d0d2",
+                    "0xdf100b8abd3cd41fc5cc1236ad7c6629a901afbf",
+                    "0xd79021d7e9358f2e5eec291774a2e22ea904a87b",
+                    "0x0000000000085d4780b73119b644ae5ecd22b376",
+                    "0x0c10bf8fcb7bf5412187a595ab97a3609160b5c6",
+                    "0x73a15fed60bf67631dc6cd7bc5b6e8da8190acf5",
+                    "0xc83e27f270cce0a3a3a29521173a83f402c1768b",
+                    "0x5f98805a4e8be255a32880fdec7f6728c6568ba0",
+                    "0x90d2af7d622ca3141efa4d8f1f24d86e5974cc8f",
+                    "0x677ddbd918637e5f2c79e164d402454de7da8619",
+                    "0xace8e719899f6e91831b18ae746c9a965c2119f1",
+                    "0x09d4214c03d01f49544c0448dbe3a27f768f2b34",
+                    "0xaca92e438df0b2401ff60da7e4337b687a2435da",
+                    "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
+                    "0xdc45e7027a0489fe6c2e4a0735097d8e6952a340",
+                    "0x4fabb145d64652a948d72533023f6e7a623c7c53",
+                    "0xcccc62962d17b8914c62d74ffb843d73b2a3cccc",
+                    "0xbc6da0fe9ad5f3b0d58160288917aa56653660e9",
+                    "0x08c6f91e2b681faf5e17227f2a44c307b3c1364c",
+                    "0x57ab1e0003f623289cd798b1824be09a793e4bec",
+                    "0x85e30b8b263bc64d94b827ed450f2edfee8579da",
+                    "0x4f8e5de400de08b164e7421b3ee387f461becd1a",
+                    "0x8e870d67f660d95d5be530380d0ec0bd388289e1",
+                    "0x23878914efe38d27c4d67ab83ed1b93a74d4086a",
+                    "0xcfc5bd99915aaa815401c5a41a927ab7a38d29cf",
+                    "0xd399e8bcb8568e4eef57f9ce2e42085306647388",
+                    "0x7e17f382db614bde529f62dbe2d607f464a0af63",
+                    "0x9d1089802ee608ba84c5c98211afe5f37f96b36c",
+                    "0xa7a31e6a81300120b7c4488ec3126bc1ad11f320",
+                    "0x865377367054516e17014ccded1e7d814edc9ce4",
+                    "0x8ccedbae4916b79da7f3f612efb2eb93a2bfd6cf",
+                    "0x66a1e37c9b0eaddca17d3662d6c05f4decf3e110",
+                    "0x956f47f50a910163d8bf957cf5846d573e7f87ca",
+                    "0x7ec90ed9297dbc5702b1e616a938235afd20a1de",
+                    "0xdba8e8021fe321af91fc3a08e223ef15908cb2bb",
+                    "0x7a486f809c952a6f8dec8cb0ff68173f2b8ed56c",
+                    "0xa469b7ee9ee773642b3e93e842e5d9b5baa10067"
+                ],
+                "130": [
+                    "0x078d782b760474a361dda0af3839290b0ef57ad6",
+                    "0x9151434b16b9763660705744891fa906f660ecc5",
+                    "0x1217bfe6c773eec6cc4a38b5dc45b92292b6e189",
+                    "0x588ce4f028d8e7b53b687865d6a67b3a54c75518",
+                    "0x80eede496655fb9047dd39d9f418d5483ed600df",
+                    "0x20cab320a855b39f724131c69424240519573f81"
+                ],
+                "143": [
+                    "0x754704bc059f8c67012fed69bc8a327a5aafb603",
+                    "0x00000000efe302beaa2b3e6e1b18d08d69a9012a",
+                    "0xe7cd86e13ac4309349f30b3435a9d337750fc82d",
+                    "0x111111d2bf19e43c34263401e0cad979ed1cdb61",
+                    "0xfd44b35139ae53fff7d8f2a9869c503d987f00d1",
+                    "0x103222f020e98bba0ad9809a011fdf8e6f067496"
+                ],
+                "999": [
+                    "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
+                    "0xb88339cb7199b77e23db6e890353e22632ba630f",
+                    "0x9ab96a4668456896d45c301bc3a15cee76aa7b8d",
+                    "0x111111a1a0667d36bd57c0a9f569b98057111111",
+                    "0xb50a96253abdf803d85efcdce07ad8becbc52bd5",
+                    "0x5d3a1ff2b6bab83b63cd9ad0787074081a52ef34",
+                    "0x02c6a2fa58cc01a18b8d9e00ea48d65e4df26c70",
+                    "0xca79db4b49f608ef54a5cb813fbed3a6387bc645",
+                    "0x5e105266db42f78fa814322bce7f388b4c2e61eb",
+                    "0xbe65f0f410a72bec163dc65d46c83699e957d588",
+                    "0x057ced81348d57aad579a672d521d7b4396e8a61",
+                    "0xa2f8da4a55898b6c947fa392ef8d6bfd87a4ff77",
+                    "0xe5350509a8d993306beb00bc4cfc8e22d181e035",
+                    "0x0ad339d66bf4aed5ce31c64bc37b3244b6394a77"
+                ],
+                "8453": [
+                    "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+                    "0xc0d3700000987c99b3c9009069e4f8413fd22330",
+                    "0xb79dd08ea68a908a97220c76d19a6aa9cbde4376",
+                    "0xfde4c96c8593536e31f229ea8f37b2ada2699bb2",
+                    "0xd9aaec86b65d86f6a7b5b1b0c42ffa531710b6ca",
+                    "0xcfa3ef56d303ae4faaba0592388f19d7c3399fb4",
+                    "0x04d5ddf5f3a8939889f11e97f8c4bb48317f1938",
+                    "0xcc7ff230365bd730ee4b352cc2492cedac49383e",
+                    "0x820c137fa70c8691f0e44dc420a5e53c168921dc",
+                    "0x526728dbc96689597f85ae4cd716d4f7fccbae9d",
+                    "0xe4b20925d9e9a62f1e492e15a81dc0de62804dd4",
+                    "0xeb466342c4d449bc9f53a865d5cb90586f405215",
+                    "0xff0c62a4979400841efaa6faadb07ac7d5c98b27",
+                    "0x5d3a1ff2b6bab83b63cd9ad0787074081a52ef34",
+                    "0xfe26e72431bd82c285655e897f25104e547c4c07",
+                    "0x4f604735c1cf31399c6e711d5962b2b3e0225ad3",
+                    "0x895e15020c3f52ddd4d8e9514eb83c39f53b1579",
+                    "0xa7e9e51eb96d41eee7676ce09a20d4137132faca",
+                    "0xec267c53f53807c2337c257f8ac3fc3cc07cc0ed",
+                    "0x50c5725949a6f0c72e6c4a641f24049a917db0cb",
+                    "0x417ac0e078398c154edfadd9ef675d30be60af93",
+                    "0x85483696cc9970ad9edd786b2c5ef735f38d156f",
+                    "0x35e5db674d8e93a03d814fa0ada70731efe8a4b9",
+                    "0x4621b7a9c75199271f773ebd9a499dbd165c3191"
+                ],
+                "9745": [
+                    "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb"
+                ],
+                "534352": [
+                    "0x06efdbff2a14a7c8e15944d1f4a48f9f95f663a4",
+                    "0xf55bec9cafdbe8730f096aa55dad6d22d44099df",
+                    "0xdb9e8f82d6d45fff803161f2a5f75543972b229a",
+                    "0x939778d83b46b456224a33fb59630b11dec56663",
+                    "0xeb466342c4d449bc9f53a865d5cb90586f405215",
+                    "0xca77eb3fefe3725dc33bccb54edefc3d9f764f97"
+                ]
+            }
+        },
+        {
+            "id": "xau-stablecoins",
+            "name": "Gold Stablecoins",
+            "logo": "https://cdn.jsdelivr.net/gh/hydric-org/token-baskets/assets/logos/xau-stablecoins.png",
+            "description": "A curated list of multiple Stablecoins that are pegged to Gold (XAU) USD price together in a single place.",
+            "lastUpdated": "2026-01-29T01:40:48.362Z",
+            "addresses": {
+                "1": [
+                    "0x68749665ff8d2d112fa859aa293f07a622782f38",
+                    "0x2103e845c5e135493bb6c2a4f0b8651956ea8682",
+                    "0x45804880de22913dafe09f4980848ece6ecbaf78",
+                    "0xa9299c296d7830a99414d1e5546f5171fa01e9c8"
+                ],
+                "143": [
+                    "0x01bff41798a0bcf287b996046ca68b395dbc1071"
+                ],
+                "999": [
+                    "0xf4d9235269a96aadafc9adae454a0618ebe37949"
+                ],
+                "8453": [
+                    "0xf602a45812040d90b202355bdc05438918cd3fe3"
+                ],
+                "9745": [
+                    "0x1b64b9025eebb9a6239575df9ea4b9ac46d4d193"
+                ]
+            }
+        },
+        {
+            "id": "hype-pegged-tokens",
+            "name": "HYPE Pegged Tokens",
+            "logo": "https://cdn.jsdelivr.net/gh/hydric-org/token-baskets/assets/logos/hype-pegged-tokens.png",
+            "description": "A curated list of multiple Tokens that are pegged to Hyperliquid's HYPE price together in a single place.",
+            "lastUpdated": "2026-01-29T01:22:47.123Z",
+            "addresses": {
+                "130": [
+                    "0x15d0e0c55a3e7ee67152ad7e89acf164253ff68d"
+                ],
+                "999": [
+                    "0x5555555555555555555555555555555555555555",
+                    "0xfd739d4e423301ce9385c1fb8850539d657c296d",
+                    "0xe44bd27c9f10fa2f89fdb3ab4b4f0e460da29ea8",
+                    "0x5748ae796ae46a4f1348a1693de4b50560485562",
+                    "0x9ba2edc44e0a4632eb4723e81d4142353e1bb160",
+                    "0xffaa4a3d97fe9107cef8a3f48c069f577ff76cc1",
+                    "0xd8fc8f0b03eba61f64d08b0bef69d80916e5dda9",
+                    "0x94e8396e0869c9f2200760af0621afd240e1cf38",
+                    "0x4de03ca1f02591b717495cfa19913ad56a2f5858",
+                    "0x8888888fdaac0e7cf8c6523c8955bf7954c216fa",
+                    "0x81e064d0eb539de7c3170edf38c1a42cbd752a76",
+                    "0xdabb040c428436d41cecd0fb06bcfdbaad3a9aa8",
+                    "0x96c6cbb6251ee1c257b2162ca0f39aa5fa44b1fb",
+                    "0xfde5b0626fc80e36885e2fa9cd5ad9d7768d725c",
+                    "0xbef0142a0955a7d5dcce5c2a13fb84e332669d2d",
+                    "0x441794d6a8f9a3739f5d4e98a728937b33489d29"
+                ],
+                "534352": [
+                    "0xd83e3d560ba6f05094d9d8b3eb8aaea571d1864e",
+                    "0xa519afbc91986c0e7501d7e34968fee51cd901ac"
+                ]
+            }
+        },
+        {
+            "id": "monad-pegged-tokens",
+            "name": "Monad Pegged Tokens",
+            "logo": "https://cdn.jsdelivr.net/gh/hydric-org/token-baskets/assets/logos/monad-pegged-tokens.png",
+            "description": "A curated list of multiple Tokens that are pegged to Monad's price together in a single place.",
+            "lastUpdated": "2026-01-29T01:31:52.740Z",
+            "addresses": {
+                "143": [
+                    "0x0000000000000000000000000000000000000000",
+                    "0x3bd359c1119da7da1d913d1c4d2b7c461115433a",
+                    "0x1b68626dca36c7fe922fd2d55e4f631d962de19c",
+                    "0x8498312a6b3cbd158bf0c93abdcf29e6e4f55081",
+                    "0x91b81bfbe3a747230f0529aa28d8b2bc898e6d56",
+                    "0x0c65a0bc65a5d819235b71f554d210d3f80e0852",
+                    "0xa3227c5969757783154c60bf0bc1944180ed81b9"
+                ]
+            }
+        }
+    ]
+}
