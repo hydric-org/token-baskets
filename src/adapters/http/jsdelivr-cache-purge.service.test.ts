@@ -10,7 +10,7 @@ describe("JsDelivrCachePurgeService", () => {
       jest.fn().mockResolvedValue({
         ok: true,
         json: jest.fn().mockResolvedValue({ id: "123", status: "finished" }),
-      } as any),
+      } as unknown as Response),
     );
   });
 
@@ -67,7 +67,7 @@ describe("JsDelivrCachePurgeService", () => {
       ok: false,
       status: 400,
       text: jest.fn().mockResolvedValue("Bad Request"),
-    } as any);
+    } as unknown as Response);
 
     await expect(service.purge([], ["test.json"])).rejects.toThrow(
       "Failed to purge cache: 400 Bad Request",

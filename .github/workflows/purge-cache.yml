@@ -1,30 +1,33 @@
 name: Purge jsDelivr Cache
 
 on:
-    push:
-        branches:
-            - main
+  push:
+    branches:
+      - main
+    paths:
+      - "baskets/**"
+      - "!**/blocklist.json"
 
 jobs:
-    purge-cache:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Wait for CDN propagation
-              run: sleep 60
+  purge-cache:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait for CDN propagation
+        run: sleep 60
 
-            - name: Checkout Repository
-              uses: actions/checkout@v3
-              with:
-                  fetch-depth: 2
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
 
-            - name: Setup Node.js
-              uses: actions/setup-node@v3
-              with:
-                  node-version: "20"
-                  cache: "npm"
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "20"
+          cache: "npm"
 
-            - name: Install Dependencies
-              run: npm ci
+      - name: Install Dependencies
+        run: npm ci
 
-            - name: Purge Cache
-              run: npm run purge-cdn-cache
+      - name: Purge Cache
+        run: npm run purge-cdn-cache
