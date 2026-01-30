@@ -18,20 +18,29 @@ The tool follows a **human-in-the-loop automation** strategy:
 - **GitOps**  
   Updates the local JSON state and opens a pull request for final human verification before merging.
 
+- **CDN Cache Purge**  
+  A GitHub Action automatically detects modified baskets and purges the jsDelivr CDN cache to ensure immediate availability of the latest data.
+
 ## Accessing Baskets
 
 Baskets are globally accessible via the jsDelivr CDN for easy integration into any dApp or backend.
 
-- **URL template**
+- **Unified URL template**
 
 ```
-  https://cdn.jsdelivr.net/gh/hydric-org/token-baskets/baskets/{chainId}/{basketId}.json
+  https://cdn.jsdelivr.net/gh/hydric-org/token-baskets/baskets/{basketId}.json
 ```
 
-- **Example (USD Stablecoins on Ethereum)**
+- **Example (USD Stablecoins - Unified for all chains)**
 
 ```
-  https://cdn.jsdelivr.net/gh/hydric-org/token-baskets/baskets/1/usd-stablecoins.json
+  https://cdn.jsdelivr.net/gh/hydric-org/token-baskets/baskets/usd-stablecoins.json
+```
+
+- **Global List (Everything in one file)**
+
+```
+  https://cdn.jsdelivr.net/gh/hydric-org/token-baskets/baskets/all.json
 ```
 
 ## Setup & Development
