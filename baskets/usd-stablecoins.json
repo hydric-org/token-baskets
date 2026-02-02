@@ -3,7 +3,7 @@
     "name": "USD Stablecoins",
     "logo": "https://cdn.jsdelivr.net/gh/hydric-org/token-baskets/assets/logos/usd-stablecoins.png",
     "description": "A curated list of multiple USD Stablecoins together in a single place.",
-    "lastUpdated": "2026-01-30T12:32:31.322Z",
+    "lastUpdated": "2026-02-02T01:05:07.585Z",
     "addresses": {
         "1": [
             "0x2a8e1e676ec238d8a992307b495b45b3feaa5e86",
@@ -74,7 +74,15 @@
             "0x7ec90ed9297dbc5702b1e616a938235afd20a1de",
             "0xdba8e8021fe321af91fc3a08e223ef15908cb2bb",
             "0x7a486f809c952a6f8dec8cb0ff68173f2b8ed56c",
-            "0xa469b7ee9ee773642b3e93e842e5d9b5baa10067"
+            "0xa469b7ee9ee773642b3e93e842e5d9b5baa10067",
+            "0xf9a2d7e60a3297e513317ad1d7ce101cc4c6c8f6",
+            "0xc56c2b7e71b54d38aab6d52e94a04cbfa8f604fa",
+            "0x78da5799cf427fee11e9996982f4150ece7a99a7",
+            "0x0e573ce2736dd9637a0b21058352e1667925c7a8",
+            "0x3581f76498675912d2effb9def320464f49a3538",
+            "0x0a3bb08b3a15a19b4de82f8acfc862606fb69a2d",
+            "0xb6667b04cb61aa16b59617f90ffa068722cf21da",
+            "0x0a5e677a6a24b2f1a2bf4f3bffc443231d2fdec8"
         ],
         "130": [
             "0x078d782b760474a361dda0af3839290b0ef57ad6",
