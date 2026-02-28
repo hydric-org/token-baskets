@@ -3,7 +3,7 @@
     "name": "EUR Stablecoins",
     "logo": "https://cdn.jsdelivr.net/gh/hydric-org/token-baskets/assets/logos/eur-stablecoins.png",
     "description": "A curated list of multiple Stablecoins pegged to EUR together in a single place.",
-    "lastUpdated": "2026-01-30T12:31:35.287Z",
+    "lastUpdated": "2026-02-28T13:34:08.324Z",
     "addresses": {
         "1": [
             "0x5f7827fdeb7c20b443265fc2f40845b715385ff2",
@@ -21,7 +21,8 @@
         "8453": [
             "0x60a3e35cc302bfa44cb288bc5a4f316fdb1adb42",
             "0x4ee4bea687d5ce6245198db136d32aec02806a83",
-            "0x4154550f4db74dc38d1fe98e1f3f28ed6dad627d"
+            "0x4154550f4db74dc38d1fe98e1f3f28ed6dad627d",
+            "0x4ed9df25d38795a47f52614126e47f564d37f347"
         ]
     }
 }

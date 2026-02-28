@@ -3,7 +3,7 @@
     "name": "ETH Pegged Tokens",
     "logo": "https://cdn.jsdelivr.net/gh/hydric-org/token-baskets/assets/logos/eth-pegged-tokens.png",
     "description": "A curated list of multiple Tokens that are pegged to ETH's price together in a single place.",
-    "lastUpdated": "2026-01-30T12:30:46.805Z",
+    "lastUpdated": "2026-02-28T13:35:32.805Z",
     "addresses": {
         "1": [
             "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
@@ -55,7 +55,13 @@
             "0x917cee801a67f933f2e6b33fc0cd1ed2d5909d88",
             "0xf1c9acdc66974dfb6decb12aa385b9cd01190e38",
             "0xac3e018457b222d93114458476f3e3416abbe38f",
-            "0x2dabcea55a12d73191aece59f508b191fb68adac"
+            "0x2dabcea55a12d73191aece59f508b191fb68adac",
+            "0xaafd07d53a7365d3e9fb6f3a3b09ec19676b73ce",
+            "0x871ab8e36cae9af35c6a3488b049965233deb7ed",
+            "0x20bc832ca081b91433ff6c17f85701b6e92486c5",
+            "0xe86142af1321eaac4270422081c1eda31eecff0c",
+            "0x8c9532a60e0e7c6bbd2b2c1303f63ace1c3e9811",
+            "0x32bd822d615a3658a68b6fdd30c2fcb2c996d678"
         ],
         "130": [
             "0x0000000000000000000000000000000000000000",
@@ -68,7 +74,8 @@
         ],
         "143": [
             "0xee8c0e9f1bffb4eb878d8f15f368a02a35481242",
-            "0x10aeaf63194db8d453d4d85a06e5efe1dd0b5417"
+            "0x10aeaf63194db8d453d4d85a06e5efe1dd0b5417",
+            "0xa3d68b74bf0528fdd07263c60d6488749044914b"
         ],
         "999": [
             "0xbe6727b535545c67d5caa73dea54865b92cf7907",
@@ -90,13 +97,17 @@
             "0x1bc71130a0e39942a7658878169764bbd8a45993",
             "0x0000000000000000000000000000000000000000",
             "0xf587b7116879a529353cc71ee959cd69fd5cae48",
-            "0xecc68d0451e20292406967fe7c04280e5238ac7d"
+            "0xecc68d0451e20292406967fe7c04280e5238ac7d",
+            "0xb29749498954a3a821ec37bde86e386df3ce30b6",
+            "0x000000000d564d5be76f7f0d28fe52605afc7cf8",
+            "0xa0e430870c4604ccfc7b38ca7845b1ff653d0ff1"
         ],
         "9745": [
             "0x9895d81bb462a195b4922ed7de0e3acd007c32cb"
         ],
         "534352": [
-            "0x5300000000000000000000000000000000000004"
+            "0x5300000000000000000000000000000000000004",
+            "0x0000000000000000000000000000000000000000"
         ]
     }
 }
