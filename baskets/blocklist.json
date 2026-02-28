@@ -150,6 +150,26 @@
                 "address": "0x56ac9870d3238605e0a8973397a0cfa696865057",
                 "reason": "This token (USDT1) is a malicious impersonator of Tether (USDT) with no legitimate backing or project documentation, typically associated with scam activities.",
                 "timestamp": "2026-01-30T12:31:05.179Z"
+            },
+            {
+                "address": "0x98a878b1cd98131b271883b390f68d2c90674665",
+                "reason": "This token (apxUSD) shows historical price data significantly below the $1.00 peg (e.g., ATH of $0.79) and lacks documentation confirming its status as a legitimate USD stablecoin.",
+                "timestamp": "2026-02-28T13:32:33.648Z"
+            },
+            {
+                "address": "0xb3b3c527ba57cd61648e2ec2f5e006a0b390a9f8",
+                "reason": "sAID (Staked AI Dollar) is a utility or governance token for an AI infrastructure project and is not pegged to $1.00.",
+                "timestamp": "2026-02-28T13:32:33.648Z"
+            },
+            {
+                "address": "0x18f52b3fb465118731d9e0d276d4eb3599d57596",
+                "reason": "AI Dollar (AID) is an infrastructure token trading at a price significantly above $1.00 (e.g., ~$4.15), not a stablecoin.",
+                "timestamp": "2026-02-28T13:32:33.648Z"
+            },
+            {
+                "address": "0xb10da2f9147f9cf2b8826877cd0c95c18a0f42dc",
+                "reason": "Pendle Principal Tokens (PT) are fixed-yield instruments that appreciate in price over time, violating the criteria for non-interest-appreciating stablecoins.",
+                "timestamp": "2026-02-28T13:32:33.648Z"
             }
         ],
         "8453": [
@@ -167,6 +187,11 @@
                 "address": "0x65f74fd58284daeafac89d122fb0566e0629c2a0",
                 "reason": "This token appears to be a scam or an impersonator. It has extremely low TVL ($11.8K), zero trading volume, and no official documentation or project presence under the name 'Stacked Dollar'. It uses the 'sUSD' symbol, which is typically associated with the high-volume Synthetix stablecoin, but the address and name do not match the official Synthetix contract on Base.",
                 "timestamp": "2026-01-30T12:32:31.322Z"
+            },
+            {
+                "address": "0xe93131620945a1273b48f57f453983d270b62dc7",
+                "reason": "This is a yield-bearing vault token (MortgageFi Earn) representing a position in USDC and cbBTC, not a pure USD stablecoin.",
+                "timestamp": "2026-02-28T13:35:56.786Z"
             }
         ]
     },
@@ -261,6 +286,11 @@
                 "address": "0x5b4b8fd619a38f2906d4ae22b6fe338550c3b449",
                 "reason": "This is a low-liquidity test token (Test ETH) with no significant market presence or legitimate financial pegging mechanism.",
                 "timestamp": "2026-01-30T12:30:46.805Z"
+            },
+            {
+                "address": "0xc4ad29ba4b3c580e6d59105fff484999997675ff",
+                "reason": "This is a Curve 3Crypto LP token consisting of USDT, BTC, and ETH; its price is an index of all three and not pegged specifically to ETH.",
+                "timestamp": "2026-02-28T13:31:05.081Z"
             }
         ],
         "8453": [
@@ -318,6 +348,16 @@
                 "address": "0xf30a58729115f0e30d64de40878adbce3cea7c84",
                 "reason": "This is a fake impersonator of Wrapped Ethereum (WETH); the official WETH contract on Base is 0x4200000000000000000000000000000000000006.",
                 "timestamp": "2026-01-29T23:57:49.511Z"
+            },
+            {
+                "address": "0x091a5a1e3aa8b96ab0fb0bc217f5e60ec4c611a0",
+                "reason": "LevETH (Leverage ETH) is a derivative token designed to provide leveraged exposure to ETH price movements. It is not a pegged asset and does not maintain a 1:1 value ratio with ETH.",
+                "timestamp": "2026-02-28T13:35:32.805Z"
+            },
+            {
+                "address": "0x20a2f39a6cd1c4ba1c115163e8ac7991e5a3b839",
+                "reason": "This token is a malicious impersonator or meme coin using the 'ETH' symbol but named 'Lord Bananahammock'. It has no legitimate peg to Ethereum.",
+                "timestamp": "2026-02-28T13:35:32.805Z"
             }
         ],
         "534352": [
@@ -485,6 +525,21 @@
                 "address": "0x3aada3e213abf8529606924d8d1c55cbdc70bf74",
                 "reason": "XMON is the native token for the 0xmons NFT project and is not pegged to the price of Monad.",
                 "timestamp": "2026-01-29T23:54:39.226Z"
+            },
+            {
+                "address": "0xc4abeddacfa65e25d6c942861fb3bdc9c00eeb13",
+                "reason": "This is a meme coin (SAFE MONEY) on Ethereum with no functional or economic link to the Monad ecosystem or its native token price.",
+                "timestamp": "2026-02-28T13:30:13.763Z"
+            },
+            {
+                "address": "0xd645250edbe9d57c12fbbb24def3153e5f19df08",
+                "reason": "This is a low-liquidity token on Ethereum with no connection to Monad or any price-pegging mechanism to Monad's assets.",
+                "timestamp": "2026-02-28T13:30:13.763Z"
+            },
+            {
+                "address": "0x03c1ec4ca9dbb168e6db0def827c085999cbffaf",
+                "reason": "This token is a malicious impersonator pretending to be an Ondo Finance tokenized stock of JPMorgan Chase; it is not a Monad-pegged asset and its price (approx. $302) does not track Monad ($0.02).",
+                "timestamp": "2026-02-28T13:30:13.763Z"
             }
         ],
         "8453": [
@@ -522,6 +577,11 @@
                 "address": "0x05589f4545f7d20caa85752aaf7c5ca16af5a2d2",
                 "reason": "This token is Monopoly Coin on the Base network, which is a separate project and is not pegged to the price of Monad (MON).",
                 "timestamp": "2026-01-30T12:31:44.891Z"
+            },
+            {
+                "address": "0x4a3a6dd60a34bb2aba60d73b4c88315e9ceb6a3d",
+                "reason": "MIM (Magic Internet Money) is a USD-pegged stablecoin issued by Abracadabra.money and does not track or peg to the price of Monad.",
+                "timestamp": "2026-02-28T13:34:16.723Z"
             }
         ]
     },
@@ -538,6 +598,26 @@
                 "address": "0xef22cb48b8483df6152e1423b19df5553bbd818b",
                 "reason": "This is the utility token for Heurist AI, a decentralized AI infrastructure project, and is not a stablecoin pegged to the Euro.",
                 "timestamp": "2026-01-30T12:31:35.287Z"
+            },
+            {
+                "address": "0x5f674bf6d559229bdd29d642d2e0978f1e282722",
+                "reason": "DEPS is the Shareholder Token for the Decentralized Euro Protocol; it is a governance/utility token, not a stablecoin pegged to the Euro.",
+                "timestamp": "2026-02-28T13:34:08.324Z"
+            },
+            {
+                "address": "0x877935876f1b0ac524d557d31fd4654233db4524",
+                "reason": "This is a Synthereum Vault LP (vLP) token representing a liquidity provider share in a pool; it is not a stablecoin pegged to 1 EUR.",
+                "timestamp": "2026-02-28T13:34:08.324Z"
+            },
+            {
+                "address": "0x9e5cf4c71cfdc6fb2161efb3843971d792c8d732",
+                "reason": "This is a Synthereum Vault LP (vLP) token representing a liquidity provider share in a pool; it is not a stablecoin pegged to 1 EUR.",
+                "timestamp": "2026-02-28T13:34:08.324Z"
+            },
+            {
+                "address": "0xbd51e891d505543d5a43ebc3a4f919b4befe09d8",
+                "reason": "This is a Synthereum Vault LP (vLP) token representing a liquidity provider share in a pool; it is not a stablecoin pegged to 1 EUR.",
+                "timestamp": "2026-02-28T13:34:08.324Z"
             }
         ]
     },
@@ -547,6 +627,15 @@
                 "address": "0xc061d38903b99ac12713b550c2cb44b221674f94",
                 "reason": "This token (hbBTC) represents a vault position with directional exposure to Bitcoin (uBTC) rather than Hyperliquid's HYPE token. While it is a legitimate project from Hyperbeat, it does not meet the basket's requirement of being pegged to HYPE's price.",
                 "timestamp": "2026-01-29T01:42:29.803Z"
+            }
+        ]
+    },
+    "xau-stablecoins": {
+        "1": [
+            {
+                "address": "0x9f9efdd09e915c1950c5ca7252fa5c4f65ab049b",
+                "reason": "This token (GRUB) is a reward asset for the MyEtherLottery project and is not pegged to the USD price of Gold (XAU). Official project documentation suggests a price mechanism tied to ETH rather than the global gold spot price.",
+                "timestamp": "2026-02-28T13:29:46.448Z"
             }
         ]
     }

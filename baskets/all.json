@@ -5,7 +5,7 @@
             "name": "BTC Pegged Assets",
             "logo": "https://cdn.jsdelivr.net/gh/hydric-org/token-baskets/assets/logos/btc-pegged-tokens.png",
             "description": "A curated list of multiple Tokens that are pegged to Bitcoin's price together in a single place.",
-            "lastUpdated": "2026-01-30T12:31:56.256Z",
+            "lastUpdated": "2026-02-28T13:34:33.646Z",
             "addresses": {
                 "1": [
                     "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
@@ -33,14 +33,21 @@
                     "0x5e14fe5ea32ee54c6cb3c237ffdce1c57df2a0be",
                     "0x004e9c3ef86bc1ca1f0bb5c7662861ee93350568",
                     "0x657e8c867d8b37dcc18fa4caead9c45eb088c642",
-                    "0x972966bcc17f7d818de4f27dc146ef539c231bdf"
+                    "0x972966bcc17f7d818de4f27dc146ef539c231bdf",
+                    "0xb0f70c0bd6fd87dbeb7c10dc692a2a6106817072",
+                    "0xdbf1703e5d29afefbf1bd958ce7a6023c67f3e5d",
+                    "0xac0cfa7742069a8af0c63e14ffd0fe6b3e1bf8d2",
+                    "0xd9d920aa40f578ab794426f5c90f6c731d159def",
+                    "0x2297aebd383787a160dd0d9f71508148769342e3",
+                    "0x9ff58f4ffb29fa2266ab25e75e2a8b3503311656"
                 ],
                 "130": [
                     "0x0555e30da8f98308edb960aa94c0db47230d2b9c",
                     "0x927b51f251480a681271180da4de28d44ec4afb8"
                 ],
                 "143": [
-                    "0x0555e30da8f98308edb960aa94c0db47230d2b9c"
+                    "0x0555e30da8f98308edb960aa94c0db47230d2b9c",
+                    "0xd691b0afed67f96cec28ab6308cbe5b2c103b7e9"
                 ],
                 "999": [
                     "0x9fdbda0a5e284c32744d2f17ee5c74b284993463",
@@ -55,7 +62,8 @@
                     "0x3b86ad95859b6ab773f55f8d94b4b9d443ee931f",
                     "0xf1143f3a8d76f1ca740d29d5671d365f66c44ed1",
                     "0x8d2757ea27aabf172da4cca4e5474c76016e3dc5",
-                    "0x12418783e860997eb99e8acf682df952f721cf62"
+                    "0x12418783e860997eb99e8acf682df952f721cf62",
+                    "0x0555e30da8f98308edb960aa94c0db47230d2b9c"
                 ],
                 "534352": [
                     "0x3c1bca5a656e69edcd0d4e36bebb3fcdaca60cf1",
@@ -68,7 +76,7 @@
             "name": "ETH Pegged Tokens",
             "logo": "https://cdn.jsdelivr.net/gh/hydric-org/token-baskets/assets/logos/eth-pegged-tokens.png",
             "description": "A curated list of multiple Tokens that are pegged to ETH's price together in a single place.",
-            "lastUpdated": "2026-01-30T12:30:46.805Z",
+            "lastUpdated": "2026-02-28T13:35:32.805Z",
             "addresses": {
                 "1": [
                     "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
@@ -120,7 +128,13 @@
                     "0x917cee801a67f933f2e6b33fc0cd1ed2d5909d88",
                     "0xf1c9acdc66974dfb6decb12aa385b9cd01190e38",
                     "0xac3e018457b222d93114458476f3e3416abbe38f",
-                    "0x2dabcea55a12d73191aece59f508b191fb68adac"
+                    "0x2dabcea55a12d73191aece59f508b191fb68adac",
+                    "0xaafd07d53a7365d3e9fb6f3a3b09ec19676b73ce",
+                    "0x871ab8e36cae9af35c6a3488b049965233deb7ed",
+                    "0x20bc832ca081b91433ff6c17f85701b6e92486c5",
+                    "0xe86142af1321eaac4270422081c1eda31eecff0c",
+                    "0x8c9532a60e0e7c6bbd2b2c1303f63ace1c3e9811",
+                    "0x32bd822d615a3658a68b6fdd30c2fcb2c996d678"
                 ],
                 "130": [
                     "0x0000000000000000000000000000000000000000",
@@ -133,7 +147,8 @@
                 ],
                 "143": [
                     "0xee8c0e9f1bffb4eb878d8f15f368a02a35481242",
-                    "0x10aeaf63194db8d453d4d85a06e5efe1dd0b5417"
+                    "0x10aeaf63194db8d453d4d85a06e5efe1dd0b5417",
+                    "0xa3d68b74bf0528fdd07263c60d6488749044914b"
                 ],
                 "999": [
                     "0xbe6727b535545c67d5caa73dea54865b92cf7907",
@@ -155,13 +170,17 @@
                     "0x1bc71130a0e39942a7658878169764bbd8a45993",
                     "0x0000000000000000000000000000000000000000",
                     "0xf587b7116879a529353cc71ee959cd69fd5cae48",
-                    "0xecc68d0451e20292406967fe7c04280e5238ac7d"
+                    "0xecc68d0451e20292406967fe7c04280e5238ac7d",
+                    "0xb29749498954a3a821ec37bde86e386df3ce30b6",
+                    "0x000000000d564d5be76f7f0d28fe52605afc7cf8",
+                    "0xa0e430870c4604ccfc7b38ca7845b1ff653d0ff1"
                 ],
                 "9745": [
                     "0x9895d81bb462a195b4922ed7de0e3acd007c32cb"
                 ],
                 "534352": [
-                    "0x5300000000000000000000000000000000000004"
+                    "0x5300000000000000000000000000000000000004",
+                    "0x0000000000000000000000000000000000000000"
                 ]
             }
         },
@@ -170,7 +189,7 @@
             "name": "EUR Stablecoins",
             "logo": "https://cdn.jsdelivr.net/gh/hydric-org/token-baskets/assets/logos/eur-stablecoins.png",
             "description": "A curated list of multiple Stablecoins pegged to EUR together in a single place.",
-            "lastUpdated": "2026-01-30T12:31:35.287Z",
+            "lastUpdated": "2026-02-28T13:34:08.324Z",
             "addresses": {
                 "1": [
                     "0x5f7827fdeb7c20b443265fc2f40845b715385ff2",
@@ -188,7 +207,8 @@
                 "8453": [
                     "0x60a3e35cc302bfa44cb288bc5a4f316fdb1adb42",
                     "0x4ee4bea687d5ce6245198db136d32aec02806a83",
-                    "0x4154550f4db74dc38d1fe98e1f3f28ed6dad627d"
+                    "0x4154550f4db74dc38d1fe98e1f3f28ed6dad627d",
+                    "0x4ed9df25d38795a47f52614126e47f564d37f347"
                 ]
             }
         },
@@ -197,7 +217,7 @@
             "name": "USD Stablecoins",
             "logo": "https://cdn.jsdelivr.net/gh/hydric-org/token-baskets/assets/logos/usd-stablecoins.png",
             "description": "A curated list of multiple USD Stablecoins together in a single place.",
-            "lastUpdated": "2026-01-30T12:32:31.322Z",
+            "lastUpdated": "2026-02-28T13:35:56.786Z",
             "addresses": {
                 "1": [
                     "0x2a8e1e676ec238d8a992307b495b45b3feaa5e86",
@@ -268,7 +288,18 @@
                     "0x7ec90ed9297dbc5702b1e616a938235afd20a1de",
                     "0xdba8e8021fe321af91fc3a08e223ef15908cb2bb",
                     "0x7a486f809c952a6f8dec8cb0ff68173f2b8ed56c",
-                    "0xa469b7ee9ee773642b3e93e842e5d9b5baa10067"
+                    "0xa469b7ee9ee773642b3e93e842e5d9b5baa10067",
+                    "0xe820c06321e60d36257c666643fa5436643445e3",
+                    "0x4ba01f22827018b4772cd326c7627fb4956a7c00",
+                    "0x14913815bcfde78baead2111f463d038ac9c2949",
+                    "0x63d74d22e689c715a04f2c13962b1f77f443d35b",
+                    "0xcacd6fd266af91b8aed52accc382b4e165586e29",
+                    "0x90a1717e0dabe37693f79afe43ae236dc3b65957",
+                    "0xcbc4619232ab161aa3af775ddee8e7497be4f148",
+                    "0x07041776f5007aca2a54844f50503a18a72a8b68",
+                    "0xc0c17dd08263c16f6b64e772fb9b723bf1344ddf",
+                    "0x6c3f90f043a72fa612cbac8115ee7e52bde6e490",
+                    "0x7c135549504245b5eae64fc0e99fa5ebabb8e35d"
                 ],
                 "130": [
                     "0x078d782b760474a361dda0af3839290b0ef57ad6",
@@ -300,7 +331,8 @@
                     "0x057ced81348d57aad579a672d521d7b4396e8a61",
                     "0xa2f8da4a55898b6c947fa392ef8d6bfd87a4ff77",
                     "0xe5350509a8d993306beb00bc4cfc8e22d181e035",
-                    "0x0ad339d66bf4aed5ce31c64bc37b3244b6394a77"
+                    "0x0ad339d66bf4aed5ce31c64bc37b3244b6394a77",
+                    "0x061661137c9af602ed0cb6f15fb326c3c8f302b4"
                 ],
                 "8453": [
                     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
@@ -327,7 +359,12 @@
                     "0x85483696cc9970ad9edd786b2c5ef735f38d156f",
                     "0x35e5db674d8e93a03d814fa0ada70731efe8a4b9",
                     "0x4621b7a9c75199271f773ebd9a499dbd165c3191",
-                    "0x5e06ea564efcb3158a85dbf0b9e017cb003ff56f"
+                    "0x5e06ea564efcb3158a85dbf0b9e017cb003ff56f",
+                    "0x1217bfe6c773eec6cc4a38b5dc45b92292b6e189",
+                    "0x102d758f688a4c1c5a80b116bd945d4455460282",
+                    "0x70654aad8b7734dc319d0c3608ec7b32e03fa162",
+                    "0x1f94d6a61973edf53252b9e61c6250f303957b9d",
+                    "0x4e65fe4dba92790696d040ac24aa414708f5c0ab"
                 ],
                 "9745": [
                     "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb"
@@ -374,7 +411,7 @@
             "name": "HYPE Pegged Tokens",
             "logo": "https://cdn.jsdelivr.net/gh/hydric-org/token-baskets/assets/logos/hype-pegged-tokens.png",
             "description": "A curated list of multiple Tokens that are pegged to Hyperliquid's HYPE price together in a single place.",
-            "lastUpdated": "2026-01-29T01:22:47.123Z",
+            "lastUpdated": "2026-02-28T13:33:23.064Z",
             "addresses": {
                 "130": [
                     "0x15d0e0c55a3e7ee67152ad7e89acf164253ff68d"
@@ -395,7 +432,9 @@
                     "0x96c6cbb6251ee1c257b2162ca0f39aa5fa44b1fb",
                     "0xfde5b0626fc80e36885e2fa9cd5ad9d7768d725c",
                     "0xbef0142a0955a7d5dcce5c2a13fb84e332669d2d",
-                    "0x441794d6a8f9a3739f5d4e98a728937b33489d29"
+                    "0x441794d6a8f9a3739f5d4e98a728937b33489d29",
+                    "0x0000000000000000000000000000000000000000",
+                    "0x360c140e5344a1a0593d44b4ea6fc7c3daf0c473"
                 ],
                 "534352": [
                     "0xd83e3d560ba6f05094d9d8b3eb8aaea571d1864e",
