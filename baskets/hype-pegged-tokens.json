@@ -3,7 +3,7 @@
     "name": "HYPE Pegged Tokens",
     "logo": "https://cdn.jsdelivr.net/gh/hydric-org/token-baskets/assets/logos/hype-pegged-tokens.png",
     "description": "A curated list of multiple Tokens that are pegged to Hyperliquid's HYPE price together in a single place.",
-    "lastUpdated": "2026-02-28T13:33:23.064Z",
+    "lastUpdated": "2026-04-20T01:27:13.131Z",
     "addresses": {
         "130": [
             "0x15d0e0c55a3e7ee67152ad7e89acf164253ff68d"
@@ -26,7 +26,11 @@
             "0xbef0142a0955a7d5dcce5c2a13fb84e332669d2d",
             "0x441794d6a8f9a3739f5d4e98a728937b33489d29",
             "0x0000000000000000000000000000000000000000",
-            "0x360c140e5344a1a0593d44b4ea6fc7c3daf0c473"
+            "0x360c140e5344a1a0593d44b4ea6fc7c3daf0c473",
+            "0x1368ee9d1212ae5b26ff166049220051a9eebc42"
+        ],
+        "8453": [
+            "0x15d0e0c55a3e7ee67152ad7e89acf164253ff68d"
         ],
         "534352": [
             "0xd83e3d560ba6f05094d9d8b3eb8aaea571d1864e",
