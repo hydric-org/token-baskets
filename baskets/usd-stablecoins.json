@@ -3,7 +3,7 @@
     "name": "USD Stablecoins",
     "logo": "https://cdn.jsdelivr.net/gh/hydric-org/token-baskets/assets/logos/usd-stablecoins.png",
     "description": "A curated list of multiple USD Stablecoins together in a single place.",
-    "lastUpdated": "2026-02-28T13:35:56.786Z",
+    "lastUpdated": "2026-04-20T01:28:28.584Z",
     "addresses": {
         "1": [
             "0x2a8e1e676ec238d8a992307b495b45b3feaa5e86",
@@ -85,7 +85,8 @@
             "0x07041776f5007aca2a54844f50503a18a72a8b68",
             "0xc0c17dd08263c16f6b64e772fb9b723bf1344ddf",
             "0x6c3f90f043a72fa612cbac8115ee7e52bde6e490",
-            "0x7c135549504245b5eae64fc0e99fa5ebabb8e35d"
+            "0x7c135549504245b5eae64fc0e99fa5ebabb8e35d",
+            "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c"
         ],
         "130": [
             "0x078d782b760474a361dda0af3839290b0ef57ad6",
@@ -93,7 +94,8 @@
             "0x1217bfe6c773eec6cc4a38b5dc45b92292b6e189",
             "0x588ce4f028d8e7b53b687865d6a67b3a54c75518",
             "0x80eede496655fb9047dd39d9f418d5483ed600df",
-            "0x20cab320a855b39f724131c69424240519573f81"
+            "0x20cab320a855b39f724131c69424240519573f81",
+            "0x984ae4c68fb3ec037fac36d48622f30eb5ae1361"
         ],
         "143": [
             "0x754704bc059f8c67012fed69bc8a327a5aafb603",
@@ -118,7 +120,8 @@
             "0xa2f8da4a55898b6c947fa392ef8d6bfd87a4ff77",
             "0xe5350509a8d993306beb00bc4cfc8e22d181e035",
             "0x0ad339d66bf4aed5ce31c64bc37b3244b6394a77",
-            "0x061661137c9af602ed0cb6f15fb326c3c8f302b4"
+            "0x061661137c9af602ed0cb6f15fb326c3c8f302b4",
+            "0x6e2ade6ffc94d24a81406285c179227dfbfc97ce"
         ],
         "8453": [
             "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
@@ -150,10 +153,16 @@
             "0x102d758f688a4c1c5a80b116bd945d4455460282",
             "0x70654aad8b7734dc319d0c3608ec7b32e03fa162",
             "0x1f94d6a61973edf53252b9e61c6250f303957b9d",
-            "0x4e65fe4dba92790696d040ac24aa414708f5c0ab"
+            "0x4e65fe4dba92790696d040ac24aa414708f5c0ab",
+            "0x00000000efe302beaa2b3e6e1b18d08d69a9012a",
+            "0x3595ca37596d5895b70efab592ac315d5b9809b2",
+            "0xe5020a6d073a794b6e7f05678707de47986fb0b6",
+            "0xf42f5795d9ac7e9d757db633d693cd548cfd9169",
+            "0x18f52b3fb465118731d9e0d276d4eb3599d57596"
         ],
         "9745": [
-            "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb"
+            "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
+            "0x29ad7fe4516909b9e498b5a65339e54791293234"
         ],
         "534352": [
             "0x06efdbff2a14a7c8e15944d1f4a48f9f95f663a4",

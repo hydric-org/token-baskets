@@ -3,8 +3,11 @@
     "name": "Monad Pegged Tokens",
     "logo": "https://cdn.jsdelivr.net/gh/hydric-org/token-baskets/assets/logos/monad-pegged-tokens.png",
     "description": "A curated list of multiple Tokens that are pegged to Monad's price together in a single place.",
-    "lastUpdated": "2026-01-29T01:31:52.740Z",
+    "lastUpdated": "2026-04-20T01:24:23.919Z",
     "addresses": {
+        "1": [
+            "0x6917037f8944201b2648198a89906edf863b9517"
+        ],
         "143": [
             "0x0000000000000000000000000000000000000000",
             "0x3bd359c1119da7da1d913d1c4d2b7c461115433a",
@@ -12,7 +15,8 @@
             "0x8498312a6b3cbd158bf0c93abdcf29e6e4f55081",
             "0x91b81bfbe3a747230f0529aa28d8b2bc898e6d56",
             "0x0c65a0bc65a5d819235b71f554d210d3f80e0852",
-            "0xa3227c5969757783154c60bf0bc1944180ed81b9"
+            "0xa3227c5969757783154c60bf0bc1944180ed81b9",
+            "0x1d4795a4670033f47f572b910553be0295077b51"
         ]
     }
 }

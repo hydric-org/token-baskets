@@ -170,6 +170,36 @@
                 "address": "0xb10da2f9147f9cf2b8826877cd0c95c18a0f42dc",
                 "reason": "Pendle Principal Tokens (PT) are fixed-yield instruments that appreciate in price over time, violating the criteria for non-interest-appreciating stablecoins.",
                 "timestamp": "2026-02-28T13:32:33.648Z"
+            },
+            {
+                "address": "0x08efcc2f3e61185d0ea7f8830b3fec9bfa2ee313",
+                "reason": "Staked NUSD (sNUSD) from Neutrl is a yield-bearing token where the price increases relative to the underlying asset as interest accrues, which is explicitly excluded by the basket's interest mechanism rule.",
+                "timestamp": "2026-04-20T01:23:53.021Z"
+            },
+            {
+                "address": "0x0655977feb2f289a4ab78af67bab0d17aab84367",
+                "reason": "Savings crvUSD (scrvUSD) is an ERC-4626 vault token where the price per share increases to reflect earned interest, violating the rule against tokens whose price goes up as compound interest.",
+                "timestamp": "2026-04-20T01:23:53.021Z"
+            },
+            {
+                "address": "0xdc53cc918c925beb02ef5eca4d83449913bb7f5a",
+                "reason": "This 'Life USD' token is an obscure project with very low liquidity and is likely an impersonator of the established Liquity USD (LUSD) stablecoin.",
+                "timestamp": "2026-04-20T01:23:53.021Z"
+            },
+            {
+                "address": "0x3175df0976dfa876431c2e9ee6bc45b65d3473cc",
+                "reason": "This is a Curve liquidity provider (LP) token representing a position in the FRAX/USDC pool, rather than a standalone USD stablecoin.",
+                "timestamp": "2026-04-20T01:23:53.021Z"
+            },
+            {
+                "address": "0x99cd4ec3f88a45940936f469e4bb72a2a701eeb9",
+                "reason": "Staked USDS (stUSDS) is a yield-bearing 'Expert' token in the Sky ecosystem that uses an accumulative structure where its value increases over time, making it invalid for this specific basket.",
+                "timestamp": "2026-04-20T01:23:53.021Z"
+            },
+            {
+                "address": "0xa3fe5c7596024e6811e14f029937d5bd8ae485b3",
+                "reason": "This address is an impersonator of the official Threshold USD (thUSD); the legitimate project address is 0xCFC5bD99915aAa815401C5a41A927aB7a38d29cf.",
+                "timestamp": "2026-04-20T01:23:53.021Z"
             }
         ],
         "8453": [
@@ -192,6 +222,36 @@
                 "address": "0xe93131620945a1273b48f57f453983d270b62dc7",
                 "reason": "This is a yield-bearing vault token (MortgageFi Earn) representing a position in USDC and cbBTC, not a pure USD stablecoin.",
                 "timestamp": "2026-02-28T13:35:56.786Z"
+            },
+            {
+                "address": "0x7bfa7c4f149e7415b73bdedfe609237e29cbf34a",
+                "reason": "Spark USDC Vault (sparkUSDC) is a yield-bearing share token where the price increases over time as interest accumulates, violating the basket's exclusion of price-appreciating tokens.",
+                "timestamp": "2026-04-20T01:28:28.584Z"
+            },
+            {
+                "address": "0x5875eee11cf8398102fdad704c9e96607675467a",
+                "reason": "Savings USDS (sUSDS) is a yield-bearing token where the price increases relative to the underlying USDS asset, which does not meet the stable 1:1 price criteria for this basket.",
+                "timestamp": "2026-04-20T01:28:28.584Z"
+            },
+            {
+                "address": "0x4ce3ec1b7b4ffb33a0b70c64a0560a3f341aa2e1",
+                "reason": "Shift Extended Basis USD (extUSD) lacks sufficient verification as a standard USD stablecoin and its 'Basis' name and low liquidity suggest it is likely a yield-accruing or rebasing asset.",
+                "timestamp": "2026-04-20T01:28:28.584Z"
+            },
+            {
+                "address": "0xc1256ae5ff1cf2719d4937adb3bbccab2e00a2ca",
+                "reason": "Moonwell Flagship USDC (mwUSDC) is an interest-bearing vault token where the price increases as yield is earned, which is excluded by the basket criteria.",
+                "timestamp": "2026-04-20T01:28:28.584Z"
+            },
+            {
+                "address": "0x616a4e1db48e22028f6bbf20444cd3b8e3273738",
+                "reason": "Seamless USDC Vault (smUSDC) is an ERC-4626 share token whose price increases over time due to compounding interest.",
+                "timestamp": "2026-04-20T01:28:28.584Z"
+            },
+            {
+                "address": "0x085178078796da17b191f9081b5e2fccc79a7ee7",
+                "reason": "EVK Vault eUSDC is a passive lending receipt token on Euler whose exchange rate increases as yield accrues, failing the 1:1 price requirement.",
+                "timestamp": "2026-04-20T01:28:28.584Z"
             }
         ]
     },
@@ -358,6 +418,11 @@
                 "address": "0x20a2f39a6cd1c4ba1c115163e8ac7991e5a3b839",
                 "reason": "This token is a malicious impersonator or meme coin using the 'ETH' symbol but named 'Lord Bananahammock'. It has no legitimate peg to Ethereum.",
                 "timestamp": "2026-02-28T13:35:32.805Z"
+            },
+            {
+                "address": "0x9912ca108bc6607b263aa66677753f32f91636ad",
+                "reason": "This is Tether Gold (XAUt), which is pegged to the price of gold (XAU), not ETH.",
+                "timestamp": "2026-04-20T01:27:43.700Z"
             }
         ],
         "534352": [
@@ -394,6 +459,16 @@
                 "address": "0xeb4c2781e4eba804ce9a9803c67d0893436bb27d",
                 "reason": "RenBTC is defunct and significantly depegged (trading at a >90% discount) following the shutdown of the Ren Protocol bridge.",
                 "timestamp": "2026-01-29T23:55:09.644Z"
+            },
+            {
+                "address": "0xc4e15973e6ff2a35cc804c2cf9d2a1b817a8b40f",
+                "reason": "Interest-Bearing BTC (ibBTC) by BadgerDAO has significantly depegged from BTC's price, trading at approximately $35,000 (roughly 0.5 BTC) following the collapse of its underlying renBTC backing. It fails the basket's price proximity requirement.",
+                "timestamp": "2026-04-20T01:23:18.229Z"
+            },
+            {
+                "address": "0x1d55940cf6eb85321816327aa785006f8dd59ef9",
+                "reason": "This address corresponds to an old, low-liquidity project called BitcoinPLUS, which does not match the official contract for Solv Protocol's BTC+ yield asset and does not demonstrate a reliable price peg to Bitcoin.",
+                "timestamp": "2026-04-20T01:23:18.229Z"
             }
         ],
         "8453": [
@@ -540,6 +615,23 @@
                 "address": "0x03c1ec4ca9dbb168e6db0def827c085999cbffaf",
                 "reason": "This token is a malicious impersonator pretending to be an Ondo Finance tokenized stock of JPMorgan Chase; it is not a Monad-pegged asset and its price (approx. $302) does not track Monad ($0.02).",
                 "timestamp": "2026-02-28T13:30:13.763Z"
+            },
+            {
+                "address": "0x5cb888182fbffdb62c08fb4b5a343914f00fdfee",
+                "reason": "This is Moneybrain BiPS (BIPS), a project unrelated to the Monad ecosystem that is not pegged to Monad's price.",
+                "timestamp": "2026-04-20T01:22:44.681Z"
+            },
+            {
+                "address": "0xb4e48ba657f3161a7490bc299e946c8de763cb02",
+                "reason": "This is DiamondBack (DMB), an independent cryptocurrency project that does not function as a Monad-pegged asset.",
+                "timestamp": "2026-04-20T01:22:44.682Z"
+            }
+        ],
+        "999": [
+            {
+                "address": "0x1368ee9d1212ae5b26ff166049220051a9eebc42",
+                "reason": "This token (Harmonix kHYPE) is a yield-bearing derivative pegged to the price of Hyperliquid's native token (HYPE), not Monad. It does not meet the criteria for the Monad Pegged Tokens basket.",
+                "timestamp": "2026-04-20T01:25:02.394Z"
             }
         ],
         "8453": [
@@ -582,6 +674,16 @@
                 "address": "0x4a3a6dd60a34bb2aba60d73b4c88315e9ceb6a3d",
                 "reason": "MIM (Magic Internet Money) is a USD-pegged stablecoin issued by Abracadabra.money and does not track or peg to the price of Monad.",
                 "timestamp": "2026-02-28T13:34:16.723Z"
+            },
+            {
+                "address": "0x7db6dfe35158bab10039648ce0e0e119d0ec21ec",
+                "reason": "eDMT Commons is an Intellectual Property Token (IPT) for scientific research into endogenous DMT (Dimethyltryptamine) and is not pegged to the price of Monad (MON).",
+                "timestamp": "2026-04-20T01:26:56.524Z"
+            },
+            {
+                "address": "0x01fd26d06b98903bffd768bd7c8e2527ded476e7",
+                "reason": "This token is a low-liquidity asset on Base with no evidence of being a legitimate liquid staking token (LST) or official bridge pegged to Monad's price.",
+                "timestamp": "2026-04-20T01:26:56.524Z"
             }
         ]
     },
@@ -636,6 +738,18 @@
                 "address": "0x9f9efdd09e915c1950c5ca7252fa5c4f65ab049b",
                 "reason": "This token (GRUB) is a reward asset for the MyEtherLottery project and is not pegged to the USD price of Gold (XAU). Official project documentation suggests a price mechanism tied to ETH rather than the global gold spot price.",
                 "timestamp": "2026-02-28T13:29:46.448Z"
+            }
+        ],
+        "8453": [
+            {
+                "address": "0x9912ca108bc6607b263aa66677753f32f91636ad",
+                "reason": "This token is an impersonator of Tether Gold (XAUt) on Base. Tether has not officially launched XAUt on the Base network (official support is limited to Ethereum and BNB Chain), and the token has negligible TVL ($1.2K) and nearly zero trading volume ($1.44), which are common characteristics of fake tokens.",
+                "timestamp": "2026-04-20T01:26:42.256Z"
+            },
+            {
+                "address": "0xb0bb1cae834d533d7b75300f4f818ef3ef8a18b8",
+                "reason": "This token is an impersonator of Paxos Gold (PAXG) on Base. Paxos has not officially deployed PAXG on the Base network. While bridged versions exist, this specific address has extremely low liquidity ($1.88K) and does not match the known contract addresses for legitimate bridge implementations like Portal (Wormhole) or Axelar.",
+                "timestamp": "2026-04-20T01:26:42.256Z"
             }
         ]
     }
